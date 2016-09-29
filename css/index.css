@@ -41,8 +41,8 @@
 
 
 
-.img{
-	background-image: url(image/photo_home.jpg);
+.image {
+	background-image: url('../img/home_page.jpg');
 	background-size: cover;
 	height: 700px;
 }

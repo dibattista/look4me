@@ -5,8 +5,8 @@ $('a[href^="#"]').click(function(){
 	var jean-michel = $(this).attr("href");
 
 	$('html, body').animate({
-		scrollTop:$('jean-michel').offset().top
-	}, 'slow');
+		scrollTop:$('#jean-michel').offset().top
+	}, 5000);
 	return false;
 });
 
