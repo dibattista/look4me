@@ -1,11 +1,35 @@
 
 /* animation.js/scrollTop */
 
-$(document).ready(function(){
+$('a[href^="#"]').click(function(){
+	var jean-michel = $(this).attr("href");
+
+	$('html, body').animate({
+		scrollTop:$('jean-michel').offset().top
+	}, 'slow');
+	return false;
+});
+
+
+
+
+
+/*$(document).ready(function() {
+   
+    $('.yolo').click(function(){
+        $('html, body').animate({scrollTop:$(document).height()}, 500);
+        return false;
+    });
+
+});*/
+
+
+/*$(document).ready(function(){
    $('.yolo').click(function(){
       $('html, body').animate({
-       scrollTop: $($(this).attr('href', '#jean-michel')).offset().top
+       scrollTop: $($(this).attr('href','#jean-michel')).offset().top
       }, 2000);
+       
    });
-});
+});*/
 

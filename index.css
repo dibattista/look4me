@@ -4,7 +4,6 @@
 
 }
 
-
 .navbar{
       
      background-color:transparent;
@@ -14,6 +13,7 @@
 }
 
 .nav-color .nav > li> :nth-of-type(1){
+	font-size: 20px;
 	color: white;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .padding-p{
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	font-size: 30px;
@@ -68,49 +68,51 @@
 	font-size: 30px;
 }
 
+
+
 .scroll{
 	padding-left: 100px;
-	padding-top: 40px;
+	padding-top: 20px;
 }
 
-/* accueil 2 */
+/****A PRENDRE**********HOME DEBUT PARTIE SALON / AVANT APRES *************/
 
-#accueil-2{
-	height: 650px;
-	/**background-color: black;***/
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 980px;
-
-}
-#colorrow2{
-	background-color:#57463c;
+#accueil-3{
+padding-top: 30px;
+height: 650px;
+background-color:#57463c;
 }
 
-#color-pink{
-	height: 200px;
-	background-color: rgb(230, 208, 101);
-}
-
-#color-blue{
-height: 200px;
-margin: 0px;
-padding: 0px;
-	/***background-color: rgb(206, 207, 202);**/
-}
- /**********AJOUT*****/
-.lesquatre{
-margin-right: 10px;
-max-width: 250px;
-float: left;
-
-}
-.quatretexte{color:
-white;
+#border{
+border-style: solid;
+ border-width: 1px;
+ border-color: white;
+ padding: 25px;
+ padding-bottom: 35px;
 
 }
 
-/* end accueil 2 */
+
+.titre-salon{
+	margin: 0px;
+	padding: 0px;
+
+}
+.paragraphe-salon{
+	padding-top: 15px;
+
+}
+
+#btn-look{
+
+float: right;
+
+}
+
+
+
+
+/**************HOME FIN PARTIE SALON*************/
 
  /* footer */
 
