@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/2-col-portfolio.css" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+
+
+  <!-- js-->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="index.css">
+
+
+
+  <title>Look4Me - Page Contact</title>
+</head>
+
+<body>
+<!-- Navbar -->
+
+<div class="container-fluid">
+     <nav class="navbar navbar-default">
+          <!-- Brand  -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><p><img src="image/logov3_maq_blanc_rose.png" alt=""></p></a>
+          </div>
+         
+              <!-- nav 2 -->
+          <div class="nav-color">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li><a href="#"><img src="" alt=""><p></p></a></li>
+                  <li><a href="#"><p>Particulier</p></a></li>
+                  <li><a href="#"><img src="" alt=""><p></p></a></li>
+                  <li><a href="#"><p>Entreprise</p></a></li>
+                  <li><a href="#"><img src="" alt=""><p></p></a></li>
+                  <li><a href="#"><p>Avant/Après</p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li><a href="#"><p></p></a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apropos<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Presentation</a></li>
+                        <li><a href="#">Presse/News</a></li>  
+                      </ul>
+                    </li>
+                  <li><a href="#"><p>Contact</p></a></li>
+                </ul>
+          </div>
+      </nav>  
+  </div>
+  <!-- fin navbar -->
+
+  <!--Votre code ici -->
+
+        <!-- Projects Row -->
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                  <div class="coordonnees">
+                                  <p class="adresse">Adresse :</p><br>
+                                  <p class="telephone">Numéro de téléphone :</p><br><br>
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.454622970444!2d1.4856484159747743!3d48.447806137481145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e40c44273a8095%3A0x1b20b5629f882821!2sCath%C3%A9drale+Notre-Dame+de+Chartres!5e0!3m2!1sfr!2sfr!4v1474797464355" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                            <div class="formulaire">
+                                    <h2 class="contact">CONTACT</h2>
+                                    <form class="well span8" role="form">
+                                    
+
+                                        <div>
+                                                  
+                                                <div class="form-group">
+                                                    <label>Nom</label>
+                                                    <input class="form-control" placeholder="Votre nom" type="text">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Prénom</label>
+                                                    <input class="form-control" placeholder="Votre prénom" type="text">
+                                                </div>
+
+                                                <div class="form-group">                
+                                                    <label>Email</label> 
+                                                    <input class="form-control" placeholder="Votre adresse email" type="text"> 
+                                                </div>
+
+                                                <p><span class="statut">Précisez votre statut :</span><br>
+                                                    <input type="radio" name="choix" value="entreprise" id="entreprise" /> <label for="entreprise">Entreprise</label>
+                                                    <input type="radio" name="choix" value="particulier" id="particulier" /> <label for="particulier">Particulier</label>
+                                                </p>
+
+                                                <div class="form-group">
+                                                    <label>Raison de l'envoi</label>
+                                                    <select class="form-control" id="subject" name="Raison de l'envoi">
+                                                        <option selected value="na">
+                                                            Choisissez une prestation :
+                                                        </option>
+                                        
+                                                        <option value="service">
+                                                            Total Relooking
+                                                        </option>
+                                        
+                                                        <option value="suggestions">
+                                                            Relooking coiffure
+                                                        </option>
+                                        
+                                                        <option value="product">
+                                                            Relooking visage
+                                                        </option>
+
+                                                        <option value="product">
+                                                            Relooking stylisme
+                                                        </option>
+
+                                                        <option value="product">
+                                                            Autre
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                        </div>
+
+                        
+                                        <div>
+                                            <label>Message</label> 
+                                            <textarea class="form-control" rows="12"></textarea>
+
+                                            <button class="btn btn-primary pull-right voffset3" type="submit" value="Envoyer">Envoyer</button>
+                                        </div>
+                                    </form>
+                            </div>
+                    </div>
+            </div>
+        </div>
+
+  <!-- fin du votre code -->
+  <footer>
+    <div class="footer" id="footer">
+      <div class="row partenaire" id="jean-michel">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-1"><img src="partenaire/vetement_f.jpg" alt=""></div>
+          <div class="col-lg-2"><img src="partenaire/vetement_h.jpg" alt=""></div>
+          <div class="col-lg-1"><img src="partenaire/maquillage.jpg" alt=""></div>
+          <div class="col-lg-1"><img src="partenaire/coiffure.jpg" alt=""></div>
+        </div>
+        <div class="row notice">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <p>2016 (c) Looke4Me | Notice légale</p>
+          </div>
+        </div>
+      </div>
+  </footer> 
+
+
+
+</body>
+
+</html>
