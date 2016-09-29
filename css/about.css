@@ -1,0 +1,81 @@
+  body{
+   background-color: black;
+   color:white;
+
+}
+
+
+#apropos-background{/***Wrap***/
+	background-color: #f4f8f9;
+	margin-top: 70px;
+	padding-bottom: 30px;
+}
+
+#apropos{
+	padding-top: 50px;
+
+
+}
+.apropos-parag{
+	font-size: 18px;
+
+	color: black;
+font-family: 'Open Sans', sans-serif;
+margin-left: 20px;;
+margin-right: 20px;
+}
+
+#apropos-portrait{
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 40px;
+}
+.portrait{
+
+	margin-bottom: 30px;
+}
+
+
+.apropos-titre{
+
+font-size: 38px;
+color: #cc9933;
+font-family: 'Open Sans', sans-serif;
+margin-left: 20px;;
+margin-right: 20px;
+
+}
+
+
+.apropos-btn{
+	width: 100%;
+font-size: 14px;
+
+padding: 10px;
+text-align: center;
+	    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+	background-color: #cc9933;
+}
+
+.apropos-btn:hover{
+font-size: 14px;
+padding: 10px;
+text-align: center;
+color: white;
+background-color: #a62e70;
+
+}
+
+.apropos-btn a{
+color:white;}
+
+
+#apropos-icon{
+	font-size: 18px;
+	float: right;
+	color: white;
+padding: 0px;
+text-align: center;
+}
