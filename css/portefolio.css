@@ -1,17 +1,64 @@
+/* Main carousel style */
+.carousel {
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+    padding-bottom: 150px;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    /*height: 54px;*/
+    margin-bottom: 5px;
+    margin-left: 32px;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 230px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    /*height: 54px;*/
+    left: 0;
+    width: 230px;
+}
+
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
 h1, h2, h3, h4, h5 {
     font-family: 'Expletus Sans', cursive;
-    /*font-family: 'El Messiri', sans-serif;
-    font-family: 'Titillium Web', sans-serif;*/
+    font-family: 'El Messiri', sans-serif;
+    zzfont-family: 'Titillium Web', sans-serif;
 }
-h1 {
-    text-shadow: 4px 4px 4px #222;
-}
+
+h1 { text-shadow: 4px 4px 4px #222; }
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     color:            #999;
     background-color: #1F2228;
     padding-top: 70px;
+    font-size: 16px;
+    background-image: url(../img/portefolio/orn_03-2.png);
+    background-repeat: no-repeat;
+    background-position: 100px 450px;
 }
 
 hr {
@@ -36,14 +83,11 @@ html {
   width:  100%;
   height: 200px;
   background-color: #282C34;
-  zzmargin-top: 180px;
   padding-top: 40px;
 }
 
 
-#portefolio {
-    padding-bottom: 300px
-}
+#portefolio { padding-bottom: 300px }
 
 /* CUSTOMIZE THE NAVBAR
 ----------------------------------------------------------------------------- */
@@ -69,32 +113,6 @@ html {
 }
 .navbar-wrapper .navbar .container ( width: auto; }
 
-
-/* CUSTOMIZE THE CAROUSEL
------------------------------------------------------------------------------ */
-
-/* Carousel base class */
-.carousel {
-    height: 800px;
-    margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 800px;
-    background-color: #777;
-}
-.carousel-inner > .item > img {
-    position: absolute;
-    top:  0;
-    left: 0;
-    min-width: 100%;
-    height: 800px;
-}
 
 .panel-default,
 .panel-body,
