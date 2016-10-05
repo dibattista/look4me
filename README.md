@@ -1,16 +1,24 @@
-# Portefolio AV/AP
+# LOOK( 4 )ME
 
 ***
+## Accueil :
+***
+## Services & tarifs particuliers
+***
+## Services & tarifs entreprises
+***
+## Portefolio AV/AP :
 
-TO DO :
--------
+### * À FAIRE : *
 
-* Faire slider avec :
-    * slides de 2 images AV/AP séparées (pas remonteés sur un même visuel)
+* Slider avec :
+    * slides de 2 images AV/AP ( 2 fichiers distincts )
     * défilement auto
-    * effets survol éventuellement
+    * effets zoom léger sur survol (éventuellement)
 
 
-* Faire un panneau de vignettes (images AP seules ?) connecté au slider
+* Faire un panneau de vignettes ( AP seules ? ) connecté au slider
 
+***
+## À propos :
 ***
