@@ -1,0 +1,164 @@
+body{
+   background-color: black;
+   color:white;
+
+}
+
+.padding-0{
+  padding: 0px;
+}
+
+.padding-nav1{
+	margin-right: 25px;
+}
+.navbar{
+      
+     background-color:transparent;
+     margin-bottom:  0px;
+     border: none;
+  
+}
+
+.nav-color .nav > li> :nth-of-type(1){
+
+	font-size: 20px;
+	color: white;
+}
+
+.nav2{
+	padding-top: 0px;
+}
+.nav1{
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+p{
+	color: white;
+}
+
+.contact{
+	background-color: #E2007A;
+    padding-bottom: 0px;
+
+}
+button{
+ background-color: #E2007A;
+ padding: 5px;
+ color: white!important;
+}
+
+
+/*.nav-color .nav > li> span:nth-of-type(3){
+	color: white;
+}
+.nav-color .nav > li> span:nth-of-type(4){
+	color: white;
+
+}
+.nav-color .nav > li> span:nth-of-type(5){
+	color: white;
+}*/
+
+
+
+/* partie image plein ecran */
+
+
+
+.image {
+	background-image: url('../img/home_page.jpg');
+	background-size: cover;
+	height: 700px;
+}
+
+#pading-text-quote{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	color: white;
+	font-size: 50px;
+	 text-align: center;
+}
+
+.padding-p{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+.padding-p-3{
+	padding-left: 0px;
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+#jean_michel{
+padding-bottom: 10px;
+background-color:#57463c;
+}
+
+.scroll{
+	padding-left: 100px;
+	padding-top: 60px;
+}
+
+/****A PRENDRE**********HOME DEBUT PARTIE SALON / AVANT APRES *************/
+
+#accueil-3{
+padding-top: 85px;
+height: 615px;
+background-color:#57463c;
+}
+
+#border{
+border-style: solid;
+ border-width: 1px;
+ border-color: white;
+ padding: 25px;
+ padding-bottom: 20px;
+
+}
+
+
+.titre-salon{
+	margin: 0px;
+	padding: 0px;
+
+}
+.paragraphe-salon{
+	padding-top: 15px;
+
+}
+
+#btn-look{
+
+float: right;
+
+}
+
+
+
+
+/**************HOME FIN PARTIE SALON*************/
+
+ /* footer */
+
+ .footer{
+ 	background-color: rgb(206, 207, 202);
+ 	height: 160px;
+ }
+
+ .partenaire{
+ 	padding-top: 25px;
+ 	padding-bottom: 20px;
+ 	padding-left: 45px;
+ }
+
+.notice{
+	padding-left: 120px;
+}
