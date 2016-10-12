@@ -1,5 +1,6 @@
 body{
    background-color: black;
+   width: 100%;
    color:white;
    font-family: 'El Messiri', sans-serif;
 
@@ -37,7 +38,7 @@ body{
 	padding-right: 20px;
 }
 
-.fa-facebook {
+.facebooknav {
   color: white;
 }
 
@@ -56,17 +57,6 @@ button{
  color: white!important;
 }
 
-
-/*.nav-color .nav > li> span:nth-of-type(3){
-	color: white;
-}
-.nav-color .nav > li> span:nth-of-type(4){
-	color: white;
-
-}
-.nav-color .nav > li> span:nth-of-type(5){
-	color: white;
-}*/
 
 
 
@@ -158,6 +148,12 @@ float: right;
 	margin-right: 5px;
 	margin-bottom: 100px;
 	
+}
+
+.facebooknews{
+	color:#DAB270;
+	position: absolute;right:0px;
+	padding-right: 10px;
 }
 
 #m-presse{
