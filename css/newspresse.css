@@ -1,41 +1,29 @@
 body{
-   background-color: black;
+   background-color:#57463c;
    width: 100%;
    color:white;
    font-family: 'El Messiri', sans-serif;
-
 }
 
 .padding-0{
   padding: 0px;
 }
 
-.padding-nav1{
-	margin-right: 25px;
-}
+
 .navbar{
-      
-     background-color:transparent;
-     margin-bottom:  0px;
+
      border: none;
-     padding-right: 5px;
-    padding-left: 10px;
-  
 }
 
 .nav-color .nav > li> :nth-of-type(1){
-
 	font-size: 20px;
 	color: white;
+	padding-top: 25px;
 }
 
 
-.nav2{
-	padding-top: 0px;
-}
 .nav1{
 	padding-top: 20px;
-	padding-right: 20px;
 }
 
 .facebooknav {
@@ -144,8 +132,8 @@ float: right;
 
 #m-news{
 	margin-left: 5px;
-	margin-top: 100px;
-	margin-right: 5px;
+	margin-top: 25px;
+	margin-right: 30px;
 	margin-bottom: 100px;
 	
 }
@@ -178,6 +166,7 @@ float: right;
 .overline-month{
 	text-decoration: overline;
 }
+
 /******************************* fin news presses *****************************/
 
 
@@ -186,7 +175,7 @@ float: right;
  /* footer */
 
  .footer{
- 	background-color: rgb(206, 207, 202);
+ 	background-color:#3d312a;
  	height: 160px;
  }
 
