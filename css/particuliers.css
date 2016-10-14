@@ -1,0 +1,106 @@
+@import 'https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+
+body
+{
+	background-color: #1b1816;
+}
+
+.imagefond
+{
+	height: 500px;
+	background-color: #473c35;
+	/*background-image: url("img/test2.png");*/
+	background-attachment: scroll;
+}
+
+a
+{
+	color:darkgoldenrod;
+}
+
+a:hover
+{
+	color:gold;
+}
+
+h2, h3, h4
+{
+	font-family: 'El Messiri', sans-serif;
+}
+
+p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+.titrePrestation
+{
+  color: goldenrod;
+}
+
+#buttonfemmes, #buttonhommes
+{
+  color: darkgoldenrod;
+	text-align: center;
+  font-size: 40px;
+  text-decoration: underline darkgoldenrod;
+	font-family: 'El Messiri', sans-serif;
+}
+
+#containerStyle
+{
+ 	color: darkgoldenrod;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline darkgoldenrod;
+ 	font-family: 'El Messiri', sans-serif;
+ 	margin-top: 15px;
+}
+
+#femmes, #hommes
+{
+	 font-family: 'El Messiri', sans-serif;
+   color: goldenrod;
+}
+
+.boutonfixe
+{
+  color: goldenrod;
+}
+
+a#cRetour{
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(227, 193, 57, 0.25);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:darkgoldenrod;
+  opacity:1;
+  transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible{
+  bottom:20px;
+  opacity:1;
+}
