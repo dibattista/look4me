@@ -16,7 +16,7 @@ body
 
 .imagefond
 {
-	background-image: url("../img/u.jpg");
+	background-image: url("../img/particuliers/banParticuliers.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -34,10 +34,20 @@ body
 	font-family: 'El Messiri', sans-serif;
 }
 
+@media screen and (max-width: 770px)
+{
+  #buttonfemmes, #buttonhommes
+  {
+	text-align: center;
+    font-size: 30px;
+  }
+}
+
 #femmes, #hommes
 {
 	color: goldenrod;
 	font-family: 'El Messiri', sans-serif;
+	text-align: center;
 }
 
 .boutonfixe
