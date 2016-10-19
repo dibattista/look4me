@@ -8,5 +8,12 @@ $('html, body').animate({scrollTop: offset}, 'slow');
     return false;
   }); 
 
-});
+
+function(){
+	$('a[href^=""]').onmouseover(){
+		this.src='img/news:presse/img-presse2.png'
+		onmouseout(){ this.src='img/news:presse/img-presse3.png'}
+};
+};
+
 
