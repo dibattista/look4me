@@ -8,12 +8,105 @@ body
 	background-color: #1b1816;
 }
 
+.container-fluid
+{
+	margin: 0px;
+	padding: 0px;
+}
+
 .imagefond
 {
+	background-image: url("../img/u.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	height: 500px;
-	background-color: #473c35;
-	/*background-image: url("img/test2.png");*/
-	background-attachment: scroll;
+	width: 100%;
+	margin: 0 0 50px 0;
+}
+
+#buttonfemmes, #buttonhommes
+{
+	color: darkgoldenrod;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: underline darkgoldenrod;
+	font-family: 'El Messiri', sans-serif;
+}
+
+#femmes, #hommes
+{
+	color: goldenrod;
+	font-family: 'El Messiri', sans-serif;
+}
+
+.boutonfixe
+{
+	color: goldenrod;
+}
+
+#containerStyle
+{
+	margin-top: 15px;
+	margin-bottom: 50px;
+	color: darkgoldenrod;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: underline darkgoldenrod;
+	font-family: 'El Messiri', sans-serif;
+}
+
+.moyenPaiement
+{
+	font-style: italic;
+}
+
+.separator
+{
+	height: 3px;
+	width: 100%;
+	background-color: goldenrod;
+	border: none;
+}
+
+.bloc-transparent
+{
+	height: 300px;
+	width: 100%;
+	margin: auto;
+	margin: 75px 0 75px 0;
+	padding: 30px 30px 30px 30px;
+	background-color: rgba(71,60,53,0.7); /*#473c35*/
+	text-align: center;
+}
+
+@media screen and (max-width: 770px)
+{
+  .bloc-transparent
+  {
+    font-size: 14px;
+  }
+}
+
+.titrePrestation
+{
+	color: goldenrod;
+}
+
+.btn-primary
+{
+	font-size: 12px;
+}
+
+p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+h2, h3, h4
+{
+	font-family: 'El Messiri', sans-serif;
 }
 
 a
@@ -26,81 +119,47 @@ a:hover
 	color:gold;
 }
 
-h2, h3, h4
+a#cRetour
 {
-	font-family: 'El Messiri', sans-serif;
+	border-radius:3px;
+	padding:10px;
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+	background:rgba(227, 193, 57, 0.25);
+	position:fixed;
+	right:20px;
+	opacity:1;
+	z-index:99999;
+	transition:all ease-in 0.2s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	text-decoration: none;
 }
 
-p
+a#cRetour:before
 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	content: "\25b2";
 }
 
-.titrePrestation
+a#cRetour:hover
 {
-  color: goldenrod;
+	background:darkgoldenrod;
+	opacity:1;
+	transition:all ease-in 0.2s;
 }
 
-#buttonfemmes, #buttonhommes
+a#cRetour.cInvisible
 {
-  color: darkgoldenrod;
-	text-align: center;
-  font-size: 40px;
-  text-decoration: underline darkgoldenrod;
-	font-family: 'El Messiri', sans-serif;
+	bottom:-35px;
+	opacity:0;
+	transition:all ease-in 0.5s;
 }
 
-#containerStyle
+a#cRetour.cVisible
 {
- 	color: darkgoldenrod;
-  text-align: center;
-  font-size: 40px;
-  text-decoration: underline darkgoldenrod;
- 	font-family: 'El Messiri', sans-serif;
- 	margin-top: 15px;
+	bottom:20px;
+	opacity:1;
 }
 
-#femmes, #hommes
-{
-	 font-family: 'El Messiri', sans-serif;
-   color: goldenrod;
-}
 
-.boutonfixe
-{
-  color: goldenrod;
-}
-
-a#cRetour{
-  border-radius:3px;
-  padding:10px;
-  font-size:15px;
-  text-align:center;
-  color:#fff;
-  background:rgba(227, 193, 57, 0.25);
-  position:fixed;
-  right:20px;
-  opacity:1;
-  z-index:99999;
-  transition:all ease-in 0.2s;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  text-decoration: none;
-}
-a#cRetour:before{ content: "\25b2"; }
-a#cRetour:hover{
-  background:darkgoldenrod;
-  opacity:1;
-  transition:all ease-in 0.2s;
-}
-a#cRetour.cInvisible{
-  bottom:-35px;
-  opacity:0;
-  transition:all ease-in 0.5s;
-}
-
-a#cRetour.cVisible{
-  bottom:20px;
-  opacity:1;
-}
