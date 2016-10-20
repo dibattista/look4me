@@ -78,30 +78,4 @@ faut-il écraser ou étendre la fonction et peut-on le faire de l'extérieur du 
 .carousel-indicators {
     bottom: 20px;
 }
-<<<<<<< HEAD
-=======
-
-
-/* RESPONSIVE CSS
------------------------------------------------------------------------------ */
-/*
-@media (min-width: 768px) {
-    /* Navbar positioning foo * /
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    /* The navbar becomes detached from the top, so we round the corners * /
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-@media (min-width: 992px) {}
->>>>>>> origin/portefolio
 */
