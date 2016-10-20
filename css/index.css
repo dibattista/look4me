@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   body{
    background-color: #57463C;
    color:white;
@@ -47,5 +48,11 @@
 .padding-0
 {
   padding: 0px;
+=======
+body{
+   background-color:#1C1815;;
+   color:white;
+   font-family: 'El Messiri', sans-serif;
+>>>>>>> 557e1e948d04b1ab5ce6c3b6e89ebc530bc9d7fa
 }
 
