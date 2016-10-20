@@ -1,0 +1,235 @@
+.voffset  { margin-top: 2px; }
+.voffset1 { margin-top: 5px; }
+.voffset2 { margin-top: 10px; }
+.voffset3 { margin-top: 15px; }
+.voffset4 { margin-top: 30px; }
+.voffset5 { margin-top: 40px; }
+.voffset6 { margin-top: 60px; }
+.voffset7 { margin-top: 80px; }
+.voffset8 { margin-top: 100px; }
+.voffset9 { margin-top: 150px; }
+
+#content{background-color:#1b1816;
+
+}
+#formulaire{
+padding-top: 50px;
+padding-left: 0px;
+padding-right: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+#formulairecolor{
+background-color:#1b1816;
+border: none;
+color:white;
+margin: 0px;
+padding: 0px;
+}
+
+
+/**********partie adresse et carte********************/
+
+#form1{
+margin-bottom: 20px;
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+padding-left: 0px;
+	color:white;
+
+}
+
+#coordonnees{
+	padding: 0px;
+	margin-top:0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+
+
+}
+
+
+#icon{
+font-size: 22px;
+display: block;
+position: relative;
+float: left;
+color: #cc9933;
+margin-left: px;
+margin-right: 15px;
+padding: 0px;}
+
+
+#activite
+{	font-size: 24px;
+padding-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: 'El Messiri', sans-serif;
+	line-height: 16px;
+
+}
+
+#adresse{	
+	font-size: 14px;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 18px;
+
+}
+
+
+#phone{
+	padding: 0px;
+	margin-top:0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+
+}
+
+ #telephone{
+
+font-size: 16px;
+	color:white;
+	margin-left: 5px;
+		margin-right: 5px;
+font-family: 'Open Sans', sans-serif;
+	line-height: 16px;
+
+}
+
+
+ #Email{
+	margin-left: 5px;
+		margin-right: 5px;
+font-size: 16px;
+	color:white;
+		padding: 0px;
+
+font-family: 'Open Sans', sans-serif;
+	line-height: 16px;
+}
+
+#message{
+	margin-left: 5px;
+	margin-right: 5px;
+padding: 0px;
+}
+
+
+.situation{
+		font-family: 'El Messiri', sans-serif;
+			font-size: 24px;
+	color: #cc9933;
+
+			padding: 0px;
+}
+
+#cartegooglemap{
+		padding: 0px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 20px;
+}
+
+
+
+
+
+/***partie formulaire**/
+#form2{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+
+}
+
+.formulaire
+{
+	margin-left: 5px;
+	margin-right: 5px;
+padding: 0px;
+	/**height: 50%;**/
+	/*margin: 15px 15px 15px 15px;****/
+	/**padding: 15px 15px 15px 15px;**/
+	/**border: solid 1px;
+		border-color: white;**/
+}
+
+.contact
+{
+	font-size: 36px;
+	color: #cc9933;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'El Messiri', sans-serif;
+	/**border-radius: 5px;**/
+	/**border: solid 1px;**/
+
+}
+#preciservotrestatut{
+margin-top: 0px;
+margin-bottom: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+padding: 0px;
+
+
+
+}
+
+
+
+.statut
+{
+padding-top: 40px;
+font-family: 'El Messiri', sans-serif;
+font-size: 26px;
+color: #cc9933;
+margin: 0px;
+	
+}
+.radio{
+
+/**margin-right: 0px;
+margin-left: 0px;
+margin-bottom: 20px;
+padding: 0px;**/
+display: block;
+position: relative;
+float: left;
+
+
+
+}
+#menuderoulant{
+margin-top: 0px;
+margin-bottom: 20px;
+margin-right: 0px;
+margin-left: 0px;
+padding: 0px;
+float: right;
+}
+
+.listederoulante{
+	font-family: 'El Messiri', sans-serif;
+font-size: 16px;
+color: #cc9933;
+}
+
+
+
+#blocmessage{
+font-family: 'El Messiri', sans-serif;
+font-size: 26px;
+color: #cc9933;
+padding: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
