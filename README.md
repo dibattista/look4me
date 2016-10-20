@@ -1,6 +1,4 @@
-# look4me
-Relooking & coach en image !!
-=======
 # LOOK4ME
+## Relooking & coach en image
 
 Wilders : Marc, Nathalie, Barbara, Jérôme
