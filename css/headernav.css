@@ -1,0 +1,149 @@
+.bg-nav{
+	background-color:black; 
+	padding-top: 10px; 
+}
+
+.navbar{
+     border: none;
+}
+
+.dropdown-menu>li>a{
+    margin-top: 2px;
+    background-color: #DAB270;
+}
+
+/*.navbar-default .navbar-nav > .hover-nav > a:hover, .navbar-default .navbar-nav > .hover-nav > a:focus{
+	
+	background-color: #C79C51;
+	color: white; 
+}*/
+
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    background:  transparent; 
+    padding: 0px;
+    text-align: left;
+    list-style: none;
+}
+
+
+.background-gold{
+	color: white; 
+	background-color: #C79C51; 
+	padding: 10px;  
+}
+
+.nav .navbar-nav >li>.fa-p-none{
+	padding:0px;
+}
+
+.gold{
+	color : #C79C51;
+}
+
+#apropos{
+	background-color: #DAB270;
+	font-size: 20px;
+	padding-right: 39px;
+	padding-left: 33px;
+	color:white;
+}
+
+.color-p-sidr{
+	color: white;
+	font-size: 20px;
+	padding:0px;
+	margin:0px;
+	text-align: -webkit-match-parent;
+}
+
+.dropdown-menu>li> {
+		margin-top: 0px;
+}
+
+
+ul.yolo{
+margin-right: 60px;
+}
+
+.img-logo-mini-m{
+	margin-left: 30px;
+}
+
+.navbar-default .navbar-toggle{
+	border:solid 1px; 
+	border-color:#DAB270;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	    background-color:#DAB270 ;
+}
+
+.navbar-collapse{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.m-news{
+	margin-top: 3px;
+}
+
+
+
+
+/******************************** RESPONSIVE ******************************/
+@media only screen and (min-width: 767px)
+{
+#burger-nav{
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 768px){
+	#burger-nav{
+		display: block;
+		float: right;
+		margin-top: 25px;
+	}
+	.burger-nav .fa  {
+		color: #DAB270;
+		background: #000;
+		display: none;
+		margin-bottom: 3px;
+		
+	}
+
+	.burger-nav .fa .fa-facebook{
+		margin-top:20px;
+		margin-bottom: 3px;
+	}
+
+	ul.nav.navbar-nav.yolo{
+		display: block;
+	}
+	ul.nav.navbar-nav{
+		display: none;
+	}
+	.navbar{
+		padding:0px;
+	}
+
+	.navbar-brand img{
+		padding:0px;
+	}
+
+	.nav-color {
+		width: 300px;
+		float: right;
+
+	}
+
+}
