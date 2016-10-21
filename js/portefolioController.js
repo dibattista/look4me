@@ -12,8 +12,7 @@ app.controller("portefolioController", function($scope){
         {img:["07AV.jpg", "07AP.jpg"], alt: "Photo relooking.."},
         {img:["08AV.jpg", "08AP.jpg"], alt: "Photo relooking.."},
         {img:["09AV.jpg", "09AP.jpg"], alt: "Photo relooking.."},
-        {img:["10AV.jpg", "10AP.jpg"], alt: "Photo relooking.."},
-        {img:["11AV.jpg", "11AP.jpg"], alt: "Photo relooking.."}
+        {img:["10AV.jpg", "10AP.jpg"], alt: "Photo relooking.."}
     ];
     $scope.portefolio.testimonials = [
         {title:"Marjorie (35 ans) - Relooking style", description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."},
