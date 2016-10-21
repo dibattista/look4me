@@ -18,9 +18,13 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/index.js"></script>
 	<script type="text/javascript" src="js/particuliers.js"></script>
+
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </head>
 
-<body>
+<body ng-app="look4meApp" ng-controller="particuliersController">
+	
 
 	<div class="container-fluid padding-0">
 		<nav class="navbar navbar-default" id="jean_michel">
@@ -92,6 +96,33 @@
 				<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
 				<hr class="separator">
 				
+
+
+				<!-- Prestations Femmes-->
+				<div class="row" ng-repeat="service in servParticuliers">
+					<div ng-if="service.genre == 'F'">
+						<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
+						<div class="col-md-6 col-sm-6">
+							<h3 class="titrePrestation">{{service.titre}}</h3>
+							<p>{{service.description}}</p>
+						</div>
+						<div class="col-md-2 col-sm-2">
+							<h3>TARIFS</h3>
+							<h4>{{service.tarif}}</h4>
+							<a href="contact.html"><button class="button"><span>contact</span></button></a>
+						</div>
+						<div class="col-md-12"><hr></div>
+					</div>
+					
+
+
+
+				</div>
+
+				<hr>
+
+
+
 				<!-- Prestation 1 -->
 				<div class="row">
 					<div class="col-md-4 col-sm-4"><img class="img-responsive" src="img/particuliers/femmes/meeting.jpg" alt="photo"></div>
@@ -112,7 +143,7 @@
 					<div class="col-md-6 col-sm-6">
 						<h3 class="titrePrestation">Atelier colorimétrie</h3>
 						<p>Les couleurs ont un impact sur votre usage. Elles peuvent vous effacer ou vous mettre en valeur.
-							Ce test est un incontournable du relooking car il va nous permettre de définir votre colorimétrie et le résultat nous servira dans le choix de vos tenues, votre maquillage, coloration coiffure et vos accessoires, connaître la symbolique des couleurs et savoir les utiliser. Un nuancier correspondant à votre résultat vous sera remis en fin de séances utile. Il vous sera utile lors de vos achats vestimentaires !
+							Ce test est un incontournable du relooking car Atelier colorimétrieil va nous permettre de définir votre colorimétrie et le résultat nous servira dans le choix de vos tenues, votre maquillage, coloration coiffure et vos accessoires, connaître la symbolique des couleurs et savoir les utiliser. Un nuancier correspondant à votre résultat vous sera remis en fin de séances utile. Il vous sera utile lors de vos achats vestimentaires !
 						</p>
 					</div>
 					<div class="col-md-2 col-sm-2">
@@ -240,11 +271,39 @@
 
 			<div id="menu2" class="tab-pane">
 
+				
+
+
 				<!-- PRESTATIONS HOMMES -->
 				<div class="prestationRelooking">Nos prestations RELOOKING</div>
 				<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler par chèque ou carte bancaire, au choix.</p>
 				<hr class="separator">
 				
+
+				<!-- Prestations Hommes-->
+				<div class="row" ng-repeat="service in servParticuliers">
+					<div ng-if="service.genre == 'H'">
+						<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
+						<div class="col-md-6 col-sm-6">
+							<h3 class="titrePrestation">{{service.titre}}</h3>
+							<p>{{service.description}}</p>
+						</div>
+						<div class="col-md-2 col-sm-2">
+							<h3>TARIFS</h3>
+							<h4>{{service.tarif}}</h4>
+							<a href="contact.html"><button class="button"><span>contact</span></button></a>
+						</div>
+						<div class="col-md-12"><hr></div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
 				<!-- Prestation 1 -->
 				<div class="row">
 
@@ -266,7 +325,8 @@
 					<div class="col-md-2 col-sm-2">
 						<h3>TARIFS</h3>
 						<h4>8H - 490€</h4>
-						<button class="button" href="#"><span>contact</span></button>
+						<a href="contact.html"><button class="button"><span>contact</span></button></a>
+
 					</div>
 				</div><hr>
 
@@ -280,7 +340,7 @@
 					<div class="col-md-2 col-sm-2">
 						<h3>TARIFS</h3>
 						<h4>Ajouter le prix et la durée de la séance</h4>
-						<button class="button" href="#"><span>contact</span></button>
+						<button type="button" class="button" href="contact.html"><span>contact</span></button>
 					</div>
 				</div><hr>
 
@@ -417,6 +477,8 @@
 		</div>
 	</footer>
 
+<script src="js/app.js"></script>
+<script src="js/particuliersController.js"></script>
 
 </body>
 </html>
