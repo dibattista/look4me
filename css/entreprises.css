@@ -1,4 +1,24 @@
+<<<<<<< HEAD
 .imagefond-entreprises
+=======
+@import 'https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+
+body
+{
+  background-color: #1b1816;
+}
+
+.container-fluid
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+.imagefond
+>>>>>>> babs
 {
   background-image: url("../img/entreprises/banEntreprises.jpg");
   background-repeat: no-repeat;
@@ -11,7 +31,11 @@
 
 @media screen and (max-width: 770px)
 {
+<<<<<<< HEAD
   .imagefond-entreprises
+=======
+  .imagefond
+>>>>>>> babs
   {
     background-position: 60% 50%;
     margin: 0 0 600px 0;
@@ -55,10 +79,17 @@
   }
 }
 
+<<<<<<< HEAD
 .bloc-info
 {
   background-color: rgba(71,60,53,0.7); /*#473c35*/
   margin-top: 140px;
+=======
+.bloc-transparent
+{
+  background-color: rgba(71,60,53,0.7); /*#473c35*/
+  margin-top: 45px;
+>>>>>>> babs
   margin-bottom: 25px;
   padding: 30px 30px 30px 30px;
   text-align: center;
@@ -68,7 +99,11 @@
 
 @media screen and (max-width: 770px)
 {
+<<<<<<< HEAD
   .bloc-info
+=======
+  .bloc-transparent
+>>>>>>> babs
   {
     margin-bottom: 75px;
     font-size: 14px;

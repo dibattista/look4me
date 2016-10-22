@@ -1,23 +1,16 @@
 (function(){
 
 var app = angular.module('Look4Me', ['ngRoute']);
-
-
-
-app.controller('headerCheck',["$scope","$location", function($scope,$location){
+  
+  app.controller('headerCheck', ['$scope','$location', function($scope, $location){
   $scope.currentPath = $location.path().trim();
-  console.log($scope.currentPath + "test");
-}]);
-
+  }]);
 
 
   app.config(function($routeProvider){
       $routeProvider
-      .when('/',{
-        templateUrl : 'partials/home.html',
-      })
 
-      .when('/home',{
+      .when('/',{
           templateUrl : 'partials/home.html',
           controller : 'HomeController',
       })

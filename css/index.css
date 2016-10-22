@@ -1,5 +1,57 @@
+<<<<<<< HEAD
+  body{
+   background-color: #57463C;
+   color:white;
+
+}
+
+.navbar{
+      
+     background-color:black;
+     margin-bottom:  0px;
+     border: none;
+     margin-right: 0px;
+}
+
+.nav-color .nav > li> :nth-of-type(1){
+	font-size: 20px;
+	color: white;
+}
+
+.nav-color .nav > li> span:nth-of-type(2){
+	color: white;
+
+}
+
+
+.votre_code{
+	height: 490px;
+}
+
+ /* footer */
+
+ .footer{
+ 	background-color: rgb(206, 207, 202);
+ 	height: 160px;
+ }
+
+ .partenaire{
+ 	padding-top: 25px;
+ 	padding-bottom: 20px;
+ 	padding-left: 45px;
+ }
+
+.notice{
+	padding-left: 50px;
+}
+
+.padding-0
+{
+  padding: 0px;
+=======
 body{
    background-color:#1C1815;;
    color:white;
    font-family: 'El Messiri', sans-serif;
+>>>>>>> 557e1e948d04b1ab5ce6c3b6e89ebc530bc9d7fa
 }
