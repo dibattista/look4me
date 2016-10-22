@@ -5,6 +5,7 @@
 
 .navbar{
      border: none;
+   
 }
 
 .dropdown-menu>li>a{
@@ -47,7 +48,7 @@
 	color : #C79C51;
 }
 
-#apropos{
+#abouther{
 	background-color: #DAB270;
 	font-size: 20px;
 	padding-right: 39px;
