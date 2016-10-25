@@ -1,453 +1,79 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <title>Look4Me - Page Particuliers</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="particuliers.css">
 
-  <!-- jQuery  -->
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-  <!-- js-->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/index.js"></script>
-</head>
+<a name="haut" id="haut"></a>
 
 
-<body>
-   
-
-<div class="container-fluid padding-0">
-    <nav class="navbar navbar-default" id="jean_michel">
-
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#"><p><img src="img/logo/logov3_maq_blanc_rose.png" alt=""></p></a>
-            </div>
-
-            <div class="nav-color">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="particuliers.html"><p>Particuliers</p></a></li>
-                <li><a href="#"><img src="" alt=""><p></p></a></li>
-                <li><a href="entreprises.html"><p>Entreprises</p></a></li>
-                <li><a href="#"><img src="" alt=""><p></p></a></li>
-                <li><a href="#"><p>Avant/Après</p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li><a href="#"><p></p></a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apropos<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="aboutme.html">Presentation</a></li>
-                    <li><a href="#">Presse/News</a></li>  
-                  </ul>
-                </li>
-                <li><a href="contact.html"><p>Contact</p></a></li>
-              </ul>
-            </div>
-    </nav>  
+<div class="imagefond">
+	<div class="row">
+		<div class="bloc-info">
+			<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
+			<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" href="#menu1">FEMMES</a></div>
+			<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" href="#menu2">HOMMES</a></div>
+			<div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
+			<div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
+		</div>
+	</div>
 </div>
-
-
-<!-- votre code -->
-<br><br>
-
-    <div class="imagefond">
-
-
-
-    <!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
-            <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3" style="text-align: center; font-size: 40px; text-decoration: underline darkgrey;"><a href="#menu1"><br><br><br>FEMMES</a></div>
-                <div class="col-lg-3" style="text-align: center; font-size: 40px; text-decoration: underline darkgrey;"><a href="#menu2"><br><br><br>HOMMES</a></div>
-                <div class="col-lg-3"></div>
-            </div>
-    </div>
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-    <div  id="menu1" class="container col-lg-8 col-lg-offset-2" style="color:grey; text-align: center; font-size: 40px; text-decoration: underline grey;">PRESTATIONS POUR FEMMES</div><br>
-
-<br><br><br><br><br>
-
-
 
 <div class="container">
 
+	<!-- SYSTEME D'ONGLETS -->
+	<ul class="nav nav-tabs">
+		<li id="femmes" class="active"><a data-toggle="tab" href="#menu1">FEMMES</a></li>
+		<li id="hommes"><a data-toggle="tab" href="#menu2">HOMMES</a></li>
+	</ul>
 
+	<div class="tab-content">
+		<div id="menu1" class="tab-pane fade in active">
+			<!-- PRESTATIONS FEMMES -->
+			<div class="prestationRelooking">Nos prestations RELOOKING</div>
+			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
+			<hr class="separator">
+			
+			<!-- Prestations Femmes-->
+			<div class="row" ng-repeat="service in servParticuliers">
+				<div ng-if="service.genre == 'F'">
+					<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
+					<div class="col-md-6 col-sm-6">
+						<h3 class="titrePrestation">{{service.titre}}</h3>
+						<p>{{service.description}}</p>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<h3>TARIFS</h3>
+						<h4>{{service.tarif}}</h4>
+						<a href="contact.html"><button class="button"><span>contact</span></button></a>
+					</div>
+					<div class="col-md-12"><hr></div>
+				</div>
+			</div>
+		</div>
 
-        <div class="tab-content">
-            <!-- SYSTEME D'ONGLETS -->
-            <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#menu1">Femmes</a></li>
-              <li><a data-toggle="tab" href="#menu2">Hommes</a></li>
-            </ul>
+		<div id="menu2" class="tab-pane">
 
-            <!-- CONTENU DE LA PAGE FEMMES -->
-
-
-
-
-                <div id="menu1" class="tab-pane fade in active">
-
-
-                <!-- Prestation 1 -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/meeting.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Entretien découverte</h3>
-                        <p>Nous permet de définir vos besoins, vos objectifs.</p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>1H - 50€</h4>
-                        <a class="btn btn-primary" href="#">contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-
-                </div><hr>
-
-
-                <!-- Prestation 2 -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/atelier_colorimetrie.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Atelier colorimétrie</h3>
-                        <p>Les couleurs ont un impact sur votre usage. Elles peuvent vous effacer ou vous mettre en valeur.
-                        Ce test est un incontournable du relooking car il va nous permettre de définir votre colorimétrie et le résultat nous servira dans le choix de vos tenues, votre maquillage, coloration coiffure et vos accessoires, connaître la symbolique des couleurs et savoir les utiliser. Un nuancier correspondant à votre résultat vous sera remis en fin de séances utile. Il vous sera utile lors de vos achats vestimentaires !</p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>1H - 70€</h4>
-                        <a class="btn btn-primary" href="#">contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-
-                </div><hr>
-
-                <!-- Prestation 3 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/atelier_makeup.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Atelier make-up</h3>
-                        <p>Se maquiller peut être un plaisir pour certaines personnes et une perte de temps pour d'autres. Pourtant, avec quelques astuces et conseils, nous pouvons toutes réaliser un maquillage idéal en toutes circonstances. Comprend :
-                        <ul>
-                            <li>test des couleurs</li>
-                            <li>analyse morphologique du visage</li>
-                            <li>cours de maquillage</li>
-                        </ul></p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>1H30 - 90€</h4>
-                        <a class="btn btn-primary" href="#">contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-
-                </div><hr>
-
-                <!-- Prestation 4 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/relooking_coiffure.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Relooking coiffure</h3>
-                        <p>Avec l'aide de notre partenaire coiffeur et après avoir vu ensemble :
-                        <ul>
-                            <li>votre personnalité</li>
-                            <li>la morphologie de votre visage</li>
-                            <li>test des couleurs</li>
-                            <li>votre nature de cheveux</li>
-                            <li>vos contraintes et envies</li>
-                        </ul>
-                        Nous vous révélerons la coupe et les choix de coloration qui vous mettrons en valeur.
-                        (!) En prévision du relooking coiffure nous vous conseillons de ne pas couper vos cheveux.
-                        </p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>Ajouter le prix et la durée de la séance</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-
-
-                <!-- Prestation 5 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/relooking_vestimentaire.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Relooking vestimentaire</h3>
-                        <p>Chacun étoffe sa garde-robe de différentes façons. Certaines personnes sont douées pour trouver ce qui leur va, d'autres se laisseront influencer par la mode ou un vendeur plus préoccupé par la vente que par le rendu du vêtement sur vous.<br>
-                        Savoir s'habiller en toute occasion et suivant l'objectif de style que vous vous êtes fixé, voila ce que je peux vous aider à acquérir.
-                        Comprend :
-                        <ul>
-                            <li>test des couleurs</li>
-                            <li>analyse morphologique de votre silhouette</li>
-                            <li>identification de votre style</li>
-                            <li>conseils vestimentaires et accessoires</li>
-                            <li>accompagnement shopping</li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>6H - 400€</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-
-
-                <!-- Prestation 6 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/relooking_complet.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Relooking complet</h3>
-                        <p>Comprend :
-                        <ul>
-                            <li>entretien découverte</li>
-                            <li>test des couleurs</li>
-                            <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>
-                            <li>conseils coiffure</li>
-                            <li>analyse morphologique de la silhouette</li>
-                            <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>
-                            <li>tri de votre garde-robes</li>
-                            <li>accompagnement shopping</li>
-                        </ul>
-                        Non-compris :
-                        <ul>
-                            <li>(!) La prestation de notre partenaire coiffeur</li>
-                            <li>(!) Les achats lors du shopping</li>
-                        </ul>
-
-                        Un book récapitulatif vous sera envoyé ultérieurement.
-                        </p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>10-11H - 690€</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-        </div>
-</div>        
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-    <div id="menu2" class="container col-lg-8 col-lg-offset-2" style="color:grey; text-align: center; font-size: 40px; text-decoration: underline grey;">PRESTATIONS POUR HOMMES</div><br>
-<br><br><br><br><br>
-
-
-                
-        <div class="tab-content">
-            <!-- SYSTEME D'ONGLETS -->
-            <ul class="nav nav-tabs">
-              <li><a data-toggle="tab" href="#menu1">Femmes</a></li>
-              <li class="active"><a data-toggle="tab" href="#menu2">Hommes</a></li>
-            </ul>
-            <!-- CONTENU DE LA PAGE HOMMES -->
-
-
-                <div id="menu2" class="tab-pane fade in active">
-
-                <!-- Prestation 1 -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/hommes/total_relooking.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Relooking complet Homme</h3>
-                        <p>Comprend :
-                        <ul>
-                            <li>entretien découverte</li>
-                            <li>test des couleurs</li>
-                            <li>maquillage</li>
-                            <li>coiffure</li>
-                            <li>analyse morphologique et style souhaité</li>
-                            <li>conseils vestimentaires et accessoires</li>
-                            <li>accompagnement shopping</li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>8H - 490€</h4>
-                        <a class="btn btn-primary" href="#">contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-
-                </div><hr>
-
-                <!-- Prestation 2 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/hommes/colorimetrie.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Prestation spécifique</h3>
-                        <p></p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>Ajouter le prix et la durée de la séance</h4>
-                        <a class="btn btn-primary" href="#">contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-
-                </div><hr>
-
-                <!-- Prestation 3 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/hommes/relooking_beard.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Prestation spécifique</h3>
-                        <p></p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>Ajouter le prix et la durée de la séance</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-
-
-                <!-- Prestation 4 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/hommes/relooking_hair.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Prestation spécifique</h3>
-                        <p></p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>Ajouter le prix et la durée de la séance</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-
-
-                <!-- Prestation 5 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/hommes/relooking_style.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Prestation spécifique</h3>
-                        <p></p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>Ajouter le prix et la durée de la séance</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-
-
-                <!-- Prestation 6 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/relooking_complet.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Relooking complet</h3>
-                        <p>Comprend :</p>
-                        <ul>
-                            <li>entretien découverte</li>
-                            <li>test des couleurs</li>
-                            <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>
-                            <li>conseils coiffure</li>
-                            <li>analyse morphologique de la silhouette</li>
-                            <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>
-                            <li>tri de votre garde-robes</li>
-                            <li>accompagnement shopping</li>
-                        </ul>
-                        <p>Non-compris :</p>
-                        <ul>
-                            <li>(!) La prestation de notre partenaire coiffeur</li>
-                            <li>(!) Les achats lors du shopping</li>
-                        </ul>
-
-                        <p>Un book récapitulatif vous sera envoyé ultérieurement.
-                        </p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>10-11H - 690€</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-
-
-                <!-- Prestation 7 -->
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/particuliers/femmes/" alt="photo">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Atelier occasion</h3>
-                        <p>
-                        </p>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>TARIFS</h3>
-                        <h4>Ajouter le prix et la durée de la séance</h4>
-                        <a class="btn btn-primary" href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div><hr>
-        </div>
-</div></div>
-
-<!-- fin de votre code -->
-
-<footer>
-  <div class="footer">
-        <div class="row partenaire">
-              <div class="col-lg-3"></div>
-              <div class="col-lg-1"><img src="img/partenaire/vetement_f.jpg" alt=""></div>
-              <div class="col-lg-2"><img src="img/partenaire/vetement_h.jpg" alt=""></div>
-              <div class="col-lg-1"><img src="img/partenaire/maquillage.jpg" alt=""></div>
-              <div class="col-lg-1"><img src="img/partenaire/coiffure.jpg" alt=""></div>
-        </div>
-
-        <div class="row notice">
-              <div class="col-lg-4"></div>
-              <div class="col-lg-4">
-                <p>2016 (c) Looke4Me | Notice légale</p>
-              </div>
-        </div>
-  </div>
-</footer>
-
+			<!-- PRESTATIONS HOMMES -->
+			<div class="prestationRelooking">Nos prestations RELOOKING</div>
+			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler par chèque ou carte bancaire, au choix.</p>
+			<hr class="separator">
+			
+			<!-- Prestations Hommes-->
+			<div class="row" ng-repeat="service in servParticuliers">
+				<div ng-if="service.genre == 'H'">
+					<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
+					<div class="col-md-6 col-sm-6">
+						<h3 class="titrePrestation">{{service.titre}}</h3>
+						<p>{{service.description}}</p>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<h3>TARIFS</h3>
+						<h4>{{service.tarif}}</h4>
+						<a href="contact.html"><button class="button"><span>contact</span></button></a>
+					</div>
+					<div class="col-md-12"><hr></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
-
 

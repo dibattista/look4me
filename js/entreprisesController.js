@@ -1,5 +1,5 @@
 app.controller('entreprisesController', function($scope){
-		$scope.servEntreprises = [
+	$scope.servEntreprises = [
 
 			// Prestation 1
 			{
@@ -46,8 +46,8 @@ app.controller('entreprisesController', function($scope){
 				titre:"",
 				description:""
 			}
-		];
-	});
+			];
+		});
 
 
 

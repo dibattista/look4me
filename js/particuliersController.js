@@ -1,5 +1,5 @@
 app.controller('particuliersController', function($scope){
-		$scope.servParticuliers = [
+	$scope.servParticuliers = [
 
 			// Prestation 1 (femmes)
 			{
@@ -136,7 +136,7 @@ app.controller('particuliersController', function($scope){
 				tarif:"Ajouter le prix et la durée de la séance",
 				genre:"H"
 			}
-		];
-	});
+			];
+		});
 
 

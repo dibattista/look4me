@@ -15,9 +15,9 @@ $(document).ready(function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  window.onscroll = function(ev) {
-    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
-  };
+	window.onscroll = function(ev) {
+		document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+	};
 });
 
 
