@@ -6,6 +6,7 @@
 	margin-bottom: 60px;
 	background-color: transparent;
 	text-align: center;
+
 	
 }
 .date{
@@ -16,6 +17,7 @@
 
 .num-date{
 	padding-top: 12px;
+	color:white;
 }
 .c-black{
 	color:#DAB270;
@@ -86,6 +88,7 @@ td p {
 .title-presse-year{
 	background-color: #DAB270;
 	text-align: center;
+	color: white;
 }
 
 .color-p-presse{
@@ -112,7 +115,6 @@ td p {
 {}
 @media only screen and (max-width: 1019px)
 {
-
 
 }
 
