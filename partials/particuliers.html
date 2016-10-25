@@ -2,7 +2,7 @@
 <a name="haut" id="haut"></a>
 
 
-<div class="imagefond">
+<div class="imageFondParticuliers">
 	<div class="row">
 		<div class="bloc-info">
 			<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
@@ -74,6 +74,19 @@
 	</div>
 </div>
 
-</body>
-</html>
+<script>
+$(document).ready(function() {
+	$("#buttonfemmes").click(function(){
+		$('#hommes').removeClass('active');
+		$("#femmes").addClass("active");
+		window.location.hash = "#femmes";
+	});
+	$("#buttonhommes").click(function(){
+		$('#femmes').removeClass('active');
+		$("#hommes").addClass("active");
+		window.location.hash = "#hommes";
+	});
+});
+</script>
+
 

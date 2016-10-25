@@ -14,10 +14,10 @@
   <link rel="stylesheet" type="text/css" href="css/news.css">
   <link rel="stylesheet" type="text/css" href="css/particuliers.css">
   <link rel="stylesheet" type="text/css" href="css/entreprises.css">
-  <link rel="stylesheet" type="text/css" href="css/Hover-master/css/hover.css">
-  <link href="css/2-col-portfolio.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/portefolio.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/Hover-master/css/hover.css">
 
   <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
   
@@ -30,29 +30,40 @@
 <headernav ng-hide="currentPath == '/' || currentPath == '' "></headerhome></headernav>
 <headerhome ng-show="currentPath != '/' || currentPath != '' "></headerhome> 
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+  };
+});
+</script>
+<a name="haut" id="haut"></a>
+<main ng-view></main>
 
-
- <main ng-view></main>
-
-
+<a id="cRetour" class="cInvisible" href="#haut"></a>
 <footers class="page-footer"></footers>
 
 	
 	
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
 
-	<script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="js/vendor-js/bootstrap/bootstrap.min.js"></script>
+ 
+<script type="text/javascript" src="js/app.js"></script>
+
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/particuliers.js"></script>
+<script type="text/javascript" src="js/particulliersController.js"></script>
+<script type="text/javascript" src="js/entreprisesController.js"></script>
 
 
-	<script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/header.js"></script>
-  <script type="text/javascript" src="js/particuliers.js"></script>
-  <scrip src="js/modernizr.custom.js"></scrip>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/scrolling-nav.js"></script>
-  <script type="text/javascript" src="js/animate_burger.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript" src="js/animate_burger.js"></script>
 
+  
 </body>
 </html>

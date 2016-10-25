@@ -14,7 +14,7 @@ body
     padding: 0px;
 }
 
-.imagefond
+.imageFondParticuliers
 {
     background-image: url("../img/particuliers/banParticuliers.jpg");
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body
 
 @media screen and (max-width: 770px)
 {
-    .imagefond
+    .imageFondParticuliers
     {
         background-position: 60% 50%;
     }
@@ -277,7 +277,6 @@ a#cRetour.cVisible
         width: 100px;
     }
 }
-
 
 
 

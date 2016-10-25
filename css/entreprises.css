@@ -14,7 +14,7 @@ body
   padding: 0px;
 }
 
-.imagefond-entreprises
+.imageFondEntreprises
 {
   background-image: url("../img/entreprises/banEntreprises.jpg");
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body
 
 @media screen and (max-width: 770px)
 {
-  .imagefond
+  .imageFondEntreprises
   {
     background-position: 60% 50%;
     margin: 0 0 600px 0;
@@ -70,6 +70,14 @@ body
   }
 }
 
+<<<<<<< HEAD
+=======
+.bloc-info
+{
+  background-color: rgba(71,60,53,0.7); /*#473c35*/
+  margin-top: 140px;
+}
+>>>>>>> ed4b9a79e533bf065dd08aef3030ab6d3665c817
 .bloc-transparent
 {
   background-color: rgba(71,60,53,0.7); /*#473c35*/
@@ -83,6 +91,11 @@ body
 
 @media screen and (max-width: 770px)
 {
+<<<<<<< HEAD
+=======
+  .bloc-info
+
+>>>>>>> ed4b9a79e533bf065dd08aef3030ab6d3665c817
   .bloc-transparent
   {
     margin-bottom: 75px;

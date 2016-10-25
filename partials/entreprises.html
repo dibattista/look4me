@@ -2,7 +2,7 @@
 <a name="haut" id="haut"></a>
 
 <div class="container-fluid">
-	<div class="imagefond-entreprises">
+	<div class="imageFondEntreprises">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
 				<div class="bloc-transparent">
@@ -23,7 +23,7 @@
 				<div class="panel panel-default" ng-repeat="service in servEntreprises">
 					<div class="panel-heading">
 						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">{{service.offre}}</a>
+							<a data-toggle="collapse" data-parent="#accordion" href="{{'#'+service.collapse}}">{{service.offre}}</a>
 						</h4>
 					</div>
 					<div id="{{service.collapse}}" class="panel-collapse collapse in">
