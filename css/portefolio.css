@@ -12,9 +12,16 @@
     margin : 0;
     padding: 0;
 }
-
+.carousel-img-indicators { padding: 10px 0; }
+.carousel-img-indicators [class*="col-"] { padding: 5px; }
 .carousel-img-indicators img { cursor: pointer; }
-.carousel-img-indicators .active { border: 4px solid #C93; }
+.carousel-img-indicators .active img { border: 4px solid #C93; }
+/*.carousel-inner*/
+#pfCarousel {
+    border: 2px solid #C93;
+    border-radius:4px;
+    background-color: black;
+}
 /*
 la classe 'active' est gérée dans le js de bootstrap (vers ligne 443)
 faut-il écraser ou étendre la fonction et peut-on le faire de l'extérieur du fichier

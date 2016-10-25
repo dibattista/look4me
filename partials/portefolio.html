@@ -47,18 +47,20 @@
 
                 </div><!-- /.carousel-inner -->
 
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <!--<div class="panel panel-default">
+                    <div class="panel-body">-->
 
                         <!-- Indicators -->
-                        <div class="carousel-img-indicators">
+                        <div class="carousel-img-indicators row">
+                            <div class="col-md-1"></div>
+                            <!-- ng repeat avec classe 'active' sur la 1ère itération -->
                             <div ng-repeat="image in portefolio.images"
                                 ng-class="{'col-md-1': true, active: ($index === 0)}">
                                 <img src="img/portefolio/{{image.img[1]}}" data-target="#pfCarousel" data-slide-to="{{$index}}" class="img-responsive" />
                             </div>
 
                         </div><!-- /.carousel-indicators -->
-                    </div><!-- /.panel-body -->
+                    <!--</div><!-- /.panel-body - ->
                 </div><!-- /.panel-default -->
             </div><!-- /#pfCarousel -->
         </div><!-- /.col -->
