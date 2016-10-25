@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 app.controller('entreprisesController', function($scope){
-		$scope.servEntreprises = [
+	$scope.servEntreprises = [
 
 			// Prestation 1
 			{
@@ -47,14 +46,9 @@ app.controller('entreprisesController', function($scope){
 				titre:"",
 				description:""
 			}
-		];
-	});
+			];
+		});
 
 
 
 
-=======
-app.controller("entreprisesController", function ($scope) {
-    $scope.msg = "Entreprises";
-});
->>>>>>> 330e6d02f8b007b1e8e9f9d77bd0ff74d4384c25
