@@ -1,0 +1,100 @@
+
+
+#presentation-bg{/***Wrap***/
+	background-color: #f4f8f9;
+	padding-bottom: 20px;
+}
+
+
+#biographie{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#presentation{
+    margin-top: 100px;
+}
+.apropos-parag{
+	font-size: 14px;
+
+	color: black;
+	/**font-family: 'Open Sans Condensed', sans-serif;**/
+font-family: 'Open Sans', sans-serif;
+margin-left: 20px;;
+margin-right: 20px;
+}
+.guillement{
+font-size: 36px;
+color: #cc9933;
+font-family: 'El Messiri', sans-serif;
+
+}
+
+
+#apropos-portrait{
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 0px;
+}
+#portrait{
+
+	margin-bottom: 0px;
+}
+
+
+.apropos-titre{
+
+font-size: 32px;
+color: #cc9933;
+
+font-family: 'El Messiri', sans-serif;
+/**font-family: 'Open Sans', sans-serif;**/
+/**font-family: 'Open Sans Condensed', sans-serif;**/
+/**font-family: 'Roboto Condensed', sans-serif;**/
+/**font-family: 'Roboto', sans-serif;**/
+margin-left: 20px;;
+margin-right: 20px;
+margin-top: 0px;
+
+}
+
+
+.apropos-btn{
+	width: 100%;
+font-size: 16px;
+
+padding: 10px;
+text-align: center;
+	    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+	background-color: #cc9933;
+}
+
+.apropos-btn a{
+	color:white;
+	text-decoration: none;
+}
+
+.apropos-btn:hover{
+font-size: 16x;
+padding: 10px;
+text-align: center;
+color: white;
+/**background-color: #a62e70;**/
+background-color: black;
+
+
+}
+
+
+
+
+#apropos-icon{
+	font-size: 18px;
+	float: right;
+	color: white;
+padding: 0px;
+text-align: center;
+}

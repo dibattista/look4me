@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 app.controller('entreprisesController', function($scope){
 		$scope.servEntreprises = [
 
@@ -52,3 +53,8 @@ app.controller('entreprisesController', function($scope){
 
 
 
+=======
+app.controller("entreprisesController", function ($scope) {
+    $scope.msg = "Entreprises";
+});
+>>>>>>> 330e6d02f8b007b1e8e9f9d77bd0ff74d4384c25

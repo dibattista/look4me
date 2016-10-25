@@ -4,11 +4,18 @@ var app = angular.module('look4meApp', []);
 (function(){
 
 var app = angular.module('Look4Me', ['ngRoute']);
+  
+  app.controller('headerCheck', ['$scope','$location', function($scope, $location){
+  $scope.currentPath = $location.path().trim();
+  }]);
+
 
   app.config(function($routeProvider){
       $routeProvider
+
       .when('/',{
-        templateUrl :'main.html', 
+          templateUrl : 'partials/home.html',
+          controller : 'HomeController',
       })
       .when('/particuliers',{
           templateUrl : 'partials/particuliers.html',
@@ -33,7 +40,7 @@ var app = angular.module('Look4Me', ['ngRoute']);
       .when('/news',{
         templateUrl : 'partials/news.html',
         controller : 'NewsController',
-      })
+      });
   });
 
 /***********controller**********************/
@@ -50,6 +57,10 @@ app.controller('HeaderController', function(){
   this.isSelected = function(checkTab){
     return this.tab === checkTab;
   };
+});
+
+app.controller('HomeController', function(){
+    this.product = home;
 });
 
 app.controller('NewsController', function(){
@@ -83,30 +94,26 @@ app.controller('ContactController', function($scope){
 
     };
   });
-
-	app.directive('headernav', function(){
+	app.directive('headernav', function() {
 		return{
 			restrict: 'AE',
       name: 'headernav',
-			templateUrl: '/partials/commun/headernav.html',
-
-		};
+			templateUrl: 'partials/commun/headernav.html'
+    }
 	});
+  app.directive('headerhome', function() {
+    return{
+      restrict: 'AE',
+      name: 'headernav',
+      templateUrl: 'partials/commun/headerhome.html'
+    }
+  });
 
   app.directive('footers', function(){
     return{
       restrict: 'AE',
       name: 'footers',
       templateUrl: '/partials/commun/footers.html',
-
-    };
-  });
-
-    app.directive('news', function(){
-    return{
-      restrict: 'AE',
-      name: 'news',
-      templateUrl: '/partials/news.html',
 
     };
   });
