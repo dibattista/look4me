@@ -1,15 +1,3 @@
-/* Common styles
-------------------------------------------------------------------------------*/
-
-body {
-    color: #AAA;
-    background-color: #1F2228;
-}
-
-h1, h2 {
-    color: #C93;
-    font-family: 'El Messiri', sans-serif;
-}
 
 /* Portefolio custom styles
 ------------------------------------------------------------------------------*/
@@ -27,7 +15,6 @@ h1, h2 {
 
 .carousel-img-indicators img { cursor: pointer; }
 .carousel-img-indicators .active { border: 4px solid #C93; }
-
 /*
 la classe 'active' est gérée dans le js de bootstrap (vers ligne 443)
 faut-il écraser ou étendre la fonction et peut-on le faire de l'extérieur du fichier

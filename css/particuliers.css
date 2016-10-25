@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-=======
-@import 'https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,300i,400,400i,600,600i,700,700i';
-
-
-body
-{
-    background-color: #1b1816;
-}
-
-.container-fluid
-{
-    margin: 0px;
-    padding: 0px;
-}
->>>>>>> babs
-
 .imagefond
 {
     background-image: url("../img/particuliers/banParticuliers.jpg");

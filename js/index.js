@@ -1,6 +1,6 @@
 
 /* animation.js/scrollTop */
-<<<<<<< HEAD
+
 
 $(document).ready(function(){
    $('.yolo').click(function(){
@@ -26,5 +26,5 @@ function(){
 };
 };
 
->>>>>>> 557e1e948d04b1ab5ce6c3b6e89ebc530bc9d7fa
+
 
