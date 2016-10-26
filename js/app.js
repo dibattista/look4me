@@ -1,6 +1,6 @@
 (function(){
 
-var app = angular.module('Look4Me', ['ngRoute',]);
+var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
   
   app.controller('headerCheck', ['$scope','$location', function($scope, $location){
   $scope.currentPath = $location.path().trim();
