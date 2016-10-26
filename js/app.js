@@ -1,6 +1,6 @@
 (function(){
 
-var app = angular.module('Look4Me', ['ngRoute',]);
+var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
 /******************************************** test anchor*****************************************/
 
 /******************************************** end test anchor *****************************************/
@@ -48,7 +48,7 @@ app.controller('LookController', function(){
 
 app.controller('HeaderController', function(){
   this.tab = 1;
-
+  
   this.selecTab = function(setTab){
     this.tab = setTab;
   };
