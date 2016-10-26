@@ -1,7 +1,4 @@
 
-<a name="haut" id="haut"></a>
-
-
 <div class="imageFondParticuliers">
 	<div class="row">
 		<div class="bloc-info">
@@ -75,20 +72,18 @@
 </div>
 
 <script>
-$(document).ready(function() {
-	$("#buttonfemmes").click(function(){
-		$('#hommes').removeClass('active');
-		$("#femmes").addClass("active");
-		window.location.hash = "#femmes";
+	$(document).ready(function() {
+		$("#buttonfemmes").click(function(){
+			$('#hommes').removeClass('active');
+			$("#femmes").addClass("active");
+			window.location.hash = "#femmes";
+		});
+		$("#buttonhommes").click(function(){
+			$('#femmes').removeClass('active');
+			$("#hommes").addClass("active");
+			window.location.hash = "#hommes";
+		});
 	});
-	$("#buttonhommes").click(function(){
-		$('#femmes').removeClass('active');
-		$("#hommes").addClass("active");
-		window.location.hash = "#hommes";
-	});
-});
 </script>
-
-
 
 
