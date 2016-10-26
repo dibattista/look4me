@@ -1,0 +1,724 @@
+.row{
+  margin: 0px;
+  padding:0px;
+      
+}
+
+
+#wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  height:780px;
+  margin: 0px;
+  padding: 0px;
+
+  background-image: url("../img/interieur.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+
+    -o-background-size: cover;
+
+  
+    }
+
+/*************NAVIGATION HAUT ET BURGER************************************/
+@media (min-width: 900px) {
+
+#navigation{
+  display: block;
+  position: fixed;
+  width:100%; 
+  z-index: 3000;
+
+}
+
+.menuhome {
+
+   margin-top: 20px;
+  margin-right: 50px;
+  font-size: 18px;
+  font-family: 'El Messiri', sans-serif;
+  background:transparent;
+  height: 50px;
+
+}
+
+.menuhome > ul {
+
+  float: right;
+  transition: max-height 0.25s linear;
+}
+.menuhome ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menuhome li {
+  background-color: #DAB270;
+  transition: visibility .25s linear;
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 5px;
+  position: relative;
+}
+.menuhome li:hover {
+  background-color: #1b1816;
+
+}
+.menuhome li a {
+cursor: pointer;
+text-decoration: none;
+}
+
+/*ajout**/
+.menuhome a {
+  color:white;
+ 
+}
+.menuhome a:hover {
+  color:#DAB270;
+ 
+}
+/***STYLES *ICONES MENU HAUT*/
+.iconhome{
+  font-size: 18px;
+  color: #1b1816;
+
+}
+
+
+.iconfleche i{
+  padding-top: 2px;
+  font-size: 18px;
+  color: white;
+float: right;}
+
+.iconfleche i:hover{
+  color: #DAB270;
+}
+
+
+.iconcontact i{
+  font-size: 18px;
+  color: white;
+float: right;
+padding-top: 2px;
+margin-left: 15px;}
+
+.iconcontact i:hover{
+  color: #DAB270;
+}
+
+/****/
+
+.sousmenushome {
+  width: 160px;
+
+}
+
+}
+
+/**************IMPORTANT GESTION SOUS MENU APROPOS**************** *********/
+@media (min-width: 768px) {
+ 
+
+
+  .menuhome li ul {
+    z-index: 3000;
+    display: none;
+    position: absolute;
+     font-size: 18px;
+     font-family: 'El Messiri', sans-serif;
+    top: 100%;
+    margin-top: 1px;
+    left: -1px;
+    right: -1px;
+
+
+  }
+  .menuhome li:hover ul {
+    display: block;
+    cursor:pointer;
+  }
+  .menuhome li li {
+    margin: -1px 0 0 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+
+}
+
+/***********************************************/
+@media (max-width: 768px) {
+
+#navigation{
+  display: block;
+  position: fixed;
+  z-index: 3000;
+  width: 100%;
+}
+  .menuhome {/***Ajout pour lettre la barre noire*/
+  background: #DAB270;
+height: 50px;
+z-index: 3000;
+ font-size: 18px;
+
+}
+
+.menuhome li:hover {
+  background-color: #1b1816;
+
+}
+.menuhome li a {
+cursor: pointer;
+text-decoration: none;
+}
+
+/***sousmenu******************************/
+  .menuhome li ul {
+    z-index: 3000;
+    display: block;
+    position: relative;
+     font-size: 18px;
+     font-family: 'El Messiri', sans-serif;
+    top: 100%;
+    margin-top: 1px;
+    left: -1px;
+    right: -1px;
+
+
+  }
+  .menuhome li:hover ul {
+    display: block;
+    cursor:pointer;
+  }
+  .menuhome li li {
+    margin: -1px 0 0 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+/*************************************************/
+  .menuhome > ul {
+    z-index: 3000;
+    max-height: 0px; 
+    overflow: hidden;
+    background-color:#DAB270;
+    opacity:0.9;/* ajout**/
+    width: 100%;/* ajout**/
+     margin: 0px;/* ajout**/
+    padding: 0px;/* ajout**/
+  }
+  .menuhome li {
+    visibility: hidden;
+    display: block;
+
+    border: none;
+     margin: 0px;/* ajout**/
+     padding-top:10px;
+     padding-bottom: 10px;
+     padding-left: 30px;
+  }
+
+  .menuhome li ul {
+    margin-top: 0.5em;
+    margin-left: 0px;
+    /*background-color:#DAB270; ajout**/ 
+  }
+
+  .menuhome .navbar-handle {/***position burger***/
+    display: block;
+    margin-right: 20px;
+  }
+
+  #navbar-checkbox:checked + .menuhome ul {
+    max-height: 400px;   
+  }
+
+  #navbar-checkbox:checked + .menuhome li {
+    visibility: visible;
+  }
+
+  #navbar-checkbox:checked + .menuhome .navbar-handle,
+  #navbar-checkbox:checked + .menuhome .navbar-handle:after,
+  #navbar-checkbox:checked + .menuhome .navbar-handle:before {
+    border-color: white;
+  }
+  /****AJOUT**/
+
+.menuhome a {
+  text-decoration: none;
+  color:white;
+    font-family: 'El Messiri', sans-serif;
+
+ 
+}
+.menuhome a:hover {
+  color:#DAB270;
+ 
+}
+/***STYLES *ICONES MENU HAUT*/
+.iconhome{
+  font-size: 18px;
+  color: #1b1816;
+}
+
+.iconfleche i{
+  padding-top: 2px;
+  font-size: 18px;
+  color: white;
+  margin-left: 15px;
+}
+
+.iconfleche i:hover{
+  color: #DAB270;
+}
+
+
+.iconcontact i{
+  font-size: 18px;
+  color: white;
+padding-top: 2px;
+margin-left: 15px;}
+
+.iconcontact i:hover{
+  color: #DAB270;
+}
+
+
+}
+
+/********style nav bar******************************/
+
+.navbar-checkbox {
+  display: none;
+
+
+}
+.navbar-handle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  padding: .5em 0;
+  height: 0;
+  width: 1.66666667em;
+  border-top: 0.13333333em solid;
+
+}
+.navbar-handle:before,
+.navbar-handle:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: ' ';
+  border-top: 0.13333333em solid;
+
+}
+.navbar-handle:before {
+  top: 0.37777778em;
+}
+.navbar-handle:after {
+  top: 0.88888889em;
+}
+.menuhome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.menuhome .navbar-handle {/*iconburger*/
+  position: absolute;
+  font-size: 20px;
+  top: 0.7em;
+  right: 12px;
+  z-index: 10;
+
+}
+
+/******************SROLLNAVBAR**********************************************/
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+/****************************************************************/
+
+
+
+
+
+
+/*********BANDEAU LOGO ET FOND NOIRTRANSPARENT***************/
+      #bandeaunoir{
+        width: 100%;
+        display: block;
+        height:auto;
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        margin-left: 0px;
+        margin-right: 0px;
+
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 30px;
+      }
+
+      #bandeaulogo{
+        width: 100%;
+        background-color: black;
+
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+
+        padding-right: 0px;
+        padding-left: 0px;
+
+      }
+
+      #logointro{
+        margin-right: auto;
+        margin-left: auto;
+
+      }
+/*****************MENU PARTICULIER-ENTREPRISE**********************************/
+      #menuservice{
+        max-width: 980px;
+        margin-right: auto;
+        margin-left: auto;
+
+      }
+
+      #btn-menuservice{       
+      list-style-type: none;
+      max-width: 980px;
+     text-align: center;
+   
+
+      }
+
+      #btn-menuservice span a{ 
+        font-family: 'El Messiri', sans-serif;
+      font-size: 36px;
+      color: white;
+      text-align: center;
+      }
+
+      #btn-menuservice a:hover{
+        text-decoration: none;
+        color: #DAB270;
+
+      }
+/************************************************************/
+
+
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  padding: 7px 6px;
+  border: 1px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+  
+/********************INDEX FLECHE SCROLL*********************************/
+
+#flechescroll{ 
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 0px;
+
+text-align: center;
+
+}
+
+#flechescroll a{   
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+#flechescroll a:hover{   
+  color: #DAB270;   
+}
+
+/****A PRENDRE**********HOME DEBUT PARTIE SALON / AVANT APRES *************/
+
+#accueil{
+padding-top: 70px;
+height: 780px;
+max-width: 980px;
+}
+
+#bienvenue{
+margin-left: auto;
+margin-right: auto;
+
+max-width: 980px;
+
+padding: 0px;
+
+}
+#logolook4me-home{
+background-image: url("../img/intro-logo-home-salon.jpg");
+width: 100%;
+background-repeat: no-repeat;
+height: 70px;
+float: left;
+
+margin-left: 25px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-top: 0px;
+
+padding: 0px;
+
+
+}
+
+#salon{
+/*border-width: 1px;
+border-color: white;*/
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+}
+
+
+#photo-salon{
+height: 298px;
+background-image: url("../img/home_slide/photo_salon.jpg");
+background-repeat: no-repeat;
+background-size:110%;
+
+padding-top: 0px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+
+margin-top: 0px;
+margin-bottom: 20px;
+
+}
+
+.titre-salon{
+color: #DAB270;   
+font-family: 'El Messiri', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#paragraphe-salon{
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+
+}
+/********slide avant apres*****/
+
+#slide{
+ /*border-width: 1px;
+ border-color: white;*/
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+}
+
+.titre-slide{
+  color: #DAB270;   
+  font-family: 'El Messiri', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#btn-look{float: right;}
+
+
+/****button bas animate css**/
+.button {
+  vertical-align:middle;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  background-color:#DAB270;   
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /**width: 200px;**/
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button span a{
+text-decoration: none;
+color:white;
+}
+
+
+
+/**************HOME FIN PARTIE SALON*************/
+
+/****************SEPARATION HOME et ACCUEIL**************************/
+ 
+#vide{
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+}

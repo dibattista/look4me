@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" href="css/headernav.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/news.css">
   <link rel="stylesheet" type="text/css" href="css/particuliers.css">
   <link rel="stylesheet" type="text/css" href="css/entreprises.css">
@@ -28,9 +29,13 @@
 
 
 <div ng-controller="headerCheck">
-<headernav ng-hide="currentPath == '/' || currentPath == '' "></headerhome></headernav>
-<headerhome ng-show="currentPath != '/' || currentPath != '' "></headerhome> 
+    <headernav ng-hide="currentPath == '/' || currentPath == '' "></headernav>
+    <headerhome ng-show="currentPath == '/' || currentPath == '' "></headerhome>
 </div>
+
+ <!--<headernav ng-hide="currentPath == '/' || currentPath == '' "></headernav>
+    <headernav ng-show="currentPath != '/' || currentPath != '' "></headernav>--> 
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = function(ev) {
@@ -48,23 +53,12 @@
 	
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
 
-<script src="js/vendor-js/bootstrap/bootstrap.min.js"></script>
+<script src="js/vendor/bootstrap/bootstrap.min.js"></script>
  
 <script type="text/javascript" src="js/app.js"></script>
-
-<script type="text/javascript" src="js/header.js"></script>
-<script type="text/javascript" src="js/particuliers.js"></script>
-<script type="text/javascript" src="js/particulliersController.js"></script>
-<script type="text/javascript" src="js/entreprisesController.js"></script>
-
-
-<script src="js/modernizr.custom.js"></script>
-<script src="js/scrolling-nav.js"></script>
-<script type="text/javascript" src="js/animate_burger.js"></script>
-
   
 </body>
 </html>
