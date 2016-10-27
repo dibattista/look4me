@@ -23,7 +23,7 @@
 		</ul>
 
 		<div class="tab-content">
-			<div id="menu1" class="tab-pane fade in active" ng-show="tab === 1">
+			<div id="anchor1" class="tab-pane fade in active" ng-show="tab === 1">
 				<!-- PRESTATIONS FEMMES -->
 				<div class="prestationRelooking">Nos prestations RELOOKING</div>
 				<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
@@ -47,7 +47,7 @@
 				</div>
 			</div>
 
-			<div id="menu2" class="tab-pane" ng-show="tab === 2">
+			<div id="anchor2" class="tab-pane" ng-show="tab === 2">
 
 				<!-- PRESTATIONS HOMMES -->
 				<div class="prestationRelooking">Nos prestations RELOOKING</div>
@@ -73,6 +73,22 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		$("#buttonfemmes").click(function(){
+			$('#hommes').removeClass('active');
+			$("#femmes").addClass("active");
+			window.location.hash = "#femmes";
+		});
+		$("#buttonhommes").click(function(){
+			$('#femmes').removeClass('active');
+			$("#hommes").addClass("active");
+			window.location.hash = "#hommes";
+		});
+	});
+</script>
 
 </div>
 
