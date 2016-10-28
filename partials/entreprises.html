@@ -20,7 +20,7 @@
 					<div class="panel panel-default" ng-repeat="service in servEntreprises">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="{{'#'+service.collapse}}">{{service.offre}}</a>
+								<a data-toggle="collapse" target="_self" data-parent="#accordion" href="{{'#'+service.collapse}}">{{service.offre}}</a>
 							</h4>
 						</div>
 						<div id="{{service.collapse}}" ng-class="{'panel-collapse':true, 'collapse':true, in:($index === 0)}">

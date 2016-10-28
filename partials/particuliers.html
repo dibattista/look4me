@@ -1,5 +1,4 @@
-
-	<div class="imageFondParticuliers">
+<div class="imageFondParticuliers">
 		<div class="row">
 			<div class="bloc-info">
 				<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
@@ -20,14 +19,14 @@
 	</ul>
 
 	<div class="tab-content">
-		<div id="menu1" class="tab-pane fade in active">
+		<div id="anchor1" data-toggle="tab" ng-show="tab === 1">
 			<!-- PRESTATIONS FEMMES -->
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
 			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
 			<hr class="separator">
 
 			<!-- Prestations Femmes-->
-			<div class="row" ng-repeat="service in servParticuliers">
+			<div class="row" ng-repeat="service in servParticuliersF">
 				<div ng-if="service.genre == 'F'">
 					<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
 					<div class="col-md-6 col-sm-6">
@@ -44,7 +43,7 @@
 			</div>
 		</div>
 
-		<div id="anchor2" class="tab-pane" ng-show="tab === 2">
+		<div id="anchor2" class="tab-pane" ng-show="tab === 2" data-toggle="tab">
 
 			<!-- PRESTATIONS HOMMES -->
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
@@ -52,7 +51,7 @@
 			<hr class="separator">
 
 			<!-- Prestations Hommes-->
-			<div class="row" ng-repeat="service in servParticuliers">
+			<div class="row" ng-repeat="service in servParticuliersH">
 				<div ng-if="service.genre == 'H'">
 					<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
 					<div class="col-md-6 col-sm-6">
@@ -70,4 +69,5 @@
 		</div>
 	</div>
 </div>
+
 
