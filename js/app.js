@@ -1,9 +1,7 @@
 (function(){
 
 var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
-/******************************************** test anchor*****************************************/
 
-/******************************************** end test anchor *****************************************/
   app.controller('headerCheck', ['$scope','$location', function($scope, $location){
   $scope.currentPath = $location.path().trim();
   }]);
@@ -369,6 +367,3 @@ app.controller("portefolioController", function($scope){
 
 
 })();
-
-
-
