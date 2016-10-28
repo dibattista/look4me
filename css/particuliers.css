@@ -145,7 +145,7 @@ body
     height: 300px;
     width: 70%;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 150px;
     padding: 30px 30px 30px 30px;
     background-color: rgba(71,60,53,0.7); /*#473c35*/
     text-align: center;
@@ -169,11 +169,6 @@ p
 {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-}
-
-h2, h3, h4
-{
-    font-family: 'El Messiri', sans-serif;
 }
 
 a
