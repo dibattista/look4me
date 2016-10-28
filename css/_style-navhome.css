@@ -1,0 +1,342 @@
+@media (min-width: 900px) {
+
+#navigation{
+  display: block;
+  position: fixed;
+  width:100%; 
+  z-index: 3000;
+
+}
+
+.menuhome {
+
+   margin-top: 20px;
+  margin-right: 50px;
+  font-size: 18px;
+  font-family: 'El Messiri', sans-serif;
+  background:transparent;
+  height: 50px;
+
+}
+
+.menuhome > ul {
+
+  float: right;
+  transition: max-height 0.25s linear;
+}
+.menuhome ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menuhome li {
+  background-color: #DAB270;
+  transition: visibility .25s linear;
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 5px;
+  position: relative;
+}
+.menuhome li:hover {
+  background-color: #1b1816;
+
+}
+.menuhome li a {
+cursor: pointer;
+text-decoration: none;
+}
+
+/*ajout**/
+.menuhome a {
+  color:white;
+ 
+}
+.menuhome a:hover {
+  color:#DAB270;
+ 
+}
+/***STYLES *ICONES MENU HAUT*/
+.iconhome{
+  font-size: 18px;
+  color: #1b1816;
+
+}
+
+
+.iconfleche i{
+  padding-top: 2px;
+  font-size: 18px;
+  color: white;
+float: right;}
+
+.iconfleche i:hover{
+  color: #DAB270;
+}
+
+
+.iconcontact i{
+  font-size: 18px;
+  color: white;
+float: right;
+padding-top: 2px;
+margin-left: 15px;}
+
+.iconcontact i:hover{
+  color: #DAB270;
+}
+
+/****/
+
+.sousmenushome {
+  width: 160px;
+
+}
+
+}
+
+/**************IMPORTANT GESTION SOUS MENU APROPOS**************** *********/
+@media (min-width: 768px) {
+ 
+
+
+  .menuhome li ul {
+    z-index: 3000;
+    display: none;
+    position: absolute;
+     font-size: 18px;
+     font-family: 'El Messiri', sans-serif;
+    top: 100%;
+    margin-top: 1px;
+    left: -1px;
+    right: -1px;
+
+
+  }
+  .menuhome li:hover ul {
+    display: block;
+    cursor:pointer;
+  }
+  .menuhome li li {
+    margin: -1px 0 0 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+
+}
+
+/***********************************************/
+@media (max-width: 768px) {
+
+#navigation{
+  display: block;
+  position: fixed;
+  z-index: 3000;
+  width: 100%;
+}
+  .menuhome {/***Ajout pour lettre la barre noire*/
+  background: #DAB270;
+height: 50px;
+z-index: 3000;
+ font-size: 18px;
+
+}
+
+.menuhome li:hover {
+  background-color: #1b1816;
+
+}
+.menuhome li a {
+cursor: pointer;
+text-decoration: none;
+}
+
+/***sousmenu******************************/
+  .menuhome li ul {
+    z-index: 3000;
+    display: block;
+    position: relative;
+     font-size: 18px;
+     font-family: 'El Messiri', sans-serif;
+    top: 100%;
+    margin-top: 1px;
+    left: -1px;
+    right: -1px;
+
+
+  }
+  .menuhome li:hover ul {
+    display: block;
+    cursor:pointer;
+  }
+  .menuhome li li {
+    margin: -1px 0 0 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+/*************************************************/
+  .menuhome > ul {
+    z-index: 3000;
+    max-height: 0px; 
+    overflow: hidden;
+    background-color:#DAB270;
+    opacity:0.9;/* ajout**/
+    width: 100%;/* ajout**/
+     margin: 0px;/* ajout**/
+    padding: 0px;/* ajout**/
+  }
+  .menuhome li {
+    visibility: hidden;
+    display: block;
+
+    border: none;
+     margin: 0px;/* ajout**/
+     padding-top:10px;
+     padding-bottom: 10px;
+     padding-left: 30px;
+  }
+
+  .menuhome li ul {
+    margin-top: 0.5em;
+    margin-left: 0px;
+    /*background-color:#DAB270; ajout**/ 
+  }
+
+  .menuhome .navbar-handle {/***position burger***/
+    display: block;
+    margin-right: 20px;
+  }
+
+  #navbar-checkbox:checked + .menuhome ul {
+    max-height: 400px;   
+  }
+
+  #navbar-checkbox:checked + .menuhome li {
+    visibility: visible;
+  }
+
+  #navbar-checkbox:checked + .menuhome .navbar-handle,
+  #navbar-checkbox:checked + .menuhome .navbar-handle:after,
+  #navbar-checkbox:checked + .menuhome .navbar-handle:before {
+    border-color: white;
+  }
+  /****AJOUT**/
+
+.menuhome a {
+  text-decoration: none;
+  color:white;
+    font-family: 'El Messiri', sans-serif;
+
+ 
+}
+.menuhome a:hover {
+  color:#DAB270;
+ 
+}
+/***STYLES *ICONES MENU HAUT*/
+.iconhome{
+  font-size: 18px;
+  color: #1b1816;
+}
+
+.iconfleche i{
+  padding-top: 2px;
+  font-size: 18px;
+  color: white;
+  margin-left: 15px;
+}
+
+.iconfleche i:hover{
+  color: #DAB270;
+}
+
+
+.iconcontact i{
+  font-size: 18px;
+  color: white;
+padding-top: 2px;
+margin-left: 15px;}
+
+.iconcontact i:hover{
+  color: #DAB270;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/**************************************/
+
+.navbar-checkbox {
+  display: none;
+
+
+}
+.navbar-handle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  padding: .5em 0;
+  height: 0;
+  width: 1.66666667em;
+  border-top: 0.13333333em solid;
+
+}
+.navbar-handle:before,
+.navbar-handle:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: ' ';
+  border-top: 0.13333333em solid;
+
+}
+.navbar-handle:before {
+  top: 0.37777778em;
+}
+.navbar-handle:after {
+  top: 0.88888889em;
+}
+.menuhome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.menuhome .navbar-handle {/*iconburger*/
+  position: absolute;
+  font-size: 20px;
+  top: 0.7em;
+  right: 12px;
+  z-index: 10;
+
+}

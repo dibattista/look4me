@@ -4,7 +4,8 @@ background-color:#1b1816;
 }
 
 
-#apropos-background{/***Wrap***/
+#presentation-bg{/***Wrap***/
+
 	background-color: #f4f8f9;
 	margin-top: 70px;
 	padding-bottom: 30px;
@@ -18,16 +19,14 @@ background-color:#1b1816;
 }
 
 
-#apropos{
+#presentation{
 	padding-top: 20px;
 
-
 }
-.apropos-parag{
+.presentation-parag{
 	font-size: 14px;
 
 	color: black;
-	/**font-family: 'Open Sans Condensed', sans-serif;**/
 font-family: 'Open Sans', sans-serif;
 margin-left: 20px;;
 margin-right: 20px;
@@ -39,11 +38,7 @@ font-family: 'El Messiri', sans-serif;
 
 }
 
-
-
-
-
-#apropos-portrait{
+#presentation-portrait{
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 0px;
@@ -54,24 +49,19 @@ font-family: 'El Messiri', sans-serif;
 }
 
 
-.apropos-titre{
+.presentation-titre{
 
 font-size: 32px;
 color: #cc9933;
 
 font-family: 'El Messiri', sans-serif;
-/**font-family: 'Open Sans', sans-serif;**/
-/**font-family: 'Open Sans Condensed', sans-serif;**/
-/**font-family: 'Roboto Condensed', sans-serif;**/
-/**font-family: 'Roboto', sans-serif;**/
 margin-left: 20px;;
 margin-right: 20px;
 margin-top: 0px;
 
 }
 
-
-.apropos-btn{
+.presentation-btn{
 	width: 100%;
 font-size: 16px;
 
@@ -83,29 +73,26 @@ text-align: center;
 	background-color: #cc9933;
 }
 
-.apropos-btn a{
+.presentation-btn a{
 	color:white;
 	text-decoration: none;
 }
 
-.apropos-btn:hover{
+.presentation-btn:hover{
 font-size: 16x;
 padding: 10px;
 text-align: center;
 color: white;
-/**background-color: #a62e70;**/
 background-color: black;
 
 
 }
 
 
-
-
-#apropos-icon{
-	font-size: 18px;
-	float: right;
-	color: white;
+#presentation-icon{
+font-size: 18px;
+float: right;
+color: white;
 padding: 0px;
 text-align: center;
 }

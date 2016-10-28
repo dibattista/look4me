@@ -1,29 +1,39 @@
-.voffset  { margin-top: 2px; }
-.voffset1 { margin-top: 5px; }
-.voffset2 { margin-top: 10px; }
-.voffset3 { margin-top: 15px; }
-.voffset4 { margin-top: 30px; }
-.voffset5 { margin-top: 40px; }
-.voffset6 { margin-top: 60px; }
-.voffset7 { margin-top: 80px; }
-.voffset8 { margin-top: 100px; }
-.voffset9 { margin-top: 150px; }
+		
+		@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|Roboto+Condensed';
+		@import 'https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700';
 
-#content{background-color:#1b1816;
 
+body{background-color:#1b1816;}
+
+.row{
+margin: 0px;
+padding: 0px;
 }
+.col-{
+margin: 0px;
+padding: 0px;
+}
+
+
+#contentformulaire{
+margin-right: auto;
+margin-left: auto;
+margin-top:70px;
+max-width: 980px;
+padding: 0px;
+}
+
 #formulaire{
-padding-top: 50px;
-padding-left: 0px;
-padding-right: 0px;
-margin-left: 0px;
-margin-right: 0px;
+
+background-color:transparent;
+width: 100%;
 }
 
-#formulairecolor{
+#formcolor{
 background-color:#1b1816;
 border: none;
 color:white;
+
 margin: 0px;
 padding: 0px;
 }
@@ -33,25 +43,23 @@ padding: 0px;
 
 #form1{
 margin-bottom: 20px;
-	margin-top: 10px;
-	margin-left: 0px;
-	margin-right: 0px;
+margin-top: 0px;
+margin-left: 10px;
+margin-right: 10px;
 
 padding-left: 0px;
-	color:white;
+color:white;
 
 }
 
 #coordonnees{
 	padding: 0px;
+
 	margin-top:0px;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
 	margin-bottom: 20px;
-
-
 }
-
 
 #icon{
 font-size: 22px;
@@ -59,148 +67,167 @@ display: block;
 position: relative;
 float: left;
 color: #cc9933;
-margin-left: px;
+
 margin-right: 15px;
 padding: 0px;}
 
 
-#activite
-{	font-size: 24px;
-padding-top: 10px;
-	margin-left: 5px;
-	margin-right: 5px;
-	font-family: 'El Messiri', sans-serif;
-	line-height: 16px;
 
+
+#identite{	
+font-size: 24px;
+padding-top: 10px;
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 10px;
+
+font-family: 'El Messiri', sans-serif;
+line-height: 16px;
+color: #cc9933;
 }
 
 #adresse{	
-	font-size: 14px;
-	margin-right: 5px;
-	margin-left: 5px;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 18px;
-
+font-size: 14px;
+margin-right: 5px;
+margin-left: 5px;
+margin-bottom: 20px;
+font-family: 'Open Sans', sans-serif;
+line-height: 18px;
 }
-
 
 #phone{
-	padding: 0px;
-	margin-top:0px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 20px;
 
+padding: 0px;
+
+margin-top:0px;
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 0px;
 }
 
- #telephone{
-
+#telephone{
 font-size: 16px;
-	color:white;
-	margin-left: 5px;
-		margin-right: 5px;
+color:white;
 font-family: 'Open Sans', sans-serif;
-	line-height: 16px;
+line-height: 16px;
 
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 20px;
 }
 
 
- #Email{
-	margin-left: 5px;
-		margin-right: 5px;
-font-size: 16px;
-	color:white;
-		padding: 0px;
+#email{
 
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 5px;
+padding: 0px;
+
+font-size: 16px;
+color:white;
 font-family: 'Open Sans', sans-serif;
-	line-height: 16px;
+line-height: 16px;
+}
+
+
+#icon-mail{	
+font-size: 22px;
+display: block;
+position: relative;
+float: left;
+
+margin-right: 15px;
+padding: 0px;}
+
+#icon-mail a{
+text-decoration: none;
+color: #cc9933;
+}
+
+#icon-mail a:hover{
+color: white;
 }
 
 #message{
-	margin-left: 5px;
-	margin-right: 5px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 5px;
 padding: 0px;
+}
+
+
+#message a{
+text-decoration: none;
+color: white;
+}
+
+#message a:hover{
+color: #cc9933;
 }
 
 
 .situation{
-		font-family: 'El Messiri', sans-serif;
-			font-size: 24px;
-	color: #cc9933;
-
-			padding: 0px;
+font-family: 'El Messiri', sans-serif;
+font-size: 24px;
+color: #cc9933;
+margin-top: 0px;
+padding: 0px;
 }
 
 #cartegooglemap{
-		padding: 0px;
-		margin-left: 5px;
-		margin-right: 5px;
-		margin-bottom: 20px;
-}
 
-
-
-
-
-/***partie formulaire**/
-#form2{
-	margin-left: 0px;
-	margin-right: 0px;
-	padding: 0px;
-
-}
-
-.formulaire
-{
-	margin-left: 5px;
-	margin-right: 5px;
 padding: 0px;
-	/**height: 50%;**/
-	/*margin: 15px 15px 15px 15px;****/
-	/**padding: 15px 15px 15px 15px;**/
-	/**border: solid 1px;
-		border-color: white;**/
-}
-
-.contact
-{
-	font-size: 36px;
-	color: #cc9933;
-	text-align: center;
-	margin-bottom: 20px;
-	font-family: 'El Messiri', sans-serif;
-	/**border-radius: 5px;**/
-	/**border: solid 1px;**/
-
-}
-#preciservotrestatut{
-margin-top: 0px;
-margin-bottom: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
-padding: 0px;
-
-
-
-}
-
-
-
-.statut
-{
-padding-top: 40px;
-font-family: 'El Messiri', sans-serif;
-font-size: 26px;
-color: #cc9933;
-margin: 0px;
-	
-}
-.radio{
-
-/**margin-right: 0px;
 margin-left: 0px;
+margin-right: 0px;
+margin-top: 5px;
 margin-bottom: 20px;
-padding: 0px;**/
+}
+
+
+/***partie formulaire2**/
+
+#form2{
+margin-left: 10px;
+margin-right:10px;
+margin-top: 0px;
+padding: 0px;
+}
+
+
+.contact{
+padding: 0px;
+margin-top: 0px;
+font-size: 24px;
+color: #cc9933;
+text-align: center;
+margin-bottom: 20px;
+font-family: 'El Messiri', sans-serif;
+}
+
+#form-zone{
+	margin: 0px;
+	padding: 0px;
+}
+
+#votrestatut{
+margin-top: 15px;
+margin-bottom: 20px;
+margin-left: 5px;
+margin-right: 5px;
+padding: 0px;
+}
+
+.statut{
+padding-top: 30px;
+font-family: 'El Messiri', sans-serif;
+font-size: 24px;
+color: #cc9933;
+margin: 0px;	
+}
+
+/****DEROULANT*************************************************/
+.radio{
 display: block;
 position: relative;
 float: left;
@@ -222,14 +249,72 @@ float: right;
 font-size: 16px;
 color: #cc9933;
 }
-
+/*********************************************************/
 
 
 #blocmessage{
 font-family: 'El Messiri', sans-serif;
-font-size: 26px;
+font-size: 18px;
 color: #cc9933;
 padding: 0px;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+#comment{
+	resize: vertical;
+    overflow: auto;
+
+}
+
+
+/****button bas animate css**/
+.button {
+  vertical-align:middle;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  background-color:#DAB270;   
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /**width: 200px;**/
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button span a{
+text-decoration: none;
+color:white;
 }
