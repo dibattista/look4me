@@ -1,7 +1,5 @@
 # LOOK4ME
-<<<<<<< HEAD
-=======
 ## Relooking & coach en image
->>>>>>> babs
 
+Client : Natacha - Look4me
 Wilders : Marc, Nathalie, Barbara, Jérôme

@@ -1,3 +1,22 @@
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #C79C51;
+    color: white;
+}
+
+#dropdown-menu > li:nth-child(1) > a:hover{
+     background-color:#C79C51;
+     opacity: 0.8;
+     
+}
+
+#dropdown-menu > li:nth-child(2) > a:hover{
+     background-color: #C79C51;
+     opacity: 0.8;
+}
+
+
+
 .bg-nav{
 	background-color:black; 
 	padding-top: 10px; 
@@ -49,7 +68,7 @@
 }
 
 #abouther{
-	background-color: #DAB270;
+	
 	font-size: 20px;
 	padding-right: 39px;
 	padding-left: 33px;
@@ -62,6 +81,7 @@
 	padding:0px;
 	margin:0px;
 	text-align: -webkit-match-parent;
+    font-family: 'El Messiri', sans-serif;
 }
 
 .dropdown-menu>li> {

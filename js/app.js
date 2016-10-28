@@ -1,11 +1,10 @@
 (function(){
 
 var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
-  
+
   app.controller('headerCheck', ['$scope','$location', function($scope, $location){
   $scope.currentPath = $location.path().trim();
   }]);
-
 
   app.config(function($routeProvider){
       $routeProvider
@@ -47,13 +46,6 @@ app.controller('LookController', function(){
 
 app.controller('HeaderController', function(){
   this.tab = 1;
-
-  this.selecTab = function(setTab){
-    this.tab = setTab;
-  };
-  this.isSelected = function(checkTab){
-    return this.tab === checkTab;
-  };
 });
 
 app.controller('HomeController', function(){
@@ -89,8 +81,28 @@ app.controller('NewsController', function($scope){
 
 /********************************** particuliers controller ***************************************/
 
-app.controller('particuliersController', function($scope){
-  $scope.servParticuliers = [
+app.controller('particuliersController', function($scope, $anchorScroll,$location){
+
+  $scope.tab = 1;
+
+  $scope.changeTab = function(id){
+    $scope.tab = parseInt(id);
+  };
+
+  $scope.gotoAnchor = function(id) {
+      if (id === 1){
+        $scope.tab = parseInt(id);
+        $location.hash("anchor" + id);
+        $location.hash('');
+      }
+      else{
+        $scope.tab = parseInt(id);
+        $location.hash("anchor" + id);
+        $location.hash('');
+      }
+    };
+
+  $scope.servParticuliersF = [
 
       // Prestation 1 (femmes)
       {
@@ -154,7 +166,11 @@ app.controller('particuliersController', function($scope){
         description:"Ajouter le prix et la durée de la séance",
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"F"
-      },
+      }
+
+      ];
+
+       $scope.servParticuliersH = [
       // Prestation 1 (hommes)
       {
         img:"img/particuliers/hommes/total_relooking.jpg",
@@ -203,7 +219,7 @@ app.controller('particuliersController', function($scope){
       // Prestation 6 (hommes)
       {
         img:"img/particuliers/hommes/relooking_complet.jpg",
-        alt:"photo relooking style",
+        alte:"photo relooking style",
         titre:"Relooking complet",
         description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              </ul> Non-compris : <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats lors du shopping</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
         tarif:"10-11H - 690€",
@@ -220,7 +236,7 @@ app.controller('particuliersController', function($scope){
       },
       // Prestation 8 (hommes)
       {
-        img:"img/particuliers/hommes/",
+        imgage:"img/particuliers/hommes/",
         alt:"photo coatch séduction",
         titre:"Coach Séduction",
         description:"Ajouter le prix et la durée de la séance",
@@ -351,6 +367,3 @@ app.controller("portefolioController", function($scope){
 
 
 })();
-
-
-

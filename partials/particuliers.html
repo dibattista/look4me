@@ -1,9 +1,13 @@
+<a name="haut" id="haut"></a>
+
+
+
 <div class="imageFondParticuliers">
 	<div class="row">
 		<div class="bloc-info">
 			<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
-			<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" href="#menu1">FEMMES</a></div>
-			<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" href="#menu2">HOMMES</a></div>
+			<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" ng-click="gotoAnchor(1)">FEMMES</a></div>
+			<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" ng-click="gotoAnchor()">HOMMES</a></div>
 			<div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
 			<div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
 		</div>
@@ -14,8 +18,8 @@
 
 	<!-- SYSTEME D'ONGLETS -->
 	<ul class="nav nav-tabs">
-		<li id="femmes" class="active"><a data-toggle="tab" href="#menu1">FEMMES</a></li>
-		<li id="hommes"><a data-toggle="tab" href="#menu2">HOMMES</a></li>
+		<li id="anchor1" ng-class="{active : tab === 1}"><a data-toggle="tab" ng-click="tab = 1">FEMMES</a></li>
+		<li id="anchor2" ng-class="{active : tab === 2}"><a data-toggle="tab" ng-click="tab = 2">HOMMES</a></li>
 	</ul>
 
 	<div class="tab-content">
@@ -24,7 +28,7 @@
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
 			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
 			<hr class="separator">
-			
+
 			<!-- Prestations Femmes-->
 			<div class="row" ng-repeat="service in servParticuliers">
 				<div ng-if="service.genre == 'F'">
@@ -43,13 +47,13 @@
 			</div>
 		</div>
 
-		<div id="menu2" class="tab-pane">
+		<div id="anchor2" class="tab-pane" ng-show="tab === 2">
 
 			<!-- PRESTATIONS HOMMES -->
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
 			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler par chèque ou carte bancaire, au choix.</p>
 			<hr class="separator">
-			
+
 			<!-- Prestations Hommes-->
 			<div class="row" ng-repeat="service in servParticuliers">
 				<div ng-if="service.genre == 'H'">
@@ -69,21 +73,21 @@
 		</div>
 	</div>
 </div>
+</div>
 
 <script>
-	$(document).ready(function() {
-		$("#buttonfemmes").click(function(){
-			$('#hommes').removeClass('active');
-			$("#femmes").addClass("active");
-			window.location.hash = "#femmes";
-		});
-		$("#buttonhommes").click(function(){
-			$('#femmes').removeClass('active');
-			$("#hommes").addClass("active");
-			window.location.hash = "#hommes";
-		});
+$(document).ready(function() {
+	$("#buttonfemmes").click(function(){
+		$('#hommes').removeClass('active');
+		$("#femmes").addClass("active");
+		window.location.hash = "#femmes";
 	});
+	$("#buttonhommes").click(function(){
+		$('#femmes').removeClass('active');
+		$("#hommes").addClass("active");
+		window.location.hash = "#hommes";
+	});
+});
 </script>
 
-
-
+</div>
