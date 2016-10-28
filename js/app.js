@@ -1,9 +1,7 @@
 (function(){
 
 var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
-/******************************************** test anchor*****************************************/
 
-/******************************************** end test anchor *****************************************/
   app.controller('headerCheck', ['$scope','$location', function($scope, $location){
   $scope.currentPath = $location.path().trim();
   }]);
@@ -172,7 +170,7 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
 
       ];
 
-       $scope.servParticuliersH = [
+       $scope.servParticuliers = [
       // Prestation 1 (hommes)
       {
         img:"img/particuliers/hommes/total_relooking.jpg",
@@ -369,6 +367,3 @@ app.controller("portefolioController", function($scope){
 
 
 })();
-
-
-
