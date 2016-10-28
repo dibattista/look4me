@@ -6,8 +6,8 @@
 		<div class="row">
 			<div class="bloc-info">
 				<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
-				<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" ng-click="gotoAnchor(1)">FEMMES</a></div>
-				<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" ng-click="gotoAnchor(2)">HOMMES</a></div>
+				<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="gotoAnchor(1)">FEMMES</a></div>
+				<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="gotoAnchor(2)">HOMMES</a></div>
 				<div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
 				<div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
 			</div>
@@ -74,21 +74,5 @@
 		</div>
 	</div>
 </div>
-
-<script>
-	$(document).ready(function() {
-		$("#buttonfemmes").click(function(){
-			$('#hommes').removeClass('active');
-			$("#femmes").addClass("active");
-			window.location.hash = "#femmes";
-		});
-		$("#buttonhommes").click(function(){
-			$('#femmes').removeClass('active');
-			$("#hommes").addClass("active");
-			window.location.hash = "#hommes";
-		});
-	});
-</script>
-
 </div>
 

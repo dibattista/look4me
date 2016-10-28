@@ -172,7 +172,7 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
 
       ];
 
-       $scope.servParticuliersH = [
+       $scope.servParticuliers = [
       // Prestation 1 (hommes)
       {
         img:"img/particuliers/hommes/total_relooking.jpg",
