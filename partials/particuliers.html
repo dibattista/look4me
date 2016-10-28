@@ -1,25 +1,30 @@
 <div class="imageFondParticuliers">
-		<div class="row">
-			<div class="bloc-info">
-				<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
-				<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="gotoAnchor(1)">FEMMES</a></div>
-				<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="gotoAnchor(2)">HOMMES</a></div>
-				<div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
-				<div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
-			</div>
-		</div>
-	</div>
-
+<div class="row">
+<div class="bloc-info">
+<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
+<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" href="#menu1">FEMMES</a></div>
+<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" href="#menu2">HOMMES</a></div>
+<div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
+<div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
+</div>
+</div>
+</div>
 <div class="container">
-
-	<!-- SYSTEME D'ONGLETS -->
 	<ul class="nav nav-tabs">
-		<li id="anchor1" ng-class="{active : tab === 1}"><a data-toggle="tab" ng-click="tab = 1">FEMMES</a></li>
-		<li id="anchor2" ng-class="{active : tab === 2}"><a data-toggle="tab" ng-click="tab = 2">HOMMES</a></li>
+		<li class="active">
+			<a data-toggle="tab" target="_self" href="#menu1">FEMMES</a>
+		</li>
+		<li>
+			<a data-toggle="tab" target="_self" href="#menu2">HOMMES</a>
+		</li>
 	</ul>
 
 	<div class="tab-content">
-		<div id="anchor1" data-toggle="tab" ng-show="tab === 1">
+
+
+		<!-- TAB MENU1 :: HOMMES =========================================== -->
+
+		<div id="menu1" class="tab-pane fade in active">
 			<!-- PRESTATIONS FEMMES -->
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
 			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
@@ -28,10 +33,10 @@
 			<!-- Prestations Femmes-->
 			<div class="row" ng-repeat="service in servParticuliersF">
 				<div ng-if="service.genre == 'F'">
-					<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
+					<div class="col-md-4 col-sm-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
 					<div class="col-md-6 col-sm-6">
 						<h3 class="titrePrestation">{{service.titre}}</h3>
-						<p ng-bind-html="service.description"></p>
+						<p>{{service.description}}</p>
 					</div>
 					<div class="col-md-2 col-sm-2">
 						<h3>TARIFS</h3>
@@ -41,10 +46,11 @@
 					<div class="col-md-12"><hr></div>
 				</div>
 			</div>
+
 		</div>
+		<!-- TAB MENU2 :: HOMMES =========================================== -->
 
-		<div id="anchor2" class="tab-pane" ng-show="tab === 2" data-toggle="tab">
-
+		<div id="menu2" class="tab-pane fade">
 			<!-- PRESTATIONS HOMMES -->
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
 			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler par chèque ou carte bancaire, au choix.</p>
@@ -53,7 +59,7 @@
 			<!-- Prestations Hommes-->
 			<div class="row" ng-repeat="service in servParticuliersH">
 				<div ng-if="service.genre == 'H'">
-					<div class="col-md-4 col-sm-4"><img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}"></div>
+					<div class="col-md-4 col-sm-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
 					<div class="col-md-6 col-sm-6">
 						<h3 class="titrePrestation">{{service.titre}}</h3>
 						<p ng-bind-html="service.description"></p>
@@ -69,5 +75,4 @@
 		</div>
 	</div>
 </div>
-
 

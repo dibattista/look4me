@@ -136,7 +136,7 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
         img:"img/particuliers/femmes/relooking_coiffure.jpg",
         alt:"photo relooking coiffure",
         titre:"Relooking coiffure",
-        description:"Avec l'aide de notre partenaire coiffeur et après avoir vu ensemble : <ul>                 <li>votre personnalité</li>                 <li>la morphologie de votre visage</li>                 <li>test des couleurs</li>                <li>votre nature de cheveux</li>                <li>vos contraintes et envies</li>              </ul> Nous vous révélerons la coupe et les choix de coloration qui vous mettrons en valeur.               (!) En prévision du relooking coiffure nous vous conseillons de ne pas couper vos cheveux.",
+        description:"Avec l'aide de notre partenaire coiffeur et après avoir vu ensemble : <ul><li>votre personnalité</li><li>la morphologie de votre visage</li><li>test des couleurs</li><li>votre nature de cheveux</li><li>vos contraintes et envies</li></ul> Nous vous révélerons la coupe et les choix de coloration qui vous mettrons en valeur.               (!) En prévision du relooking coiffure nous vous conseillons de ne pas couper vos cheveux.",
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"F"
       },
@@ -145,7 +145,7 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
         img:"img/particuliers/femmes/relooking_vestimentaire.jpg",
         alt:"photo relooking vestimentaire",
         titre:"Relooking vestimentaire",
-        description:"Chacun étoffe sa garde-robe de différentes façons. Certaines personnes sont douées pour trouver ce qui leur va, d'autres se laisseront influencer par la mode ou un vendeur plus préoccupé par la vente que par le rendu du vêtement sur vous. <br> Savoir s'habiller en toute occasion et suivant l'objectif de style que vous vous êtes fixé, voila ce que je peux vous aider à acquérir.              Comprend : <ul>                 <li>test des couleurs</li>                <li>analyse morphologique de votre silhouette</li>                <li>identification de votre style</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
+        description:"Chacun étoffe sa garde-robe de différentes façons. Certaines personnes sont douées pour trouver ce qui leur va, d'autres se laisseront influencer par la mode ou un vendeur plus préoccupé par la vente que par le rendu du vêtement sur vous. <br> Savoir s'habiller en toute occasion et suivant l'objectif de style que vous vous êtes fixé, voila ce que je peux vous aider à acquérir.              Comprend : <ul><li>test des couleurs</li><li>analyse morphologique de votre silhouette</li><li>identification de votre style</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
         tarif:"6H - 400€",
         genre:"F"
       },
@@ -154,7 +154,7 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
         img:"img/particuliers/femmes/relooking_complet.jpg",
         alt:"photo relooking complet",
         titre:"Relooking complet",
-        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats lors du shopping</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
+        description:"Comprend : <ul><li>entretien découverte</li><li>test des couleurs</li><li>analyse morphologique du visage, cosmétologie et cours de maquillage</li><li>conseils coiffure</li><li>analyse morphologique de la silhouette</li><li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li><li>tri de votre garde-robes</li><li>accompagnement shopping</li></ul>Non-compris :<ul><li>(!) La prestation de notre partenaire coiffeur</li><li>(!) Les achats lors du shopping</li></ul> Un book récapitulatif vous sera envoyé ultérieurement.",
         tarif:"10-11H - 690€",
         genre:"F"
       },
@@ -176,7 +176,7 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
         img:"img/particuliers/hommes/total_relooking.jpg",
         alt:"photo total relooking",
         titre:"Relooking complet Homme",
-        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>maquillage</li>                 <li>coiffure</li>                 <li>analyse morphologique et style souhaité</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
+        description:"Comprend : <ul><li>entretien découverte</li><li>test des couleurs</li><li>maquillage</li><li>coiffure</li><li>analyse morphologique et style souhaité</li><li>conseils vestimentaires et accessoires</li><li>accompagnement shopping</li></ul>",
         tarif:"8H - 490€",
         genre:"H"
       },
@@ -221,7 +221,7 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
         img:"img/particuliers/hommes/relooking_complet.jpg",
         alte:"photo relooking style",
         titre:"Relooking complet",
-        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              </ul> Non-compris : <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats lors du shopping</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
+        description:"Comprend : <ul><li>entretien découverte</li><li>test des couleurs</li><li>analyse morphologique du visage, cosmétologie et cours de maquillage</li><li>conseils coiffure</li><li>analyse morphologique de la silhouette</li><li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li><li>tri de votre garde-robes</li><li>accompagnement shopping</li></ul> Non-compris :<ul><li>(!) La prestation de notre partenaire coiffeur</li><li>(!) Les achats lors du shopping</li></ul> Un book récapitulatif vous sera envoyé ultérieurement.",
         tarif:"10-11H - 690€",
         genre:"H"
       },
