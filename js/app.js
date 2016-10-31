@@ -25,6 +25,10 @@ var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
           templateUrl : 'partials/home.html',
           controller : 'HomeController',
       })
+      .when('/home',{
+          templateUrl : 'partials/home.html',
+          controller : 'HomeController',
+      })
       .when('/particuliers',{
           templateUrl : 'partials/particuliers.html',
           controller : 'particuliersController',
@@ -61,7 +65,14 @@ app.controller('HeaderController', function(){
 });
 
 app.controller('HomeController', function(){
-    //this.product = home;
+    $scope.home = {};
+    $scope.home.portefolio = [
+
+        {img:["01AV.jpg", "01AP.jpg"], alt: "Photo relooking"},
+        {img:["02AV.jpg", "02AP.jpg"], alt: "Photo relooking"},
+        {img:["03AV.jpg", "03AP.jpg"], alt: "Photo relooking"}
+    ];
+
 });
 
 /******************************************** News controller *****************************************/

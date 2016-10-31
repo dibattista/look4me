@@ -1,50 +1,77 @@
-.row{
-  margin: 0px;
-  padding:0px;
-      
+#homepage{
+margin: 0px;
+padding: 0px;
 }
 
+.row{
+  margin: 0px;
+  padding:0px;      
+}
 
 #wrap {
   display: block;
   position: relative;
   width: 100%;
+  height:800px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../img/interieur_4250.JPG");
+  background-position: center;
   height:780px;
   margin: 0px;
   padding: 0px;
-
-  background-image: url("../img/interieur.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-
-    -o-background-size: cover;
-
-  
+  -o-background-size: cover;
     }
+
+@media(max-width:768px) {
+#wrap {
+  height:1024px; 
+    }
+}
+
+@media(max-width:360px) {
+#wrap {
+  height:640px;
+    }
+}
+
 
 /*************NAVIGATION HAUT ET BURGER************************************/
 @media (min-width: 900px) {
+.carousel-inner .row,
+.carousel-inner [class*="col-"] {
+  margin: 0px;
+  padding: 0px;
+}
+#carousel-example-generic{
+  border:2px solid #C79C51;
+  margin: 0px;
+  padding: 0px;
+}
+.carousel-indicators .active{
+  background-color: #C79C51;
+}
+
 
 #navigation{
   display: block;
   position: fixed;
   width:100%; 
   z-index: 3000;
-
 }
 
 .menuhome {
-
    margin-top: 20px;
   margin-right: 50px;
   font-size: 18px;
   font-family: 'El Messiri', sans-serif;
   background:transparent;
   height: 50px;
-
 }
 
 .menuhome > ul {
@@ -58,7 +85,7 @@
   text-align: center;
 }
 .menuhome li {
-  background-color: #DAB270;
+  background-color: #C79C51;
   transition: visibility .25s linear;
   display: inline-block;
   padding: 10px 15px 10px 15px;
@@ -87,9 +114,7 @@ text-decoration: none;
 .iconhome{
   font-size: 18px;
   color: #1b1816;
-
 }
-
 
 .iconfleche i{
   padding-top: 2px;
@@ -98,9 +123,8 @@ text-decoration: none;
 float: right;}
 
 .iconfleche i:hover{
-  color: #DAB270;
+  color: #C79C51;
 }
-
 
 .iconcontact i{
   font-size: 18px;
@@ -110,24 +134,19 @@ padding-top: 2px;
 margin-left: 15px;}
 
 .iconcontact i:hover{
-  color: #DAB270;
+  color: #C79C51;
 }
-
-/****/
 
 .sousmenushome {
   width: 160px;
-
 }
 
 }
 
 /**************IMPORTANT GESTION SOUS MENU APROPOS**************** *********/
 @media (min-width: 768px) {
- 
 
-
-  .menuhome li ul {
+ .menuhome li ul {
     z-index: 3000;
     display: none;
     position: absolute;
@@ -137,8 +156,6 @@ margin-left: 15px;}
     margin-top: 1px;
     left: -1px;
     right: -1px;
-
-
   }
   .menuhome li:hover ul {
     display: block;
@@ -149,65 +166,35 @@ margin-left: 15px;}
     box-sizing: border-box;
     width: 100%;
   }
-
-
 }
 
+/*******************************************************************/
+/*******************************************************************/
 /***********************************************/
 @media (max-width: 768px) {
-
-#navigation{
-  display: block;
-  position: fixed;
-  z-index: 3000;
-  width: 100%;
-}
-  .menuhome {/***Ajout pour lettre la barre noire*/
-  background: #DAB270;
-height: 50px;
+  .menuhome {/***Ajout pour mettre la barre noire*/
+  background: #C79C51;
 z-index: 3000;
- font-size: 18px;
-
 }
 
 .menuhome li:hover {
   background-color: #1b1816;
-
 }
 .menuhome li a {
 cursor: pointer;
 text-decoration: none;
 }
-
-/***sousmenu******************************/
-  .menuhome li ul {
-    z-index: 3000;
+  .menuhome li ul {/***sousmenu******************************/
+   
     display: block;
     position: relative;
-     font-size: 18px;
-     font-family: 'El Messiri', sans-serif;
-    top: 100%;
-    margin-top: 1px;
-    left: -1px;
-    right: -1px;
-
-
   }
-  .menuhome li:hover ul {
-    display: block;
-    cursor:pointer;
-  }
-  .menuhome li li {
-    margin: -1px 0 0 0;
-    box-sizing: border-box;
-    width: 100%;
-  }
-/*************************************************/
+ 
   .menuhome > ul {
     z-index: 3000;
     max-height: 0px; 
     overflow: hidden;
-    background-color:#DAB270;
+    background-color:#C79C51;
     opacity:0.9;/* ajout**/
     width: 100%;/* ajout**/
      margin: 0px;/* ajout**/
@@ -216,7 +203,6 @@ text-decoration: none;
   .menuhome li {
     visibility: hidden;
     display: block;
-
     border: none;
      margin: 0px;/* ajout**/
      padding-top:10px;
@@ -227,7 +213,7 @@ text-decoration: none;
   .menuhome li ul {
     margin-top: 0.5em;
     margin-left: 0px;
-    /*background-color:#DAB270; ajout**/ 
+
   }
 
   .menuhome .navbar-handle {/***position burger***/
@@ -258,7 +244,8 @@ text-decoration: none;
  
 }
 .menuhome a:hover {
-  color:#DAB270;
+  color:#C79C51;
+
  
 }
 /***STYLES *ICONES MENU HAUT*/
@@ -273,11 +260,9 @@ text-decoration: none;
   color: white;
   margin-left: 15px;
 }
-
 .iconfleche i:hover{
-  color: #DAB270;
+  color: #C79C51;
 }
-
 
 .iconcontact i{
   font-size: 18px;
@@ -286,9 +271,8 @@ padding-top: 2px;
 margin-left: 15px;}
 
 .iconcontact i:hover{
-  color: #DAB270;
+  color: #C79C51;
 }
-
 
 }
 
@@ -296,7 +280,6 @@ margin-left: 15px;}
 
 .navbar-checkbox {
   display: none;
-
 
 }
 .navbar-handle {
@@ -340,23 +323,12 @@ margin-left: 15px;}
 
 }
 
+
 /******************SROLLNAVBAR**********************************************/
-/*!
- * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 
-body {
-    width: 100%;
-    height: 100%;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-}
-
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -370,10 +342,9 @@ html {
     }
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
-
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
 .intro-section {
     height: 100%;
     padding-top: 150px;
@@ -401,12 +372,6 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #eee;
 }
-/****************************************************************/
-
-
-
-
-
 
 /*********BANDEAU LOGO ET FOND NOIRTRANSPARENT***************/
       #bandeaunoir{
@@ -416,70 +381,80 @@ of those sections to manage the look and feel of the site. */
         position: absolute;
         bottom: 0px;
         background-color: rgba(0, 0, 0, 0.7);
-
         margin-left: 0px;
         margin-right: 0px;
-
         padding-right: 0px;
         padding-left: 0px;
-        padding-bottom: 30px;
+        padding-bottom: 70px;
       }
 
       #bandeaulogo{
-        width: 100%;
         background-color: black;
+        opacity: 0.7;
+    
 
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 30px;
+      }
+#logointro{
+  margin-right: auto;
+  margin-left: auto;
+  max-width:980px;
+  background-position: center;
+}
 
-        padding-right: 0px;
-        padding-left: 0px;
+/*****************MENU PARTICULIERS-ENTREPRISES AVANT APRES**********************************/
+      #menuprestation{
+      }
+
+      #menuprestation p{
+      max-width: 980px; 
+      margin-right: auto;
+      margin-left: auto; 
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding:0px;   
+          text-align: center;
 
       }
 
-      #logointro{
-        margin-right: auto;
-        margin-left: auto;
-
-      }
-/*****************MENU PARTICULIER-ENTREPRISE**********************************/
-      #menuservice{
-        max-width: 980px;
-        margin-right: auto;
-        margin-left: auto;
-
-      }
-
-      #btn-menuservice{       
-      list-style-type: none;
-      max-width: 980px;
-     text-align: center;
-   
-
-      }
-
-      #btn-menuservice span a{ 
+      #menuprestation span a{ 
         font-family: 'El Messiri', sans-serif;
       font-size: 36px;
       color: white;
-      text-align: center;
-      }
+            list-style-type: none;
+              
 
-      #btn-menuservice a:hover{
+      }
+      #menuprestation a:hover{
         text-decoration: none;
-        color: #DAB270;
-
+        color: #C79C51;
       }
-/************************************************************/
 
+/********************HOME STYLE FLECHE SCROLL CENTRALE*********************************/
 
+#flechescroll{ 
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
+text-align: center;
+}
 
+#flechescroll a{   
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+#flechescroll a:hover{   
+  color:#C79C51;   
+}
+
+/*****************STYLE CERCLE FLECHE SCROLL CENTRALE*******************************************/
 .btn-circle {
   width: 50px;
   height: 50px;
   margin-top: 5px;
-  padding: 7px 6px;
+  padding: 12px 6px;
   border: 1px solid white;
   border-radius: 100% !important;
   font-size: 40px;
@@ -539,95 +514,57 @@ of those sections to manage the look and feel of the site. */
     transform: scale(1);
   }
 }
-
-
-
-  
-/********************INDEX FLECHE SCROLL*********************************/
-
-#flechescroll{ 
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-
-  padding: 0px;
-
-text-align: center;
-
-}
-
-#flechescroll a{   
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-}
-
-#flechescroll a:hover{   
-  color: #DAB270;   
-}
-
-/****A PRENDRE**********HOME DEBUT PARTIE SALON / AVANT APRES *************/
-
-#accueil{
-padding-top: 70px;
-height: 780px;
+/***********FIN STYLE FLECHE CENTRALE******************************/
+/***********Debut******2eme partie page Home**********************/
+#homeprestation{
+padding-top: 20px;
+height: 630px;
 max-width: 980px;
+margin-left: auto;
+margin-right: auto;
 }
 
 #bienvenue{
-margin-left: auto;
-margin-right: auto;
-
-max-width: 980px;
-
 padding: 0px;
-
 }
+
 #logolook4me-home{
 background-image: url("../img/intro-logo-home-salon.jpg");
 width: 100%;
 background-repeat: no-repeat;
 height: 70px;
 float: left;
-
 margin-left: 25px;
 margin-right: 0px;
 margin-bottom: 0px;
 margin-top: 0px;
-
 padding: 0px;
-
-
 }
 
 #salon{
-/*border-width: 1px;
-border-color: white;*/
 padding-top: 10px;
 padding-left: 20px;
 padding-right: 20px;
-padding-bottom: 20px;
+margin-bottom-bottom: 20px;
 }
 
 
 #photo-salon{
 height: 298px;
-background-image: url("../img/home_slide/photo_salon.jpg");
+background-image: url("../img/interieur_4250.JPG");
 background-repeat: no-repeat;
-background-size:110%;
-
+background-size:100%;
 padding-top: 0px;
 padding-left: 20px;
 padding-right: 20px;
 padding-bottom: 20px;
-
 margin-top: 0px;
 margin-bottom: 20px;
 
 }
 
 .titre-salon{
-color: #DAB270;   
+color: #C79C51;   
 font-family: 'El Messiri', sans-serif;
   margin: 0px;
   padding: 0px;
@@ -641,8 +578,6 @@ font-family: 'El Messiri', sans-serif;
 /********slide avant apres*****/
 
 #slide{
- /*border-width: 1px;
- border-color: white;*/
 padding-top: 10px;
 padding-left: 20px;
 padding-right: 20px;
@@ -650,22 +585,22 @@ padding-bottom: 20px;
 }
 
 .titre-slide{
-  color: #DAB270;   
+  color: #C79C51;   
   font-family: 'El Messiri', sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
-#btn-look{float: right;}
-
+#suite{float: right;
+bottom: 10px;}
 
 /****button bas animate css**/
-.button {
+.animbutton {
   vertical-align:middle;
   border-radius: 5px;
   border: none;
   display: inline-block;
-  background-color:#DAB270;   
+  background-color:#C79C51;  
   color: #FFFFFF;
   text-align: center;
   font-size: 14px;
@@ -673,21 +608,20 @@ padding-bottom: 20px;
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  /**width: 200px;**/
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
   font-family: 'Open Sans', sans-serif;
 }
 
-.button span {
+.animbutton span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.animbutton span:after {
   content: '»';
   position: absolute;
   opacity: 0;
@@ -696,29 +630,24 @@ padding-bottom: 20px;
   transition: 0.5s;
 }
 
-.button:hover span {
+.animbutton:hover span {
   padding-right: 25px;
-
 }
 
-.button:hover span:after {
+.animbutton:hover span:after {
   opacity: 1;
   right: 0;
 }
-.button span a{
+.animbutton span a{
 text-decoration: none;
 color:white;
 }
 
-
-
-/**************HOME FIN PARTIE SALON*************/
-
-/****************SEPARATION HOME et ACCUEIL**************************/
- 
 #vide{
   width: 100%;
-  height: 100px;
+  height: 180px;
   margin: 0px;
   padding: 0px;
+}
+
 }
