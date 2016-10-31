@@ -341,8 +341,21 @@ app.controller("aboutmeController", function ($scope) {
 });
 
 app.controller("contactController", function ($scope) {
-    $scope.msg = "Contact";
+   console.log  ("Contact");
+ 
+  $scope.coordonnees = {
+    identite :"LOOK4ME",
+    name: "Natacha Tilmant",
+    adresse: "7 Rue de la Foulerie",
+    ville: "28000 Chartres",
+    telephone: "06 38 41 38 38",
+    email: "contact@look4me"
+  };
+
 });
+
+
+
 
 
 /***************************************** controller portefolio *****************************/

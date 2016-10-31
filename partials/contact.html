@@ -1,20 +1,20 @@
-<div  id="contentformulaire" class="container-fluid" ng-controller="contactController">
+<div  id="contentformulaire" class="container-fluid">
   <div class="row">
     <div id="formulaire" class="col-sm-12 col-md-12 col-lg-12 ">
       <!--FORMULAIRE PARTIE ADRESSE et COORDONNEES + CARTE GOOGLE-->
-      <div class="row" ng-controller="coordonnees in coordonneesCtrl">
+      <div class="row">
         <div id="coordonnees" class="col-xs-12 col-sm-4 col-md-12  col-lg-12">
           <span id="icon" class="glyphicon glyphicon-home"></span>
-          <p id="identite">{{coordonneesCtrl.liste.identite}}</p>
-          <p id="adresse"><big><big>{{liste.coordonnees.name}}</big></big><br/>{{liste.coordonnees.adresse}}<br/>{{liste.coordonnees.ville}}</p>
+          <p id="identite">{{coordonnees.identite}}</p>
+          <p id="adresse"><big><big>{{coordonnees.name}}</big></big><br/>{{coordonnees.adresse}}<br/>{{coordonnees.ville}}</p>
 
           <div id="phone" >
            <span id="icon" class="glyphicon glyphicon-earphone">   </span>
-           <p id="telephone">{{liste.coordonnees.telephone}}</p>
+           <p id="telephone">{{coordonnees.telephone}}</p>
 
            <div id="email">
              <span id="icon-mail"><a data-email="contact@look4me" href="mailto:"contact@look4me" class="glyphicon glyphicon-envelope"></a> </span>
-             <p id="message"><a data-email="contact@look4me" href="mailto:"contact@look4me">{{liste.coordonnees.email}}</a></p>
+             <p id="message"><a data-email="contact@look4me" href="mailto:"contact@look4me">{{coordonnees.email}}</a></p>
            </div>
          </div>
        </div>
@@ -29,7 +29,7 @@
    <div id="form2" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 " >
      <h2 class="contact">CONTACT</h2>
 
-     <div class="row"  ng-app="validationApp" ng-controller="contactController">
+     <div class="row">
        <div  id="form-zone" class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
 
         <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate id="formcolor" role="form">
