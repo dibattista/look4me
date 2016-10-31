@@ -66,6 +66,17 @@ app.controller('HeaderController', function(){
 
 app.controller('HomeController', function($scope){
     $scope.home = {};
+    $scope.home.caption = {
+      title : "Avant / Après",
+      paragh : "D'autres prestations sont en cours, hésitez-pas à consulter mon site régulièrement ou me suivre sur facebook et instagramm."
+
+    }
+    $scope.home.space = {
+title : "Bienvenue",
+photo : "img/interieur_4250.JPG",
+paragh : 'Je vous accueille dans un cadre atypique et chaleureux au coeur de Chartres. Toutes les conditions sont réunies pour que nous trouvions ensemble le style qui vous correspond afin de vous révéler et reprendre confiance en vous.'
+
+    }
     $scope.home.portefolio = [
 
         {img:["01AV.jpg", "01AP.jpg"], alt: "Photo relooking"},
@@ -337,7 +348,11 @@ app.controller('entreprisesController', function($scope){
     });
 /********************************** about controller ***************************************/
 app.controller("aboutmeController", function ($scope) {
-    $scope.msg = "À propos";
+    $scope.about = {
+      title : "Natacha Tilmant",
+      paragh : "Au cours de ma vie professionnelle, j'ai toujours été en contact avec des personnes.<br/>J'ai été amenée à diriger, à recruter certaines, et à en conseiller d'autres. <br/> J'ai vite pris conscience que l'image que l'on véhicule est aussi importante que ce que l'on est amené à dire. <br/>Comme le dit Nicholas Boothman<em> <br/>\"Tout se joue en moins de 2 minutes!\"</em><br/>Souvent par manque de temps, votre interlocuteur risque de vous juger sur votre apparence, votre attitude au détriment de vos paroles, de votre potentiel et de votre vraie nature. <br/>Une attitude peu sûre vous conduira certainement à une déception.<br/>Je vais donc vous accompagner, vous aider à vous révéler et à prendre confiance en vous,<br/>pour trouver l'harmonie entre votre personnalité et l'image que vous souhaitez véhiculer.",
+      photo : 'img/natacha_portrait.JPG'
+    }
 });
 
 app.controller("contactController", function ($scope) {

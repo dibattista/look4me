@@ -5,10 +5,10 @@
 
 			<div id="presentation" class="col-md-8 col-md-offset-2">
 
-				<div class="row" ng-controller="A propos in storeApropos">
+				<div class="row">
 
 					<div id="about-portrait" class="col-sm-6 col-md-6 col-lg-4">
-						<p id="portrait"><img class="img-responsive" src="img/natacha_portrait.JPG" alt=""></p>
+						<p id="portrait"><img class="img-responsive" src="{{about.photo}}" alt=""></p>
 
 						<p class="about-btn" ><a href="#/contact">Me contacter<span id="about-icon" class="glyphicon glyphicon-envelope"></span></a>
 						</p>
@@ -17,15 +17,10 @@
 
 					<div id="biographie" class="col-sm-6 col-md-6 col-lg-8">
 
-						<h1 class="about-titre">{{storeApropos.A propos.titre}}</h1>
+						<h1 class="about-titre">{{about.title}}</h1>
 
-						<p class="about-parag">
-							Au cours de ma vie professionnelle, j'ai toujours été en contact avec des personnes.<br/> J'ai été amenée à diriger, à recruter certaines, et à en conseiller d'autres. <br/>
-							J'ai vite pris conscience que l'image que l'on véhicule est aussi importante que ce que l'on est amené à dire. <br/>Comme le dit Nicholas Boothman<em> <br/>Tout se joue en moins de 2 minutes!"</em><br/>
-							Souvent par manque de temps, votre interlocuteur risque de vous juger sur votre apparence, votre attitude au détriment de vos paroles, de votre potentiel et de votre vraie nature. <br/>Une attitude peu sûre vous conduira certainement à une déception.<br/>
-							Je vais donc vous accompagner, vous aider à vous révéler et à prendre confiance en vous, <br/>pour trouver l'harmonie entre votre personnalité et l'image que vous souhaitez véhiculer.
-
-						</p></div>
+						<p class="about-parag" ng-bind-html="about.paragh"></p>
+						</div>
 					</div><!--fin row-->
 				</div>
 			</div></div>
