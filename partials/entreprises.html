@@ -20,7 +20,7 @@
 					<div class="panel panel-default" ng-repeat="service in servEntreprises">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="{{'#'+service.collapse}}">{{service.offre}}</a>
+								<a data-toggle="collapse" target="_self" data-parent="#accordion" href="{{'#'+service.collapse}}">{{service.offre}}</a>
 							</h4>
 						</div>
 						<div id="{{service.collapse}}" ng-class="{'panel-collapse':true, 'collapse':true, in:($index === 0)}">
@@ -34,8 +34,7 @@
 										<p>{{service.description}}</p>
 									</div>
 									<div class="col-md-2">
-										<h3>DEVIS</h3>
-										<h4>Prix en €</h4>
+										<h3 class="devis-color">DEVIS</h3>
 										<button class="button" href="#"><span>contact</span></button>
 									</div>
 								</div>
