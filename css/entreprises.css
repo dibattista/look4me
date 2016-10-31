@@ -92,6 +92,19 @@ body
   }
 }
 
+.tailleTexte
+{
+  font-size: 24px;
+}
+
+@media screen and (max-width: 770px)
+{
+  .tailleTexte
+  {
+    font-size: 14px;
+  }
+}
+
 .italique
 {
   font-style: italic;
@@ -100,11 +113,6 @@ body
 .btn-success, .btn-primary
 {
   font-size: 12px;
-}
-
-h3, h4
-{
-  color: white;
 }
 
 .devis-color{
