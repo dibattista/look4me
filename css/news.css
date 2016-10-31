@@ -9,6 +9,10 @@
 
 	
 }
+
+.color-presse-p{
+	color: black;
+}
 .date{
 	position: absolute;
 	right:0px;color:black; 
@@ -72,6 +76,10 @@ td p {
 
 .table>tbody>tr>td{
 	border-top: 0px;
+}
+
+.date-color{
+	color:white;
 }
 
 /******************************* fin news  *****************************/

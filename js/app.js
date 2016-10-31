@@ -3,7 +3,19 @@
 var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
 
   app.controller('headerCheck', ['$scope','$location', function($scope, $location){
-  $scope.currentPath = $location.path().trim();
+    $scope.headerhome = 1;
+
+    $scope.$watch(function(){
+      return $location.path();
+    }, function(newPath){
+      let tabPath = newPath.split('/');
+      if(tabPath[1] === ''){
+        $scope.headerhome = 1;
+      }
+      else{
+        $scope.headerhome = 0;
+      }
+    });
   }]);
 
   app.config(function($routeProvider){
@@ -53,7 +65,6 @@ app.controller('HeaderController', function(){
 });
 
 app.controller('HomeController', function(){
-    //this.product = "home";
     $scope.home = {};
     $scope.home.portefolio = [
 
@@ -61,6 +72,7 @@ app.controller('HomeController', function(){
         {img:["02AV.jpg", "02AP.jpg"], alt: "Photo relooking"},
         {img:["03AV.jpg", "03AP.jpg"], alt: "Photo relooking"}
     ];
+
 });
 
 /******************************************** News controller *****************************************/
@@ -71,21 +83,34 @@ app.controller('NewsController', function($scope){
 { datej: "14",
   dateM: "Août",
   title: "Relooking à Chartres",
-  description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures"
+  description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
+  image: "img/news-presse/news.jpg"
 },
 
 { datej: "14",
   dateM: "Août",
   title: "Relooking à Chartres",
-  description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures"
+  description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
+  image: "img/news-presse/news.jpg"
 },
 
 { datej: "14",
   dateM: "Août",
   title: "Relooking à Chartres",
-  description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures"
-},
- ];
+  description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
+  image: "img/news-presse/news.jpg"
+}
+
+];
+
+$scope.news.objectPresses = [
+{
+  info: "Look at your clothes with different eyes. Ask more than “does this look great on me?”.Ask “who made my clothes?”.",
+  photo: "img/news-presse/img-presse.png",
+  pdf: "img/pdf/pdf-fashion.pdf"
+}
+
+];
 
 });
 /********************************** News end controller ***************************************/
@@ -353,14 +378,14 @@ app.controller("portefolioController", function($scope){
 
 	app.directive('headernav', function() {
 		return{
-			restrict: 'AE',
+			restrict: 'E',
       name: 'headernav',
 			templateUrl: 'partials/commun/headernav.html'
     }
 	});
   app.directive('headerhome', function() {
     return{
-      restrict: 'AE',
+      restrict: 'E',
       name: 'headernav',
       templateUrl: 'partials/commun/headerhome.html'
     }

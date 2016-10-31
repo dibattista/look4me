@@ -28,8 +28,8 @@
 
 
 <div ng-controller="headerCheck">
-<headernav ng-hide="currentPath == '/' || currentPath == '' "></headernav>
-<headerhome ng-show="currentPath != '/' || currentPath != '' "></headerhome>
+  <headernav ng-show="headerhome === 0"></headernav>
+  <headerhome ng-show="headerhome === 1"></headerhome>
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
