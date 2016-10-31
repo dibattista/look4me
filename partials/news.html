@@ -31,26 +31,28 @@
 <!--Title presse --> 
 <div class="row thumbnail"" id="m-presse" ng-repeat="presse in news.objectPresses">
       <div class="col-xs-12 col-md-5 centerImage">
-        <img src="" class="img-presse" alt="">
+        <img src='{{presse.photo[0]}}' class="img-presse" alt="" id="myImage">
       </div>
       <div class="col-xs-12 col-md-6">
       <div class="title-presse"><h1>PRESSE</h1>
       </div> 
-        <h1 class="thumbnail title-presse-year">2017</h1>
+        <h1 class="thumbnail title-presse-year">{{presse.title}}</h1>
               <table class="table">
                 <tr>
-                  <td><a href="" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><a href="{{presse.pdf[0]}}" target="_blank" onclick="document.getElementById('myImage').src='img/news-presse/img-presse.png'"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
                   <td><p class="color-presse-p">{{presse.info}}</p></td>
                 </tr>
                  <tr>
-                  <td><a href="" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
-                  <td><p></p></td>
+                  <td><a href="{{presse.pdf[1]}}" target="_blank" onclick="document.getElementById('myImage').src='img/news-presse/img-presse2.png'"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p>{{presse.info}}</p></td>
                 </tr>
                  <tr>
-                  <td><a href="" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
-                  <td><p></p></td>
+                  <td><a href="{{presse.pdf[2]}}" target="_blank" onclick="document.getElementById('myImage').src='img/news-presse/img-presse3.png'"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p>{{presse.info}}</p></td>
                 </tr>
               </table>
-          <h1 class="thumbnail title-presse-year">plus d'info</h1>    
+          <h1 class="thumbnail title-presse-year">{{presse.plusinfos}}</h1>    
       </div> 
 </div> 
+
+
