@@ -10,11 +10,11 @@
       <div class="date">
       <figure class="figure color-b-img">
       <h1 class="num-date">{{objectNews.datej}}</h1>
-      <h2 class="overline-month">{{objectNews.dateM}}</h2>
+      <h2 class="overline-month date-color">{{objectNews.dateM}}</h2>
       <img src="" class="figure-img img-fluid img-rounded">
       </figure>
       </div>
-      <img src="img/news:presse/news.jpg" alt="...">  
+      <img src="{{objectNews.image}}" alt="...">  
       <h3 class="c-black">{{objectNews.title}}<a href="#"><i class="fa fa-facebook background-gold-news" aria-hidden="true"></i></a></h3>
       <p class="c-black">{{objectNews.description}}</p>
       </div>
@@ -29,9 +29,9 @@
 
 <!-- ******************************** start presse ******************************** --> 
 <!--Title presse --> 
-<div class="row thumbnail"" id="m-presse">
+<div class="row thumbnail"" id="m-presse" ng-repeat="presse in news.objectPresses">
       <div class="col-xs-12 col-md-5 centerImage">
-        <img src="img/news:presse/img-presse.png" class="img-presse" alt="">
+        <img src="" class="img-presse" alt="">
       </div>
       <div class="col-xs-12 col-md-6">
       <div class="title-presse"><h1>PRESSE</h1>
@@ -39,16 +39,16 @@
         <h1 class="thumbnail title-presse-year">2017</h1>
               <table class="table">
                 <tr>
-                  <td><a href="img/pdf/pdf-fashion.pdf"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
-                  <td><p>Look at your clothes with different eyes. Ask more than “does this look great on me?”.Ask “who made my clothes?”.</p></td>
+                  <td><a href="" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p class="color-presse-p">{{presse.info}}</p></td>
                 </tr>
                  <tr>
-                  <td><a href="img/pdf/pdf-fashion.pdf"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
-                  <td><p>Look at your clothes with different eyes. Ask more than “does this look great on me?”.Ask “who made my clothes?”.</p></td>
+                  <td><a href="" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p></p></td>
                 </tr>
                  <tr>
-                  <td><a href="img/pdf/pdf-fashion.pdf"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
-                  <td><p>Look at your clothes with different eyes. Ask more than “does this look great on me?”.Ask “who made my clothes?”.</p></td>
+                  <td><a href="" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p></p></td>
                 </tr>
               </table>
           <h1 class="thumbnail title-presse-year">plus d'info</h1>    
