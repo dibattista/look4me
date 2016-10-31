@@ -1,180 +1,127 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="homeApp" ng-controller="homeController">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/index.css">
+<div id="haut" class="container-fluid" >
+<div class="row">
+      <div  id="navigation">
+        <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
 
+        <nav class="menuhome">
+          <ul >
+            <li ><a class="iconhome page-scroll" href="#haut"><i class="glyphicon glyphicon-home page-scroll"></i></a></li>  
+            <li class="sousmenushome"><a href="#">A propos<span class="iconfleche"><i class="glyphicon glyphicon-menu-down"></i> </span></a>
+              <ul>
+                <li><a href="aboutme.html">Présentation</a></li>
+                <li><a href="news.html">News / Presse</a></li>
+              </ul>
+            </li>
+            <li><a href="#/contact.html">Contact<span class="iconcontact"><i class="glyphicon glyphicon-envelope"></i></span></a></li>
+            <li><a href="https://www.facebook.com/look4me.fr/" target="_blanck" class="iconhome" ><i class="fa fa-facebook" ></i>
+            </a></li> 
+            <li><a class="iconhome" href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul> 
+          <label for="navbar-checkbox" class="navbar-handle"></label>
+        </nav>
+      </div>
+      </div>
+   
 
+    <div id="wrap" class="container-fluid">
 
-  <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="../fonts/font-awesome-4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/home.css">
-
-
-
-
-
-
-  <title>home</title>
-</head>
-
-<body >
-<div id="page" class="container-fluid">
-  <!-- Navigation -->
-  <div id="navigation" class="container-fluid">
-    <div class="row">
-      <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
-
-      <nav class="menuhome">
-        <ul >
-          <li ><a class="iconhome page-scroll" href="#page"><i class="glyphicon glyphicon-home page-scroll"></i></a></li>  
-          <li class="sousmenushome"><a href="#">A propos<span class="iconfleche"><i class="glyphicon glyphicon-menu-down"></i> </span></a>
-            <ul>
-              <li><a href="aboutme.html">Présentation</a></li>
-              <li><a href="news.html">News / Presse</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact<span class="iconcontact"><i class="glyphicon glyphicon-envelope"></i></span></a></li>
-          <li><a href="https://www.facebook.com/look4me.fr/" class="iconhome" ><i class="fa fa-facebook" ></i>
-          </a></li> 
-          <li><a class="iconhome" href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul> 
-        <label for="navbar-checkbox" class="navbar-handle"></label>
-      </nav>
-    </div>
-  </div>
-
-  <div id="wrap" class="container-fluid">
-
-    <div class="row">
-      <div id="bandeaunoir" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-     
-
-        <div class="row">
-          <div id="bandeaulogo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div id="bandeaunoir" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+            <div id="bandeaulogo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div id="logointro"><img class="img-responsive" src="../img/LOGO_intro_big.png"></div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div id="menuservice">
-            <div id="btn-menuservice" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#">Particulier</a></span>
-              <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#">Entreprise</a></span>
-              <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#">Avant / Après</a></span>
             </div>
           </div>
+          <div class="row">
+          <div id="menuprestation" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+   <p>
+                <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/particuliers.html">Particuliers</a></span>
+                <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/entreprises.html">Entreprises</a></span>
+                <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/portefolio.html">Avant / Après</a></span>
+             </p>
+              </div>
+          </div>
+
+          <div class="row">
+           <span id="flechescroll" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             <a href="#homeprestation" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
+           </span>
+         </div>
+       </div><!--fin row bandeaux-->
+     </div><!--fin row menu logo et particuliers-->
+   </div>
+   <div id="vide" class="row"></div>
+   <!-- HOME A PROPOS-->
+   <div id="homeprestation" class="container-fluid">
+    <h1 id="logolook4me-home"></h1>
+    <div class="row">
+      <div id="bienvenue" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <div id="salon" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h1 class="titre-salon">Bienvenue</h1><br/> 
+          <span id="photo-salon" class="img-responsive"></span>
+          <p id="paragraphe-salon" class="col-sm-12 col-md-12 col-lg-12">Je vous accueille dans un cadre atypique et chaleureux au coeur de Chartres . Toutes les conditions sont réunies pour que nous trouvions ensemble le style qui vous correspond afin de vous révéler et reprendre confiance en vous.
+          </p>
+          <p id="btn-look"><a href="#/aboutme.html"><button class="animbutton"><span>A propos</span></button></a></p><br/>
         </div>
-        <div class="row">
-         <span id="flechescroll" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-           <!--<a class="glyphicon glyphicon-chevron-down page-scroll" href="#accueil"></a>-->
-           <a href="#accueil" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
-         </span>
-       </div>
-     </div><!--fin row bandeaux-->
-   </div><!--fin row menu logo et particuliers-->
- </div>
- <div id="vide" class="row"></div>
- <!-- HOME A PROPOS-->
- <div id="accueil" class="container-fluid">
-  <h1 id="logolook4me-home"></h1>
-  <div class="row">
-    <div id="bienvenue" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div id="salon" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <h1 class="titre-salon">Bienvenue</h1><br/> 
-        <span id="photo-salon" class="img-responsive"></span>
-        <p id="paragraphe-salon" class="col-sm-12 col-md-12 col-lg-12">Je vous accueille dans un cadre atypique et chaleureux au coeur de Chartres . Toutes les conditions sont réunies pour que nous trouvions ensemble le style qui vous correspond afin de vous révéler et reprendre confiance en vous.
-        </p>
-        <p id="btn-look"><a href="aboutme.html"><button class="button"><span>A propos</span></button></a></p>
-        <br/>
-      </div>
-      <!--CARROUSEL-->
-      <div class="col-sm-12 col-md-6"> 
-       <div id="slide">
-        <h1 class="titre-slide">Avant / Après</h1><br/>
-
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-
-            <div ng-class="{item:true, active: ($index === 0)}" ng-repeat="diaporama in home.portefolio">
-              <div class="row">
-                <div class=" col-xs-6 col-sm-6 col-md-6">
-                  <img class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[0]}}" alt="...">
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                  <img class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[1]}}" alt="...">
+        <!--CARROUSEL-->
+        <div class="col-sm-12 col-md-6"> 
+         <div id="slide">
+          <h1 class="titre-slide">Avant / Après</h1><br/>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div ng-class="{item:true, active: ($index === 0)}" ng-repeat="diaporama in home.portefolio">
+                <div class="row">
+                  <div class=" col-xs-6 col-sm-6 col-md-6">
+                    <img  ng-show="true"class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[0]}}" alt="...">
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img  ng-show="true"class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[1]}}" alt="...">
+                  </div>
                 </div>
               </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" target="_self">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control nav2" href="#carousel-example-generic" role="button" data-slide="next" target="_self">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" target="_self">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control nav2" href="#carousel-example-generic" role="button" data-slide="next" target="_self">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-
-        </div>    
-
+          </div>    
           <p class="paragraphe-salon">D'autres prestations sont en cours, hésitez-pas à consulter mon site régulièrement ou me suivre sur facebook et instagramm.</p>
-          <p id="btn-look"><a href="portefolio.html"><button  class="button"><span>Voir la galerie</span></button></a></p><br/>
+          <p id="suite"><a href="#/portefolio.html"><button  class="animbutton"><span>Voir la galerie</span></button></a></p><br/>
         </div><!--slide-->
-
+      </div>
     </div>
 
-
-</div>
-
+  </div>
 
 
-    <!-- jQuery  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- js-->
-    <script src="../js/bootstrap.min.js"></script>
-    <scrip src="../js/modernizr.custom.js"></scrip>
-    <!--scroll page-->
-    <script src="../js/jquery.easing.min.js"></script>
-    <script src="../js/scrolling-nav.js"></script>
 
-    <!-- ANGULAR -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <!--JQUERY SCROLL NAV-->
+  <script type="text/javascript">
+    $(document).ready(function(){
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+  $('a.page-scroll').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
+});
 
- <!-- ANGULAR DIAPORAMA -->
-    <script type="text/javascript">
-      (function(){
-        var app = angular.module('homeApp', []);
+});
 
-    //controller avant a pres slide
-    app.controller('homeController', function($scope){
-        //objet
-        $scope.home = {};
-        $scope.home.portefolio = [
-
-        {img:["01AV.jpg", "01AP.jpg"], alt: "Photo relooking"},
-        {img:["02AV.jpg", "02AP.jpg"], alt: "Photo relooking"},
-        {img:["03AV.jpg", "03AP.jpg"], alt: "Photo relooking"}
-        ];
-
-      }); 
-
-    }()
-    );
-  </script>
-
-</body>
-</html>
+</script>

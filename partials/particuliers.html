@@ -1,0 +1,78 @@
+<div class="imageFondParticuliers">
+<div class="row">
+<div class="bloc-info">
+<!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
+<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" href="#menu1">FEMMES</a></div>
+<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" href="#menu2">HOMMES</a></div>
+<div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
+<div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
+</div>
+</div>
+</div>
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li class="active">
+			<a data-toggle="tab" target="_self" href="#menu1">FEMMES</a>
+		</li>
+		<li>
+			<a data-toggle="tab" target="_self" href="#menu2">HOMMES</a>
+		</li>
+	</ul>
+
+	<div class="tab-content">
+
+
+		<!-- TAB MENU1 :: HOMMES =========================================== -->
+
+		<div id="menu1" class="tab-pane fade in active">
+			<!-- PRESTATIONS FEMMES -->
+			<div class="prestationRelooking">Nos prestations RELOOKING</div>
+			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
+			<hr class="separator">
+
+			<!-- Prestations Femmes-->
+			<div class="row" ng-repeat="service in servParticuliersF">
+				<div ng-if="service.genre == 'F'">
+					<div class="col-md-4 col-sm-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
+					<div class="col-md-6 col-sm-6">
+						<h3 class="titrePrestation">{{service.titre}}</h3>
+						<p ng-bind-html="service.description"></p>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<h3>TARIFS</h3>
+						<h4>{{service.tarif}}</h4>
+						<a href="contact.html"><button class="button"><span>contact</span></button></a>
+					</div>
+					<div class="col-md-12"><hr></div>
+				</div>
+			</div>
+
+		</div>
+		<!-- TAB MENU2 :: HOMMES =========================================== -->
+
+		<div id="menu2" class="tab-pane fade">
+			<!-- PRESTATIONS HOMMES -->
+			<div class="prestationRelooking">Nos prestations RELOOKING</div>
+			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler par chèque ou carte bancaire, au choix.</p>
+			<hr class="separator">
+
+			<!-- Prestations Hommes-->
+			<div class="row" ng-repeat="service in servParticuliersH">
+				<div ng-if="service.genre == 'H'">
+					<div class="col-md-4 col-sm-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
+					<div class="col-md-6 col-sm-6">
+						<h3 class="titrePrestation">{{service.titre}}</h3>
+						<p ng-bind-html="service.description"></p>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<h3>TARIFS</h3>
+						<h4>{{service.tarif}}</h4>
+						<a href="contact.html"><button class="button"><span>contact</span></button></a>
+					</div>
+					<div class="col-md-12"><hr></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

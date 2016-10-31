@@ -1,0 +1,48 @@
+	<div class="container-fluid">
+		<div class="imageFondEntreprises">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+					<div class="bloc-transparent">
+						<p>Entreprises, Associations, Marques, Réseaux professionnels...<br><br>
+							Nous répondons à vos besoins en terme de Relooking afin de former vos collaborateurs à l'impact de l'image, en proposant des offres CE ou en créant des événementiels autour du look.<br><br> <span class="italique">"Le conseil en image, une valeur ajoutée !"</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="container col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+				<div class="prestationRelooking">Nos prestations RELOOKING</div>
+				<hr class="separator">
+
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default" ng-repeat="service in servEntreprises">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" target="_self" data-parent="#accordion" href="{{'#'+service.collapse}}">{{service.offre}}</a>
+							</h4>
+						</div>
+						<div id="{{service.collapse}}" ng-class="{'panel-collapse':true, 'collapse':true, in:($index === 0)}">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-4">
+										<img class="img-responsive" src="{{service.img}}" alt="{{service.alt}}">
+									</div>
+									<div class="col-md-6">
+										<h3>{{service.titre}}</h3>
+										<p>{{service.description}}</p>
+									</div>
+									<div class="col-md-2">
+										<h3 class="devis-color">DEVIS</h3>
+										<h4>Prix en €</h4>
+										<button class="button" href="#"><span>contact</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
