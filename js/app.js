@@ -64,7 +64,7 @@ app.controller('HeaderController', function(){
   this.tab = 1;
 });
 
-app.controller('HomeController', function(){
+app.controller('HomeController', function($scope){
     $scope.home = {};
     $scope.home.portefolio = [
 
@@ -341,8 +341,6 @@ app.controller("aboutmeController", function ($scope) {
 });
 
 app.controller("contactController", function ($scope) {
-   console.log  ("Contact");
- 
   $scope.coordonnees = {
     identite :"LOOK4ME",
     name: "Natacha Tilmant",
