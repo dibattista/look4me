@@ -92,6 +92,19 @@ body
   }
 }
 
+.tailleTexte
+{
+  font-size: 24px;
+}
+
+@media screen and (max-width: 770px)
+{
+  .tailleTexte
+  {
+    font-size: 14px;
+  }
+}
+
 .italique
 {
   font-style: italic;

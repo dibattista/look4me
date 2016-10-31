@@ -2,8 +2,8 @@
 <div class="row">
 <div class="bloc-info">
 <!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
-<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" href="#menu1">FEMMES</a></div>
-<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" href="#menu2">HOMMES</a></div>
+<div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="goToHash(1)" >FEMMES</a></div>
+<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="goToHash(2)" >HOMMES</a></div>
 <div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
 <div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
 </div>
@@ -11,10 +11,10 @@
 </div>
 <div class="container">
 	<ul class="nav nav-tabs">
-		<li class="active">
+		<li id="1" ng-class="{'active' : tab === 1}">
 			<a data-toggle="tab" target="_self" href="#menu1">FEMMES</a>
 		</li>
-		<li>
+		<li id="2" ng-class="{'active' : tab === 2}">
 			<a data-toggle="tab" target="_self" href="#menu2">HOMMES</a>
 		</li>
 	</ul>
@@ -24,7 +24,7 @@
 
 		<!-- TAB MENU1 :: HOMMES =========================================== -->
 
-		<div id="menu1" class="tab-pane fade in active">
+		<div id="menu1" ng-class="{'in active' : tab === 1}" class="tab-pane fade">
 			<!-- PRESTATIONS FEMMES -->
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
 			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
@@ -50,7 +50,7 @@
 		</div>
 		<!-- TAB MENU2 :: HOMMES =========================================== -->
 
-		<div id="menu2" class="tab-pane fade">
+		<div id="menu2" ng-class="{'in active' : tab === 2}" class="tab-pane fade">
 			<!-- PRESTATIONS HOMMES -->
 			<div class="prestationRelooking">Nos prestations RELOOKING</div>
 			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler par chèque ou carte bancaire, au choix.</p>

@@ -117,8 +117,10 @@ app.controller('NewsController', function($scope){
 $scope.news.objectPresses = [
 {
   info: "Look at your clothes with different eyes. Ask more than “does this look great on me?”.Ask “who made my clothes?”.",
-  photo: "img/news-presse/img-presse.png",
-  pdf: "img/pdf/pdf-fashion.pdf"
+  photo: ["img/news-presse/img-presse.png", "img/news-presse/img-presse2.png", "img/news-presse/img-presse3.png"],
+  pdf: ["img/pdf/pdf-fashion.pdf", "http://www.chartres.fr/fr/outils-et-services/tous-les-documents-et-publications/le-magazine-de-la-ville/", "http://www.relooking-chartres.fr/"],
+  title: "2017",
+  plusinfos: "plus d'infos",
 }
 
 ];
@@ -128,7 +130,7 @@ $scope.news.objectPresses = [
 
 /********************************** particuliers controller ***************************************/
 
-app.controller('particuliersController', function($scope, $anchorScroll,$location){
+app.controller('particuliersController', function($scope,$location,$anchorScroll){
 
   $scope.tab = 1;
 
@@ -136,18 +138,12 @@ app.controller('particuliersController', function($scope, $anchorScroll,$locatio
     $scope.tab = parseInt(id);
   };
 
-  $scope.gotoAnchor = function(id) {
-      if (id === 1){
-        $scope.tab = parseInt(id);
-        $location.hash("anchor" + id);
-        $location.hash('');
-      }
-      else{
-        $scope.tab = parseInt(id);
-        $location.hash("anchor" + id);
-        $location.hash('');
-      }
-    };
+  $scope.goToHash = function(id){
+    $scope.tab = id;
+    $location.hash("menu"+id);
+    $anchorScroll();
+    $location.hash('');
+  };
 
   $scope.servParticuliersF = [
 
