@@ -21,7 +21,7 @@
       </nav>
     </div>
   </div>
-  
+
 
   <div id="wrap" class="container-fluid">
 
@@ -55,18 +55,17 @@
 <div id="homeprestation" class="container-fluid">
   <h1 id="logolook4me-home"></h1>
   <div class="row">
-    <div id="bienvenue" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
+  <div id="bienvenue" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div id="salon" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <h1 class="titre-salon">{{home.space.title}}</h1><br/> 
+        <h1 class="titre-salon">{{home.space.title}}</h1>
         <span id="photo-salon"><img class="img-responsive" ng-src="{{home.space.photo}}"></span>
         <p id="paragraphe-salon" class="col-sm-12 col-md-12 col-lg-12">{{home.space.paragh}}
         </p>
         <p id="btn-look"><a href="#/presentation"><button class="animbutton"><span>A propos</span></button></a></p><br/>
       </div>
       <!--CARROUSEL-->
-      <div class="col-sm-12 col-md-6"> 
-       <div id="slide">
+      <div id="slide" class="col-sm-12 col-md-6"> 
+      
         <h1 class="titre-slide">{{home.caption.title}}</h1><br/>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
@@ -76,14 +75,14 @@
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
           </ol>
           <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
+          <div id="slideHome" class="carousel-inner" role="listbox">
             <div ng-class="{item:true, active: ($index === 0)}" ng-repeat="diaporama in home.portefolio">
               <div class="row">
                 <div class=" col-xs-6 col-sm-6 col-md-6">
-                  <img  ng-show="true"class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[0]}}" alt="...">
+                  <img  ng-show="true" class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[0]}}" alt="...">
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                  <img  ng-show="true"class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[1]}}" alt="...">
+                  <img  ng-show="true" class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[1]}}" alt="...">
                 </div>
               </div>
             </div>
@@ -98,9 +97,9 @@
             </a>
           </div>
         </div>    
-        <p class="paragraphe-salon">{{home.caption.paragh}}</p>
+        <p id="paragraphe-salon2">{{home.caption.paragh}}</p>
         <p id="suite"><a href="#/portefolio"><button  class="animbutton"><span>Voir la galerie</span></button></a></p><br/>
-      </div><!--slide-->
+     <!--slide-->
     </div>
   </div>
 

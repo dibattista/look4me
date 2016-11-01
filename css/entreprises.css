@@ -29,7 +29,7 @@ body
   .imageFondEntreprises
   {
     background-position: 60% 50%;
-    margin: 0 0 600px 0;
+    margin: 0 0 40px 0;
   }
 }
 
@@ -44,7 +44,16 @@ body
 {
   .prestationRelooking
   {
-    margin-top: 70px;
+    margin-top: -20px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1280px)
+{
+  .prestationRelooking
+  {
+    margin-top: 30px;
     font-size: 25px;
   }
 }
@@ -66,29 +75,29 @@ body
 {
   #accordion
   {
-    margin-bottom: 750px;
+    margin-bottom: 75px;
   }
 }
 
 .bloc-transparent
 {
   background-color: rgba(71,60,53,0.7); /*#473c35*/
+  width: 100%;
+  margin: auto;
   margin-top: 150px;
   margin-bottom: 25px;
   padding: 30px 30px 30px 30px;
   text-align: center;
-  font-size: 24px;
   font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (max-width: 770px)
+@media screen and (max-width: 360px)
 {
   .bloc-transparent
   {
-    margin-bottom: 75px;
-    margin-top: 150px;
-    font-size: 14px;
-    width: 100%;
+  width: 100%;
+  margin: auto;
+  margin-top: 85px;
   }
 }
 
@@ -97,11 +106,19 @@ body
   font-size: 24px;
 }
 
-@media screen and (max-width: 770px)
+@media screen and (max-width: 1280px)
 {
   .tailleTexte
   {
-    font-size: 14px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px)
+{
+  .tailleTexte
+  {
+    font-size: 13px;
   }
 }
 

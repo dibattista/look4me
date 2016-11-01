@@ -90,26 +90,6 @@ body
     margin-bottom: -50px;
 }
 
-#containerStyle
-{
-    margin-top: 15px;
-    margin-bottom: 50px;
-    color: darkgoldenrod;
-    text-align: center;
-    font-size: 40px;
-    text-decoration: underline darkgoldenrod;
-    font-family: 'El Messiri', sans-serif;
-}
-
-@media screen and (max-width: 770px)
-{
-    #containerStyle
-    {
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
-}
-
 .prestationRelooking
 {
     color:darkgoldenrod;
@@ -133,10 +113,21 @@ body
 
 .separator
 {
-    height: 3px;
+    line-height: 1px;
     width: 100%;
     background-color: goldenrod;
     border: none;
+}
+
+@media screen and (max-width: 770px)
+{
+    .separator
+    {
+        line-height: 1px;
+        width: 100%;
+        background-color: goldenrod;
+        border: none;
+    }
 }
 
 .bloc-info

@@ -5,14 +5,19 @@
 }
 
 #dropdown-menu > li:nth-child(1) > a:hover{
-     background-color:#C79C51;
-     opacity: 0.8;
+     background-color:black;
+     color:#C79C51;
+    
      
+}
+#bs-example-navbar-collapse-1{
+    margin-bottom: 10px;
 }
 
 #dropdown-menu > li:nth-child(2) > a:hover{
-     background-color: #C79C51;
-     opacity: 0.8;
+     background-color:black;
+     color:#C79C51;
+     
 }
 
 .iconfleche i{
@@ -127,6 +132,21 @@ margin-right: 60px;
 
 
 /******************************** RESPONSIVE ******************************/
+@media (max-width: 768px) {
+    .color-p-sidr, #abouther{
+        font-size: 14px;
+    }
+    .iconfleche i {
+        font-size: 12px !important;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: white;
+    }
+}
+
+
+
+
 @media (max-width: 1200px) {
     .navbar-header {
         float: none;
@@ -134,18 +154,34 @@ margin-right: 60px;
     .navbar-left,.navbar-right {
         float: none !important;
     }
+    .navbar-collapse.in{
+            width: 100%  !important;
+            height: 250px !important;
+            overflow: scroll !important;
+
+    }
 
    #bs-example-navbar-collapse-1 > ul > li:nth-child(12) a{
    	margin: 0px !important;
    	margin-bottom: 3px !important;
    	margin-top: 20px !important;
    }
+   
+   #bs-example-navbar-collapse-1 > ul{
+    margin-left: 40px;
+    margin-top: 20px;
+   }
+
     .navbar-toggle {
         display: block;
     }
     .navbar-collapse {
-        border-top: 1px solid transparent;
+        border-top: 0px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: white;
     }
     .navbar-fixed-top {
         top: 0;

@@ -50,7 +50,7 @@ app.controller('particuliersController', function($scope){
 			{
 				img:"img/particuliers/femmes/relooking_complet.jpg",
 				alt:"photo coaching en image",
-				titre:"Coaching en image",
+				titre:"Coaching en image complet",
 				description:"Comprend : <ul> 								<li>entretien découverte</li> 								<li>test des couleurs</li> 								<li>analyse morphologique du visage, cosmétologie et cours de maquillage</li> 								<li>conseils coiffure</li> 								<li>analyse morphologique de la silhouette</li> 								<li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li> 								<li>tri de votre garde-robes</li> 								<li>accompagnement shopping</li> 							</ul> 							Non-compris : 							<ul> 								<li>(!) La prestation de notre partenaire coiffeur</li> 								<li>(!) Les achats lors du shopping</li> 							</ul> Un book récapitulatif vous sera envoyé ultérieurement.",
 				tarif:"10-11H - 690€",
 				genre:"F"

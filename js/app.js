@@ -53,6 +53,10 @@ var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
         templateUrl : 'partials/news.html',
         controller : 'NewsController',
       })
+      .when('/plusdinfos',{
+        templateUrl : 'partials/plusdinfos.html',
+        controller : 'plusdinfosController',
+      })
   });
 
 /***********controller**********************/
@@ -64,11 +68,39 @@ app.controller('HeaderController', function(){
   this.tab = 1;
 });
 
+/************************************PLUS DINFO**********************/
+app.controller('plusdinfosController', function($scope){
+
+$scope.plus.objectPlusinfos = [
+
+{ titleinfo: "2016",
+  pdfinfo: "img/pdf/pdf-fashion.pdf",
+  videoinfo: "http...",
+  descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures"
+},
+
+{ titleinfo: "2017",
+  pdfinfo: "img/pdf/pdf-fashion.pdf",
+  videoinfo: "http...",
+  descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures"
+},
+
+{ titleinfo: "2018",
+  pdfinfo: "img/pdf/pdf-fashion.pdf",
+  videoinfo: "http...",
+  descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
+}
+
+];
+
+});
+/*************************************PLUS DINFO**********************/
+
 app.controller('HomeController', function($scope){
     $scope.home = {};
     $scope.home.caption = {
       title : "Avant / Après",
-      paragh : "D'autres prestations sont en cours, hésitez-pas à consulter mon site régulièrement ou me suivre sur facebook et instagramm."
+      paragh : "D'autres prestations sont en cours, vous pouvez les consulter sur mon compte facebook"
 
     }
     $scope.home.space = {
@@ -88,6 +120,7 @@ paragh : 'Je vous accueille dans un cadre atypique et chaleureux au coeur de Cha
 
 /******************************************** News controller *****************************************/
 app.controller('NewsController', function($scope){
+
   $scope.news = {};
   $scope.news.objectNews = [
 
@@ -179,7 +212,7 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         img:"img/particuliers/femmes/relooking_coiffure.jpg",
         alt:"photo relooking coiffure",
         titre:"Relooking coiffure",
-        description:"Avec l'aide de notre partenaire coiffeur et après avoir vu ensemble : <ul><li>votre personnalité</li><li>la morphologie de votre visage</li><li>test des couleurs</li><li>votre nature de cheveux</li><li>vos contraintes et envies</li></ul> Nous vous révélerons la coupe et les choix de coloration qui vous mettrons en valeur.               (!) En prévision du relooking coiffure nous vous conseillons de ne pas couper vos cheveux.",
+        description:"Avec l'aide de notre partenaire coiffeur et après avoir vu ensemble : <ul>                 <li>votre personnalité</li>                 <li>la morphologie de votre visage</li>                 <li>test des couleurs</li>                <li>votre nature de cheveux</li>                <li>vos contraintes et envies</li>              </ul> Nous vous révélerons la coupe et les choix de coloration qui vous mettrons en valeur.               (!) En prévision du relooking coiffure nous vous conseillons de ne pas couper vos cheveux.",
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"F"
       },
@@ -188,26 +221,26 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         img:"img/particuliers/femmes/relooking_vestimentaire.jpg",
         alt:"photo relooking vestimentaire",
         titre:"Relooking vestimentaire",
-        description:"Chacun étoffe sa garde-robe de différentes façons. Certaines personnes sont douées pour trouver ce qui leur va, d'autres se laisseront influencer par la mode ou un vendeur plus préoccupé par la vente que par le rendu du vêtement sur vous. <br> Savoir s'habiller en toute occasion et suivant l'objectif de style que vous vous êtes fixé, voila ce que je peux vous aider à acquérir.              Comprend : <ul><li>test des couleurs</li><li>analyse morphologique de votre silhouette</li><li>identification de votre style</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
+        description:"Chacun étoffe sa garde-robe de différentes façons. Certaines personnes sont douées pour trouver ce qui leur va, d'autres se laisseront influencer par la mode ou un vendeur plus préoccupé par la vente que par le rendu du vêtement sur vous. <br> Savoir s'habiller en toute occasion et suivant l'objectif de style que vous vous êtes fixé, voila ce que je peux vous aider à acquérir.              Comprend : <ul>                 <li>test des couleurs</li>                <li>analyse morphologique de votre silhouette</li>                <li>identification de votre style</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
         tarif:"6H - 400€",
         genre:"F"
       },
       // Prestation 6 (femmes)
       {
         img:"img/particuliers/femmes/relooking_complet.jpg",
-        alt:"photo relooking complet",
-        titre:"Relooking complet",
-        description:"Comprend : <ul><li>entretien découverte</li><li>test des couleurs</li><li>analyse morphologique du visage, cosmétologie et cours de maquillage</li><li>conseils coiffure</li><li>analyse morphologique de la silhouette</li><li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li><li>tri de votre garde-robes</li><li>accompagnement shopping</li></ul>Non-compris :<ul><li>(!) La prestation de notre partenaire coiffeur</li><li>(!) Les achats lors du shopping</li></ul> Un book récapitulatif vous sera envoyé ultérieurement.",
+        alt:"photo coaching en image",
+        titre:"Coaching en image complet",
+        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats lors du shopping</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
         tarif:"10-11H - 690€",
         genre:"F"
       },
       // Prestation 7 (femmes)
       {
         img:"img/particuliers/femmes/",
-        alt:"photo coatch séduction",
-        titre:"Coach Séduction",
+        alt:"photo atelier occasion",
+        titre:"Atelier occasion",
         description:"Ajouter le prix et la durée de la séance",
-        tarif:"Ajouter le prix et la durée de la séance",
+        tarif:"à partir de + prix (par personne)",
         genre:"F"
       }
 
@@ -216,14 +249,23 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
        $scope.servParticuliersH = [
       // Prestation 1 (hommes)
       {
-        img:"img/particuliers/hommes/total_relooking.jpg",
-        alt:"photo total relooking",
-        titre:"Relooking complet Homme",
-        description:"Comprend : <ul><li>entretien découverte</li><li>test des couleurs</li><li>maquillage</li><li>coiffure</li><li>analyse morphologique et style souhaité</li><li>conseils vestimentaires et accessoires</li><li>accompagnement shopping</li></ul>",
-        tarif:"8H - 490€",
+        img:"img/particuliers/hommes/",
+        alt:"photo meeting",
+        titre:"Entretien découverte",
+        description:"Nous permet de définir vos besoins, vos objectifs.",
+        tarif:"1H - 50€",
         genre:"H"
       },
       // Prestation 2 (hommes)
+      {
+        img:"img/particuliers/hommes/total_relooking.jpg",
+        alt:"photo coaching en image",
+        titre:"Coaching en image complet",
+        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>maquillage</li>                 <li>coiffure</li>                 <li>analyse morphologique et style souhaité</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
+        tarif:"8H - 490€",
+        genre:"H"
+      },
+      // Prestation 3 (hommes)
       {
         img:"img/particuliers/hommes/colorimetrie.jpg",
         alt:"photo colorimetrie",
@@ -232,7 +274,7 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       },
-      // Prestation 3 (hommes)
+      // Prestation 4 (hommes)
       {
         img:"img/particuliers/hommes/relooking_beard.jpg",
         alt:"photo relooking barbe",
@@ -241,7 +283,7 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       },
-      // Prestation 4 (hommes)
+      // Prestation 5 (hommes)
       {
         img:"img/particuliers/hommes/relooking_hair.jpg",
         alt:"photo relooking cheveux",
@@ -250,7 +292,7 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       },
-      // Prestation 5 (hommes)
+      // Prestation 6 (hommes)
       {
         img:"img/particuliers/hommes/relooking_style.jpg",
         alt:"photo relooking style",
@@ -259,35 +301,18 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       },
-      // Prestation 6 (hommes)
-      {
-        img:"img/particuliers/hommes/relooking_complet.jpg",
-        alte:"photo relooking style",
-        titre:"Relooking complet",
-        description:"Comprend : <ul><li>entretien découverte</li><li>test des couleurs</li><li>analyse morphologique du visage, cosmétologie et cours de maquillage</li><li>conseils coiffure</li><li>analyse morphologique de la silhouette</li><li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li><li>tri de votre garde-robes</li><li>accompagnement shopping</li></ul> Non-compris :<ul><li>(!) La prestation de notre partenaire coiffeur</li><li>(!) Les achats lors du shopping</li></ul> Un book récapitulatif vous sera envoyé ultérieurement.",
-        tarif:"10-11H - 690€",
-        genre:"H"
-      },
       // Prestation 7 (hommes)
       {
         img:"img/particuliers/hommes/",
-        alt:"photo atelier occasion",
-        titre:"Atelier occasion",
-        description:"Ajouter le prix et la durée de la séance",
-        tarif:"Ajouter le prix et la durée de la séance",
-        genre:"H"
-      },
-      // Prestation 8 (hommes)
-      {
-        imgage:"img/particuliers/hommes/",
         alt:"photo coatch séduction",
         titre:"Coach Séduction",
         description:"Ajouter le prix et la durée de la séance",
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       }
-      ];
-    });
+    ];
+  });
+
 
 /********************************** end particuliers controller ***************************************/
 
@@ -358,7 +383,7 @@ app.controller("contactController", function ($scope) {
     adresse: "7 Rue de la Foulerie",
     ville: "28000 Chartres",
     telephone: "06 38 41 38 38",
-    email: "contact@look4me"
+    email: "contact@look4me.fr"
   };
  
 });
@@ -421,7 +446,14 @@ app.controller("portefolioController", function($scope){
 
     }
   });
-/************* end Directive *********************/
+    /*app.directive('plusdinfos', function(){
+    return{
+      restrict: 'E',
+      name: 'plusdinfos',
+      templateUrl: '/partials/plusdinfos.html',
 
+    }
+  });*/
+/************* end Directive *********************/
 
 })();
