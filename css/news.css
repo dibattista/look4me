@@ -117,6 +117,10 @@ td p {
 	.centerImage {
 		text-align: center;
 	}
+.color-link-plusinfos:hover{
+	color:black;
+	text-decoration: none;
+}
 /******************************* presses *****************************/
 @media only screen and (min-width: 1024px)
 
