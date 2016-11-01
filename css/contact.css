@@ -32,7 +32,7 @@
 }
 
 #coordonnees{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	margin-left: 0px;
 	padding-left: 0px;
 }
@@ -59,12 +59,14 @@
 		margin-bottom: 20px;
 		font-family: 'Open Sans', sans-serif;
 		line-height: 18px;
+		margin-left: 0px;
+		padding-left: 0px;
 	}
 
 #phone{
 		padding: 0px;
 		margin-top:0px;
-		margin-bottom: 0px;
+		margin-bottom: 20px;
 	}
 
 
@@ -147,13 +149,13 @@
 				/***partie formulaire2**/
 
 				#form2{
-					margin-left: 0px;
-					margin-right: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
 					padding: 0px;
 
 				}
 
-				.contact{
+				.titrecontact{
 					padding: 0px;
 					margin-top: 0px;
 					font-size: 24px;
@@ -163,17 +165,15 @@
 					font-family: 'El Messiri', sans-serif;
 				}
 
-				#form-zone{
+				#form-champs{
 					margin: 0px;
-					padding: 0px;
+		
 				}
 
 				#votrestatut{
-					margin-top: 15px;
+					margin-top: 20px;
 					margin-bottom: 20px;
-					margin-left: 5px;
-					margin-right: 5px;
-					padding: 0px;
+		
 				}
 
 				.statut{
@@ -217,12 +217,19 @@
 					font-family: 'El Messiri', sans-serif;
 					font-size: 18px;
 					color: #C79C51;
-					padding: 0px;
-					margin-left: 0px;
-					margin-right: 0px;
+					padding-right: 10px;
+					padding-left: 10px;
 
 				}
+
+				.titremessage{
+				padding-top: 15px;		
+					font-family: 'El Messiri', sans-serif;
+					font-size: 18px;
+					color: #C79C51;
+				}
 				#comment{
+
 					resize: vertical;
 					overflow: auto;
 
@@ -230,7 +237,7 @@
 
 
 				/****button bas animate css**/
-				.button {
+				.animbutton {
 					vertical-align:middle;
 					border-radius: 5px;
 					border: none;
@@ -250,14 +257,14 @@
 					font-family: 'Open Sans', sans-serif;
 				}
 
-				.button span {
+				.animbutton span {
 					cursor: pointer;
 					display: inline-block;
 					position: relative;
 					transition: 0.5s;
 				}
 
-				.button span:after {
+				.animbutton span:after {
 					content: '»';
 					position: absolute;
 					opacity: 0;
@@ -266,16 +273,16 @@
 					transition: 0.5s;
 				}
 
-				.button:hover span {
+				.animbutton:hover span {
 					padding-right: 25px;
 
 				}
 
-				.button:hover span:after {
+				.animbutton:hover span:after {
 					opacity: 1;
 					right: 0;
 				}
-				.button span a{
+				.animbutton span a{
 					text-decoration: none;
 					color:white;
 				}
