@@ -48,29 +48,22 @@ body
     #buttonfemmes, #buttonhommes
     {
         text-align: center;
-        font-size: 25px;
+        font-size: 40px;
     }
 }
 
-#textFemmes
+#textHommesFemmes
 {
     margin-top: 10px;
     padding-right: 50px;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
-
-#textHommes
-{
-    margin-top: 10px;
-    padding-left: 50px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 @media screen and (max-width: 770px)
 {
-    #textFemmes, #textHommes
+    #textHommesFemmes
     {
         font-size: 15px;
     }
@@ -90,6 +83,11 @@ body
     {
         font-size: 20px;
     }
+}
+
+.nav-tabs
+{
+    margin-bottom: -50px;
 }
 
 #containerStyle
@@ -114,6 +112,7 @@ body
 
 .prestationRelooking
 {
+    color:darkgoldenrod;
     margin-top: 75px;
     font-size: 30px;
     font-family: 'El Messiri', sans-serif;
@@ -127,7 +126,7 @@ body
     }
 }
 
-.moyenPaiement
+.texteInfo
 {
     font-style: italic;
 }
@@ -146,7 +145,7 @@ body
     width: 70%;
     margin: auto;
     margin-top: 150px;
-    padding: 30px 30px 30px 30px;
+    padding: 80px 30px 30px 30px;
     background-color: rgba(71,60,53,0.7); /*#473c35*/
     text-align: center;
 }
