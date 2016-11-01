@@ -391,7 +391,7 @@ app.controller("contactController", function ($scope) {
     adresse: "7 Rue de la Foulerie",
     ville: "28000 Chartres",
     telephone: "06 38 41 38 38",
-    email: "contact@look4me"
+    email: "contact@look4me.fr"
   };
  
 });

@@ -12,13 +12,11 @@ padding: 0px;
   display: block;
   position: relative;
   width: 100%;
+    height:820px;
   margin: 0px;
   padding: 0px;
   background-image: url("../img/interieur_4250.JPG");
   background-position: center;
-  height:820px;
-  margin: 0px;
-  padding: 0px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -31,14 +29,21 @@ padding: 0px;
 #wrap {
   height:1024px; 
     }
-}
+#bandeaunoir{
+        padding-bottom: 150px;
+      }
 
+
+}
+/*******************************************/
 @media(max-width:360px) {
 #wrap {
   height:640px;
     }
+  #bandeaunoir{
+  padding-bottom: 50px;
+  }
 }
-
 
 /*************NAVIGATION HAUT ET BURGER************************************/
 @media (min-width: 900px) {
@@ -145,7 +150,7 @@ margin-left: 15px;}
 /**************IMPORTANT GESTION SOUS MENU APROPOS**************** *********/
 @media (min-width: 768px) {
 
- .menuhome li ul {
+.menuhome li ul {
     z-index: 3000;
     display: none;
     position: absolute;
@@ -165,21 +170,39 @@ margin-left: 15px;}
     box-sizing: border-box;
     width: 100%;
   }
+
+  .iconhome{
+  font-size: 18px;
+  color: #1b1816;
 }
+}
+
 
 /*******************************************************************/
 /*******************************************************************/
 /***********************************************/
 @media (max-width: 768px) {
-  .menuhome {/***Ajout pour mettre la barre noire*/
-  background: #C79C51;
+
+  .menuhome {
+    /***Ajout pour mettre la barre noire*/
+ /* background: #C79C51;*/
 z-index: 3000;
+ font-size: 22px;
+
+}
+.iconhome{
+  font-size: 36px;
+  color: #1b1816;
 }
 
 .menuhome li:hover {
-  background-color: #1b1816;
+ /* background-color: #1b1816;*/
+   background-color:black;
+
+
 }
 .menuhome li a {
+
 cursor: pointer;
 text-decoration: none;
 }
@@ -187,6 +210,7 @@ text-decoration: none;
    
     display: block;
     position: relative;
+
   }
  
   .menuhome > ul {
@@ -200,9 +224,11 @@ text-decoration: none;
     padding: 0px;/* ajout**/
   }
   .menuhome li {
+
     visibility: hidden;
     display: block;
     border: none;
+
      margin: 0px;/* ajout**/
      padding-top:10px;
      padding-bottom: 10px;
@@ -225,6 +251,7 @@ text-decoration: none;
   }
 
   #navbar-checkbox:checked + .menuhome li {
+
     visibility: visible;
   }
 
@@ -278,10 +305,11 @@ margin-left: 15px;}
 /********style nav bar******************************/
 
 .navbar-checkbox {
-  display: none;
+display: none;
 
 }
 .navbar-handle {
+
   display: none;
   cursor: pointer;
   position: relative;
@@ -309,11 +337,13 @@ margin-left: 15px;}
 }
 .menuhome {
   position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
 .menuhome .navbar-handle {/*iconburger*/
+
   position: absolute;
   font-size: 20px;
   top: 0.7em;
@@ -324,10 +354,6 @@ margin-left: 15px;}
 
 
 /******************SROLLNAVBAR**********************************************/
-
-/*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -379,12 +405,11 @@ margin-left: 15px;}
         height:auto;
         position: absolute;
         bottom: 0px;
-        /*background-color: rgba(0, 0, 0, 0.7);*/
         margin-left: 0px;
         margin-right: 0px;
         padding-right: 0px;
         padding-left: 0px;
-        padding-bottom: 70px;
+        padding-bottom: 90px;
       }
 
       #bandeaulogo{
@@ -537,7 +562,10 @@ padding: 0px;
 
 #salon{
 }
-
+#slideHome{
+  max-height: 300px;
+  width: 100%;
+}
 
 #photo-salon{
 padding-left: 20px;
