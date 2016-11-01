@@ -1,444 +1,281 @@
 
 .row{
-margin: 0px;
-padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 .col-{
-margin: 0px;
-padding: 0px;
-}
-
-
-#contentformulaire{
-margin-right: auto;
-margin-left: auto;
-margin-top:70px;
-max-width: 980px;
-padding: 0px;
-}
-
-#formcolor{
-background-color:#1b1816;
-border: none;
-color:white;
-}
-
-#content{background-color:#1b1816;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-#formulaire{
-	background-color:transparent;
-width: 100%;
-padding-top: 50px;
-padding-left: 0px;
-padding-right: 0px;
-margin-left: 0px;
-margin-right: 0px;
-}
-
-#formulairecolor{
-background-color:#1b1816;
-border: none;
-color:white;
-margin: 0px;
-padding: 0px;
-}
-
-
-/**********partie adresse et carte********************/
-
-#form1{
-margin-bottom: 20px;
-margin-top: 0px;
-margin-left: 10px;
-margin-right: 10px;
-padding-left: 0px;
-color:white;
-	margin-top: 10px;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-#coordonnees{
-	padding: 0px;
-	margin-top:0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 20px;
-}
-
-#icon{
-font-size: 22px;
-display: block;
-position: relative;
-float: left;
-color: #cc9933;
-margin-right: 15px;
-padding: 0px;}
-
-#identite{	
-font-size: 24px;
-padding-top: 10px;
-margin-left: 5px;
-margin-right: 5px;
-margin-bottom: 10px;
-font-family: 'El Messiri', sans-serif;
-line-height: 16px;
-color: #cc9933;
-}
-
-#adresse{	
-font-size: 14px;
-margin-right: 5px;
-margin-left: 5px;
-margin-bottom: 20px;
-font-family: 'Open Sans', sans-serif;
-line-height: 18px;
-}
-
-#phone{
-padding: 0px;
-margin-top:0px;
-margin-left: 5px;
-margin-right: 5px;
-margin-bottom: 0px;
-}
-
-#telephone{
-font-size: 16px;
-color:white;
-font-family: 'Open Sans', sans-serif;
-line-height: 16px;
-margin-left: 5px;
-margin-right: 5px;
-margin-bottom: 20px;
-}
-
-#email{
-margin-left: 5px;
-margin-right: 5px;
-margin-top: 5px;
-padding: 0px;
-font-size: 16px;
-color:white;
-font-family: 'Open Sans', sans-serif;
-line-height: 16px;
-}
-
-#icon-mail{	
-font-size: 22px;
-display: block;
-position: relative;
-float: left;
-
-margin-right: 15px;
-padding: 0px;}
-
-#icon-mail a{
-text-decoration: none;
-color: #cc9933;
-}
-#icon-mail a:hover{
-color: white;
-}
-
-#message{
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 5px;}
-
-#activite{	
-	font-size: 24px;
-padding-top: 10px;
-	margin-left: 5px;
-	margin-right: 5px;
-	font-family: 'El Messiri', sans-serif;
-	line-height: 16px;
-}
-
-#adresse{	
-	font-size: 14px;
-	margin-right: 5px;
-	margin-left: 5px;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 18px;
-}
-
-#phone{
-	padding: 0px;
-	margin-top:0px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 20px;
-}
-
- #telephone{
-font-size: 16px;
-	color:white;
-	margin-left: 5px;
-		margin-right: 5px;
-font-family: 'Open Sans', sans-serif;
-	line-height: 16px;
-}
-
-
- #Email{
-	margin-left: 5px;
-		margin-right: 5px;
-font-size: 16px;
-	color:white;
-		padding: 0px;
-
-font-family: 'Open Sans', sans-serif;
-	line-height: 16px;
-}
-
-#message{
-	margin-left: 5px;
-	margin-right: 5px;
-padding: 0px;
-}
-#message a{
-text-decoration: none;
-color: white;
-}
-
-#message a:hover{
-color: #cc9933;
-}
-
-
-.situation{
-font-family: 'El Messiri', sans-serif;
-font-size: 24px;
-color: #cc9933;
-margin-top: 0px;
-padding: 0px;
-}
-
-#cartegooglemap{
-padding: 0px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 5px;
-margin-bottom: 20px;
-}
-
-
-/***partie formulaire2**/
-
-#form2{
-margin-left: 10px;
-margin-right:10px;
-margin-top: 0px;
-padding: 0px;
-}
-
-
-.contact{
-padding: 0px;
-margin-top: 0px;
-font-size: 24px;
-color: #cc9933;
-text-align: center;
-margin-bottom: 20px;
-font-family: 'El Messiri', sans-serif;
-}
-
-#form-zone{
 	margin: 0px;
 	padding: 0px;
 }
 
-#votrestatut{
-margin-top: 15px;
-margin-bottom: 20px;
-margin-left: 5px;
-margin-right: 5px;
-padding: 0px;
+
+#contentformulaire{
 }
 
-.statut{
-padding-top: 30px;
-font-family: 'El Messiri', sans-serif;
-font-size: 24px;
-color: #cc9933;
-margin: 0px;	
+#content{
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 980px;
+
+	margin-top: 120px;
+	margin-bottom: 50px;
 }
 
-/****DEROULANT*************************************************/
-.situation{
+/**********partie adresse et carte********************/
+
+#form1{
+	margin-bottom: 20px;
+	color:white;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 0px;
+}
+
+#coordonnees{
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#icon{
+	font-size: 22px;
+	display: block;
+	position: relative;
+	float: left;
+	color: #C79C51;
+	margin-right: 15px;}
+
+#identite{	
+		font-size: 24px;
+		padding-top: 10px;
+		margin-bottom: 10px;
 		font-family: 'El Messiri', sans-serif;
-			font-size: 24px;
-	color: #cc9933;
+		line-height: 16px;
+		color:#C79C51;
+	}
 
-			padding: 0px;
-}
+#adresse{	
+		font-size: 14px;
+		margin-bottom: 20px;
+		font-family: 'Open Sans', sans-serif;
+		line-height: 18px;
+	}
 
-#cartegooglemap{
+#phone{
 		padding: 0px;
-		margin-left: 5px;
+		margin-top:0px;
+		margin-bottom: 0px;
+	}
+
+
+#telephone{
+		font-size: 16px;
+		font-family: 'Open Sans', sans-serif;
+		line-height: 16px;
 		margin-right: 5px;
 		margin-bottom: 20px;
-}
+	}
+
+#email{
+		margin-right: 5px;
+		margin-top: 5px;
+		font-size: 16px;
+		color:white;
+		font-family: 'Open Sans', sans-serif;
+		line-height: 16px;
+	}
+
+#icon-mail{	
+		font-size: 22px;
+		display: block;
+		position: relative;
+		float: left;
+		margin-right: 15px;
+		padding: 0px;}
+
+#icon-mail a{
+			text-decoration: none;
+			color: #C79C51;
+	}
+#icon-mail a:hover{
+			color: white;
+		}
+
+#message{
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-top: 5px;}
+
+#activite{	
+				font-size: 24px;
+				padding-top: 10px;
+				font-family: 'El Messiri', sans-serif;
+				line-height: 16px;
+			}
+
+
+			#message{
+				margin-left: 5px;
+				margin-right: 5px;
+				padding: 0px;
+			}
+			#message a{
+				text-decoration: none;
+				color: white;
+			}
+
+			#message a:hover{
+				color:#C79C51;}
+
+
+				.situation{
+					font-family: 'El Messiri', sans-serif;
+					font-size: 24px;
+					color: #C79C51;
+					margin-top: 0px;
+					padding: 0px;
+				}
+
+				#cartegooglemap{
+					padding: 0px;
+					margin-left: 0px;
+					margin-right: 0px;
+					margin-top: 5px;
+					margin-bottom: 20px;
+				}
+
+				/***partie formulaire2**/
+
+				#form2{
+					margin-left: 0px;
+					margin-right: 0px;
+					padding: 0px;
+
+				}
+
+				.contact{
+					padding: 0px;
+					margin-top: 0px;
+					font-size: 24px;
+					color: #C79C51;
+					text-align: center;
+					margin-bottom: 20px;
+					font-family: 'El Messiri', sans-serif;
+				}
+
+				#form-zone{
+					margin: 0px;
+					padding: 0px;
+				}
+
+				#votrestatut{
+					margin-top: 15px;
+					margin-bottom: 20px;
+					margin-left: 5px;
+					margin-right: 5px;
+					padding: 0px;
+				}
+
+				.statut{
+					padding-top: 30px;
+					font-family: 'El Messiri', sans-serif;
+					font-size: 24px;
+					color: #C79C51;
+					margin: 0px;	
+				}
+
+				/****DEROULANT*************************************************/
+
+
+				}
+				.radio{
+					display: block;
+					position: relative;
+					float: left;
 
 
 
+				}
+				#menuderoulant{
+					margin-top: 0px;
+					margin-bottom: 20px;
+					margin-right: 0px;
+					margin-left: 0px;
+					padding: 0px;
+					float: right;
+				}
 
-
-/***partie formulaire**/
-#form2{
-	margin-left: 0px;
-	margin-right: 0px;
-	padding: 0px;
-
-}
-
-.formulaire
-{
-	margin-left: 5px;
-	margin-right: 5px;
-padding: 0px;
-
-}
-
-.contact
-{
-	font-size: 36px;
-	color: #cc9933;
-	text-align: center;
-	margin-bottom: 20px;
-	font-family: 'El Messiri', sans-serif;
-	/**border-radius: 5px;**/
-	/**border: solid 1px;**/
-
-}
-#preciservotrestatut{
-margin-top: 0px;
-margin-bottom: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
-padding: 0px;
+				.listederoulante{
+					font-family: 'El Messiri', sans-serif;
+					font-size: 16px;
+					color: #C79C51;
+				}
 
 
 
-}
+				#blocmessage{
+					font-family: 'El Messiri', sans-serif;
+					font-size: 18px;
+					color: #C79C51;
+					padding: 0px;
+					margin-left: 0px;
+					margin-right: 0px;
+
+				}
+				#comment{
+					resize: vertical;
+					overflow: auto;
+
+				}
 
 
+				/****button bas animate css**/
+				.button {
+					vertical-align:middle;
+					border-radius: 5px;
+					border: none;
+					display: inline-block;
+					background-color:#DAB270;   
+					color: #FFFFFF;
+					text-align: center;
+					font-size: 14px;
+					padding-left: 15px;
+					padding-right: 20px;
+					padding-top: 5px;
+					padding-bottom: 5px;
 
-.statut
-{
-padding-top: 40px;
-font-family: 'El Messiri', sans-serif;
-font-size: 26px;
-color: #cc9933;
-margin: 0px;
-	
-}
-.radio{
+					transition: all 0.5s;
+					cursor: pointer;
+					margin: 5px;
+					font-family: 'Open Sans', sans-serif;
+				}
 
-/**margin-right: 0px;
-margin-left: 0px;
-margin-bottom: 20px;
-padding: 0px;**/
->>>>>>> 4a12470966adb86b4808fb42193ee0e88511d02b
-display: block;
-position: relative;
-float: left;
+				.button span {
+					cursor: pointer;
+					display: inline-block;
+					position: relative;
+					transition: 0.5s;
+				}
 
+				.button span:after {
+					content: '»';
+					position: absolute;
+					opacity: 0;
+					top: 0;
+					right: -20px;
+					transition: 0.5s;
+				}
 
+				.button:hover span {
+					padding-right: 25px;
 
-}
-#menuderoulant{
-margin-top: 0px;
-margin-bottom: 20px;
-margin-right: 0px;
-margin-left: 0px;
-padding: 0px;
-float: right;
-}
+				}
 
-.listederoulante{
-	font-family: 'El Messiri', sans-serif;
-font-size: 16px;
-color: #cc9933;
-}
-
-
-
-#blocmessage{
-font-family: 'El Messiri', sans-serif;
-<<<<<<< HEAD
-font-size: 18px;
-color: #cc9933;
-padding: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-
-}
-#comment{
-	resize: vertical;
-    overflow: auto;
-
-}
-
-
-/****button bas animate css**/
-.button {
-  vertical-align:middle;
-  border-radius: 5px;
-  border: none;
-  display: inline-block;
-  background-color:#DAB270;   
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 14px;
-  padding-left: 15px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /**width: 200px;**/
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-.button span a{
-text-decoration: none;
-color:white;
-}
-
-/*font-size: 26px;
-color: #cc9933;
-padding: 0px;
-	margin-left: 5px;
-	margin-right: 5px;
-}*/
-
+				.button:hover span:after {
+					opacity: 1;
+					right: 0;
+				}
+				.button span a{
+					text-decoration: none;
+					color:white;
+				}
