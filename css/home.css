@@ -12,12 +12,11 @@ padding: 0px;
   display: block;
   position: relative;
   width: 100%;
-  height:800px;
   margin: 0px;
   padding: 0px;
   background-image: url("../img/interieur_4250.JPG");
   background-position: center;
-  height:780px;
+  height:820px;
   margin: 0px;
   padding: 0px;
   background-size: cover;
@@ -380,7 +379,7 @@ margin-left: 15px;}
         height:auto;
         position: absolute;
         bottom: 0px;
-        background-color: rgba(0, 0, 0, 0.7);
+        /*background-color: rgba(0, 0, 0, 0.7);*/
         margin-left: 0px;
         margin-right: 0px;
         padding-right: 0px;
@@ -402,8 +401,7 @@ margin-left: 15px;}
 }
 
 /*****************MENU PARTICULIERS-ENTREPRISES AVANT APRES**********************************/
-      #menuprestation{
-      }
+      #menuprestation{}
 
       #menuprestation p{
       max-width: 980px; 
@@ -412,15 +410,14 @@ margin-left: 15px;}
       margin-top: 20px;
       margin-bottom: 20px;
       padding:0px;   
-          text-align: center;
-
+      text-align: center;
       }
 
       #menuprestation span a{ 
         font-family: 'El Messiri', sans-serif;
       font-size: 36px;
       color: white;
-            list-style-type: none;
+     list-style-type: none;
               
 
       }
@@ -475,8 +472,6 @@ text-align: center;
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
-}
-.btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
@@ -486,6 +481,7 @@ text-align: center;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -526,6 +522,7 @@ margin-right: auto;
 
 #bienvenue{
 padding: 0px;
+margin: 0px;
 }
 
 #logolook4me-home{
@@ -534,29 +531,17 @@ background-repeat: no-repeat;
 width: 100%;
 height: 70px;
 float: left;
-margin-left: 25px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-top: 0px;
+margin-left: 20px;
 padding: 0px;
 }
 
 #salon{
-padding-top: 10px;
-padding-left: 20px;
-padding-right: 20px;
-margin-bottom-bottom: 20px;
 }
 
 
 #photo-salon{
-height: 298px;
-padding-top: 0px;
 padding-left: 20px;
 padding-right: 20px;
-padding-bottom: 20px;
-margin-top: 0px;
-margin-bottom: 20px;
 }
 
 .titre-salon{
@@ -567,17 +552,18 @@ font-family: 'El Messiri', sans-serif;
 }
 
 #paragraphe-salon{
-  margin: 0px 0px 10px 0px;
-  padding: 0px;
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
 
+
+#paragraphe-salon2{
+  margin: 0px;
+  padding: 0px 0px 20px 0px;
 }
 /********slide avant apres*****/
 
 #slide{
-padding-top: 10px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 20px;
 }
 
 .titre-slide{
@@ -587,7 +573,10 @@ padding-bottom: 20px;
   padding: 0px;
 }
 
-#suite{float: right;
+
+
+#suite{
+  float: right;
 bottom: 10px;}
 
 /****button bas animate css**/

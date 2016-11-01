@@ -68,7 +68,7 @@ app.controller('HomeController', function($scope){
     $scope.home = {};
     $scope.home.caption = {
       title : "Avant / Après",
-      paragh : "D'autres prestations sont en cours, hésitez-pas à consulter mon site régulièrement ou me suivre sur facebook et instagramm."
+      paragh : "D'autres prestations sont en cours, vous pouvez les consulter sur mon compte facebook"
 
     }
     $scope.home.space = {
