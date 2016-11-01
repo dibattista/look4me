@@ -53,6 +53,10 @@ var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
         templateUrl : 'partials/news.html',
         controller : 'NewsController',
       })
+      .when('/plusdinfos',{
+        templateUrl : 'partials/plusdinfos.html',
+        controller : 'plusdinfosController',
+      })
   });
 
 /***********controller**********************/
@@ -63,6 +67,34 @@ app.controller('LookController', function(){
 app.controller('HeaderController', function(){
   this.tab = 1;
 });
+
+/************************************PLUS DINFO**********************/
+app.controller('plusdinfosController', function($scope){
+
+$scope.plus.objectPlusinfos = [
+
+{ titleinfo: "2016",
+  pdfinfo: "img/pdf/pdf-fashion.pdf",
+  videoinfo: "http...",
+  descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures"
+},
+
+{ titleinfo: "2017",
+  pdfinfo: "img/pdf/pdf-fashion.pdf",
+  videoinfo: "http...",
+  descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures"
+},
+
+{ titleinfo: "2018",
+  pdfinfo: "img/pdf/pdf-fashion.pdf",
+  videoinfo: "http...",
+  descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
+}
+
+];
+
+});
+/*************************************PLUS DINFO**********************/
 
 app.controller('HomeController', function($scope){
     $scope.home = {};
@@ -88,6 +120,7 @@ paragh : 'Je vous accueille dans un cadre atypique et chaleureux au coeur de Cha
 
 /******************************************** News controller *****************************************/
 app.controller('NewsController', function($scope){
+
   $scope.news = {};
   $scope.news.objectNews = [
 
@@ -421,7 +454,14 @@ app.controller("portefolioController", function($scope){
 
     }
   });
-/************* end Directive *********************/
+    /*app.directive('plusdinfos', function(){
+    return{
+      restrict: 'E',
+      name: 'plusdinfos',
+      templateUrl: '/partials/plusdinfos.html',
 
+    }
+  });*/
+/************* end Directive *********************/
 
 })();

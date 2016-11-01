@@ -1,0 +1,60 @@
+body {
+    color: #AAA;
+    background-color: #1F2228;
+    font-family: 'El Messiri', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #C93;
+    font-family: 'El Messiri', sans-serif;
+}
+
+
+.plusdinfos{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.footerplus{
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+.partenaire{
+	background-color: black;
+	padding: 20px;
+
+}
+
+.footerplus h4{
+    color:#BF813F;
+}
+
+.m-partenaires{
+	margin-left: 17px;
+	margin-bottom: 20px;
+
+}
+
+.footerplus ul{
+  list-style-type: none;
+  padding:0px;
+}
+
+li a.footerplus-a{
+	color: white; 
+	text-decoration: none;
+}
+
+a.footerplus-a :hover{
+  color: #BF813F; 
+  text-decoration: underline;
+}
+
+.m-footer{
+	margin-top: 95px;
+}
+
+.color-p-footer{
+	color:white;
+}

@@ -1,4 +1,9 @@
 
+.footer{
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
 .partenaire{
 	background-color: black;
 	padding: 20px;
@@ -6,7 +11,7 @@
 }
 
 .footer h4{
-    color:#DAB270;
+    color:#BF813F;
 }
 
 .m-partenaires{
@@ -25,6 +30,15 @@ li a.footer-a{
 	text-decoration: none;
 }
 
+a.footer-a :hover{
+	color: #BF813F; 
+	text-decoration: underline;
+}
+
 .m-footer{
 	margin-top: 95px;
+}
+
+.color-p-footer{
+	color:white;
 }
