@@ -79,7 +79,7 @@
             <div ng-class="{item:true, active: ($index === 0)}" ng-repeat="diaporama in home.portefolio">
               <div class="row">
                 <div class=" col-xs-6 col-sm-6 col-md-6">
-                  <img  ng-show="true"class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[0]}}" alt="...">
+                  <img  ng-show="true" class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[0]}}" alt="...">
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
                   <img  ng-show="true" class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[1]}}" alt="...">
@@ -97,7 +97,7 @@
             </a>
           </div>
         </div>    
-        <p class="paragraphe-salon2">{{home.caption.paragh}}</p>
+        <p id="paragraphe-salon2">{{home.caption.paragh}}</p>
         <p id="suite"><a href="#/portefolio"><button  class="animbutton"><span>Voir la galerie</span></button></a></p><br/>
      <!--slide-->
     </div>
