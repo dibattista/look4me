@@ -104,9 +104,9 @@ app.controller('HomeController', function($scope){
 
     }
     $scope.home.space = {
-title : "Bienvenue",
-photo : "img/interieur_4250.JPG",
-paragh : 'Je vous accueille dans un cadre atypique et chaleureux au coeur de Chartres. Toutes les conditions sont réunies pour que nous trouvions ensemble le style qui vous correspond afin de vous révéler et reprendre confiance en vous.'
+      title : "Bienvenue",
+      photo : "img/interieur_4250.JPG",
+      paragh : "Dans une atmosphere bienvaillante, d'écoute et de respect je vous aide : à reprendre confiance en vous, affirmer votre personnalité, trouver l'harmonie entre votre personnalité et l'image que vous souhaitez vehiculer."
 
     }
     $scope.home.portefolio = [
@@ -393,7 +393,13 @@ app.controller("contactController", function ($scope) {
     telephone: "06 38 41 38 38",
     email: "contact@look4me.fr"
   };
- 
+  $scope.user = {
+    name : "",
+    username :"",
+    email : "",
+    message : ""
+  }
+
 });
 
 
