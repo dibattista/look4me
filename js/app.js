@@ -182,19 +182,19 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
 
       // Prestation 1 (femmes)
       {
-        img:"img/particuliers/femmes/meeting.jpg",
+        img:"img/particuliers/femmes/entretienDecouverteFemme.jpg",
         alt:"photo meeting",
         titre:"Entretien découverte",
-        description:"Nous permet de définir vos besoins, vos objectifs.",
+        description:"Nous permet de définir votre objectif et adapter la formule à vos besoins",
         tarif:"1H - 50€",
         genre:"F"
       },
       // Prestation 2 (femmes)
       {
-        img:"img/particuliers/femmes/atelier_colorimetrie.jpg",
+        img:"img/particuliers/femmes/colorimetrie.jpg",
         alt:"photo atelier colorimetrie",
         titre:"Atelier colorimétrie",
-        description:"Les couleurs ont un impact sur votre usage. Elles peuvent vous effacer ou vous mettre en valeur. Ce test est un incontournable du relooking car Atelier colorimétrieil va nous permettre de définir votre colorimétrie et le résultat nous servira dans le choix de vos tenues, votre maquillage, coloration coiffure et vos accessoires, connaître la symbolique des couleurs et savoir les utiliser. Un nuancier correspondant à votre résultat vous sera remis en fin de séances utile. Il vous sera utile lors de vos achats vestimentaires!",
+        description:"Les couleurs ont un impact sur votre visage. Elles peuvent vous effacer ou vous mettre en valeur. Ce test est un incontournable du coaching en image car son résultat nous servira dans le choix de votre maquillage, coloration, coiffure, de vos tenues et accessoires. Vous comprendrez la symbolique des couleurs et comment les utiliser selon vos objectifs. Un nuancier correspondant à votre résultat vous sera remis en fin de séances utile. Il vous sera utile lors de vos achats vestimentaires!",
         tarif:"1H - 70€",
         genre:"F"
       },
@@ -203,13 +203,13 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         img:"img/particuliers/femmes/atelier_makeup.jpg",
         alt:"photo make-up",
         titre:"Atelier make-up",
-        description:"Se maquiller peut être un plaisir pour certaines personnes et une perte de temps pour d'autres. Pourtant, avec quelques astuces et conseils, nous pouvons toutes réaliser un maquillage idéal en toutes circonstances. Comprend : <ul>                 <li>test des couleurs</li>                <li>analyse morphologique du visage</li>                <li>cours de maquillage</li>              </ul>",
+        description:"Se maquiller peut être un plaisir pour certaines personnes et une perte de temps pour d'autres. Pourtant, avec quelques astuces et conseils, nous pouvons toutes réaliser un maquillage idéal en toutes circonstances.        Comprend : <ul>                 <li>conseils simples et faciles à reproduire</li>                <li>analyse du type de peau et conseil soins du visage</li>                <li>tri de votre trousse de maquillage</li>              </ul>",
         tarif:"1H30 - 90€",
         genre:"F"
       },
       // Prestation 4 (femmes)
       {
-        img:"img/particuliers/femmes/relooking_coiffure.jpg",
+        img:"img/particuliers/femmes/relookingCoiffureFemme.jpg",
         alt:"photo relooking coiffure",
         titre:"Relooking coiffure",
         description:"Avec l'aide de notre partenaire coiffeur et après avoir vu ensemble : <ul>                 <li>votre personnalité</li>                 <li>la morphologie de votre visage</li>                 <li>test des couleurs</li>                <li>votre nature de cheveux</li>                <li>vos contraintes et envies</li>              </ul> Nous vous révélerons la coupe et les choix de coloration qui vous mettrons en valeur.               (!) En prévision du relooking coiffure nous vous conseillons de ne pas couper vos cheveux.",
@@ -221,7 +221,7 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         img:"img/particuliers/femmes/relooking_vestimentaire.jpg",
         alt:"photo relooking vestimentaire",
         titre:"Relooking vestimentaire",
-        description:"Chacun étoffe sa garde-robe de différentes façons. Certaines personnes sont douées pour trouver ce qui leur va, d'autres se laisseront influencer par la mode ou un vendeur plus préoccupé par la vente que par le rendu du vêtement sur vous. <br> Savoir s'habiller en toute occasion et suivant l'objectif de style que vous vous êtes fixé, voila ce que je peux vous aider à acquérir.              Comprend : <ul>                 <li>test des couleurs</li>                <li>analyse morphologique de votre silhouette</li>                <li>identification de votre style</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
+        description:"Chacun étoffe sa garde-robe de différentes façons. Certaines personnes sont douées pour trouver ce qui leur va, d'autres se laisseront influencer par la mode ou un vendeur plus préoccupé par la vente que par le rendu du vêtement sur vous. <br> Savoir s'habiller en toute occasion et suivant l'objectif de style que vous vous êtes fixé, voila ce que je vous aide à acquérir.              Comprend : <ul>                 <li>test des couleurs</li>                <li>analyse morphologique de votre silhouette</li>                <li>identification de votre style</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
         tarif:"6H - 400€",
         genre:"F"
       },
@@ -230,7 +230,7 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         img:"img/particuliers/femmes/relooking_complet.jpg",
         alt:"photo coaching en image",
         titre:"Coaching en image complet",
-        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats lors du shopping</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
+        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats en boutique</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
         tarif:"10-11H - 690€",
         genre:"F"
       },
@@ -242,6 +242,15 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
         description:"Ajouter le prix et la durée de la séance",
         tarif:"à partir de + prix (par personne)",
         genre:"F"
+      },
+      // Prestation 8 (femmes)
+      {
+        img:"img/particuliers/femmes/",
+        alt:"photo coatch séduction",
+        titre:"Coach Séduction",
+        description:"Ajouter le prix et la durée de la séance",
+        tarif:"Ajouter le prix et la durée de la séance",
+        genre:"F"
       }
 
       ];
@@ -249,7 +258,7 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
        $scope.servParticuliersH = [
       // Prestation 1 (hommes)
       {
-        img:"img/particuliers/hommes/",
+        img:"img/particuliers/hommes/entretienDecouverteHomme.jpg",
         alt:"photo meeting",
         titre:"Entretien découverte",
         description:"Nous permet de définir vos besoins, vos objectifs.",
@@ -258,47 +267,47 @@ app.controller('particuliersController', function($scope,$location,$anchorScroll
       },
       // Prestation 2 (hommes)
       {
-        img:"img/particuliers/hommes/total_relooking.jpg",
-        alt:"photo coaching en image",
-        titre:"Coaching en image complet",
-        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>maquillage</li>                 <li>coiffure</li>                 <li>analyse morphologique et style souhaité</li>                <li>conseils vestimentaires et accessoires</li>                 <li>accompagnement shopping</li>              </ul>",
-        tarif:"8H - 490€",
+        img:"img/particuliers/hommes/colorimetrie.jpg",
+        alt:"photo colorimetrie",
+        titre:"Atelier colorimétrie",
+        description:"Les couleurs ont un impact sur votre visage. Elles peuvent vous effacer ou vous mettre en valeur. Ce test est un incontournable du coaching en image car son résultat nous servira dans le choix de votre coloration, coiffure, de vos tenues et accessoires. Vous comprendrez la symbolique des couleurs et comment les utiliser selon vos objectifs. Un nuancier correspondant à votre résultat vous sera remis en fin de séances utile. Il vous sera utile lors de vos achats vestimentaires!",
+        tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       },
       // Prestation 3 (hommes)
       {
-        img:"img/particuliers/hommes/colorimetrie.jpg",
-        alt:"photo colorimetrie",
-        titre:"Prestation spécifique",
-        description:"",
-        tarif:"Ajouter le prix et la durée de la séance",
+        img:"img/particuliers/hommes/relooking_beard.jpg",
+        alt:"photo relooking barbe",
+        titre:"Relooking visage",
+        description:"Apres avoir discuter de votre objectif et conseiller sur les soins a apporter a votre peau, je vous indique la coupe la mieux adapter a votre morphologie du visage et vous  accompagne chez notre partenaire coiffeur qui realisera la coupe et soins de barbe si nécessaire.",
+        tarif:"2H - 150€",
         genre:"H"
       },
       // Prestation 4 (hommes)
       {
-        img:"img/particuliers/hommes/relooking_beard.jpg",
-        alt:"photo relooking barbe",
-        titre:"Prestation spécifique",
+        img:"img/particuliers/hommes/relookingCoiffureHomme.jpg",
+        alt:"photo relooking cheveux",
+        titre:"Relooking coiffure",
         description:"",
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       },
       // Prestation 5 (hommes)
       {
-        img:"img/particuliers/hommes/relooking_hair.jpg",
-        alt:"photo relooking cheveux",
-        titre:"Prestation spécifique",
+        img:"img/particuliers/hommes/relooking_style.jpg",
+        alt:"photo relooking style",
+        titre:"Relooking vestimentaire",
         description:"",
         tarif:"Ajouter le prix et la durée de la séance",
         genre:"H"
       },
       // Prestation 6 (hommes)
       {
-        img:"img/particuliers/hommes/relooking_style.jpg",
-        alt:"photo relooking style",
-        titre:"Prestation spécifique",
-        description:"",
-        tarif:"Ajouter le prix et la durée de la séance",
+        img:"img/particuliers/hommes/relooking_complet.jpg",
+        alt:"photo coaching en image",
+        titre:"Coaching en image complet",
+        description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage et cosmétologie</li>                 <li>conseils coiffure</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats en boutique</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
+        tarif:"10-11H - 690€",
         genre:"H"
       },
       // Prestation 7 (hommes)
