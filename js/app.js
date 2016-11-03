@@ -305,7 +305,7 @@ $scope.news.objectPresses = [
         alt:"photo coaching en image",
         titre:"Coaching en image complet",
         description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage et cosmétologie</li>                 <li>conseils coiffure et accompagnement chez notre partenaire coiffeur</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) Les achats en boutique</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
-        tarif:"580€",
+        tarif:"8H - 580€",
         genre:"H"
       }
       ];
