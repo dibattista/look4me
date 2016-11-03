@@ -24,12 +24,36 @@ body
 	margin-top: -150px;
 }
 
-@media screen and (max-width: 770px)
+@media screen and (max-width: 980px)
 {
 	.imageFondEntreprises
 	{
-		background-position: 60% 50%;
-		margin: 0 0 40px 0;
+		background-image: url("../img/entreprises/photoBanniereBusiness980.jpg");
+		background-position: 80% 50%;
+		height: 340px;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.imageFondEntreprises
+	{
+		background-image: url("../img/entreprises/photoBanniereBusiness800.jpg");
+		background-position: 80% 50%;
+		height: 285px;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.imageFondEntreprises
+	{
+		background-image: url("../img/entreprises/photoBanniereBusiness360.jpg");
+		background-position: 80% 50%;
+		height: 340px;
+		margin-top: 50px;
 	}
 }
 
@@ -41,35 +65,57 @@ body
 	height: 75px;
 	width: 70%;
 	margin: auto;
-	margin-top: 600px;
+	margin-top: 615px;
 	padding: 20px 30px 20px 30px;
 }
 
-@media screen and (max-width: 360px)
+@media screen and (max-width: 980px)
 {
 	.bloc-transparent
 	{
 		width: 100%;
-		margin: auto;
-		margin-top: 85px;
+		margin-top: 250px;
 	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.bloc-transparent
+	{
+		height: 50px;
+		width: 100%;
+		margin-top: 225px;
+		padding: 10px 10px 10px 10px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+    .bloc-transparent
+    {
+        margin-top: 340px;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+    }
 }
 
 .tailleTexte
 {
 	color: #ffffff;
-	font-size: 15px;
+	font-size: 18px;
 }
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 800px)
 {
 	.tailleTexte
 	{
-		font-size: 12px;
+		font-size: 15px;
 	}
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 360px)
 {
 	.tailleTexte
 	{
@@ -82,25 +128,24 @@ body
 	color: #C79C51;
 	font-size: 30px;
 	font-family: 'El Messiri', sans-serif;
-	margin-top: 75px;
+	margin-top: 25px;
 }
 
 @media screen and (max-width: 770px)
 {
-	.prestationsEntreprises
-	{
-		font-size: 25px;
-		margin-top: -20px;  
-	}
+    .prestationsEntreprises
+    {
+        font-size: 30px;
+    }
 }
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 360px)
 {
-	.prestationsEntreprises
-	{
-		font-size: 25px;
-		margin-top: 30px;
-	}
+    .prestationsEntreprises
+    {
+        font-size: 20px;
+        margin-top: 25px;
+    }
 }
 
 .separator
@@ -121,6 +166,39 @@ body
 {
 	font-size: 14px;
 }
+
+@media screen and (max-width: 360px)
+{
+    .titrePrestationEntreprises
+    {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .descriptionPrestationEntreprises
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .tarifsEntreprises
+    {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .descriptionTarifsEntreprises
+    {
+        font-size: 14px;
+    }
+}
+
 
 ul
 {
