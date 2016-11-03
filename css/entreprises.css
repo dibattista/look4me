@@ -38,7 +38,8 @@ body
 	background-color: rgba(71,60,53,0.7); /*#473c35*/
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	width: 50%;
+	height: 75px;
+	width: 70%;
 	margin: auto;
 	margin-top: 600px;
 	padding: 20px 30px 20px 30px;
@@ -56,7 +57,7 @@ body
 
 .tailleTexte
 {
-	color: white;
+	color: #ffffff;
 	font-size: 15px;
 }
 
@@ -78,6 +79,7 @@ body
 
 .prestationsEntreprises
 {
+	color: #C79C51;
 	font-size: 30px;
 	font-family: 'El Messiri', sans-serif;
 	margin-top: 75px;
@@ -103,7 +105,7 @@ body
 
 .separator
 {
-	background-color: goldenrod;
+	background-color: #C93;
 	border: none;
 	height: 3px;
 	width: 100%;
@@ -111,6 +113,7 @@ body
 
 .titrePrestationEntreprises
 {
+	color: #C79C51;
 	font-size: 24px;
 }
 
@@ -124,48 +127,7 @@ ul
 	padding-left: 15px;
 }
 
-a#cRetour
-{
-	border-radius:3px;
-	padding:10px;
-	font-size:15px;
-	text-align:center;
-	color:#fff;
-	background:rgba(227, 193, 57, 0.25);
-	position:fixed;
-	right:20px;
-	opacity:1;
-	z-index:99999;
-	transition:all ease-in 0.2s;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	text-decoration: none;
-}
-
-a#cRetour:before
-{
-	content: "\25b2";
-}
-
-a#cRetour:hover
-{
-	background:darkgoldenrod;
-	opacity:1;
-	transition:all ease-in 0.2s;
-}
-
-a#cRetour.cInvisible
-{
-	bottom:-35px;
-	opacity:0;
-	transition:all ease-in 0.5s;
-}
-
-a#cRetour.cVisible
-{
-	bottom:20px;
-	opacity:1;
-}
+/******************************* button (bouton contact) ****************************/
 
 .button {
 	display: inline-block;
@@ -215,5 +177,51 @@ a#cRetour.cVisible
 		width: 100px;
 	}
 }
+
+/*
+a#cRetour
+{
+	border-radius:3px;
+	padding:10px;
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+	background:rgba(227, 193, 57, 0.25);
+	position:fixed;
+	right:20px;
+	opacity:1;
+	z-index:99999;
+	transition:all ease-in 0.2s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	text-decoration: none;
+}
+
+a#cRetour:before
+{
+	content: "\25b2";
+}
+
+a#cRetour:hover
+{
+	background:darkgoldenrod;
+	opacity:1;
+	transition:all ease-in 0.2s;
+}
+
+a#cRetour.cInvisible
+{
+	bottom:-35px;
+	opacity:0;
+	transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible
+{
+	bottom:20px;
+	opacity:1;
+}
+*/
+
 
 

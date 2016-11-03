@@ -20,9 +20,9 @@ body
 	background-repeat: no-repeat;
 	background-position: 30% 10%;
 	background-attachment: scroll;
-	height: 450px;
+	height: 475px;
 	width: 100%;
-	margin: 100px 0 50px 0;
+	margin: 70px 0 50px 0;
 }
 
 @media screen and (max-width: 770px)
@@ -40,7 +40,7 @@ body
 	height: 75px;
 	width: 45%;
 	margin: auto;
-	margin-top: 325px;
+	margin-top: 350px;
 	padding: 20px 30px 80px 30px;
 }
 
@@ -73,6 +73,7 @@ body
 
 #textHommesFemmes
 {
+	color: #ffffff;
 	text-align: center;
 	font-size: 17px;
 	font-family: 'El Messiri', sans-serif;
@@ -96,7 +97,7 @@ body
 
 #femmes, #hommes
 {
-	color: goldenrod;
+	color: #C79C51;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'El Messiri', sans-serif;
@@ -112,7 +113,7 @@ body
 
 .prestationsParticuliers
 {
-	color:darkgoldenrod;
+	color: #C79C51;
 	font-size: 30px;
 	font-family: 'El Messiri', sans-serif;
 	margin-top: 25px;
@@ -132,9 +133,23 @@ body
 	font-style: italic;
 }
 
+.ribbonbox h3 {
+	color: white;
+}
+
+.ribbonbox {
+	background-color: #C79C51;
+	border: 2px solid #fff;
+	width: 100%;
+	background-image: url('../img/particuliers/femmes/ribbon-top-100.png');
+	background-repeat: no-repeat;
+	text-align: center;
+	margin-top: 20px;
+}
+
 .separator
 {
-	background-color: goldenrod;
+	background-color: #C79C51;
 	border: none;
 	line-height: 1px;
 	width: 100%;
@@ -144,7 +159,7 @@ body
 {
 	.separator
 	{
-		background-color: goldenrod;
+		background-color: #C79C51;
 		border: none;
 		line-height: 1px;
 		width: 100%;
@@ -153,7 +168,7 @@ body
 
 .titrePrestationParticuliers
 {
-	color: goldenrod;
+	color: #C79C51;
 }
 
 p
@@ -172,48 +187,7 @@ a:hover
 	color:darkgoldenrod;
 }
 
-a#cRetour
-{
-	border-radius:3px;
-	padding:10px;
-	font-size:15px;
-	text-align:center;
-	color:#fff;
-	background:rgba(227, 193, 57, 0.25);
-	position:fixed;
-	right:20px;
-	opacity:1;
-	z-index:99999;
-	transition:all ease-in 0.2s;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	text-decoration: none;
-}
-
-a#cRetour:before
-{
-	content: "\25b2";
-}
-
-a#cRetour:hover
-{
-	background:darkgoldenrod;
-	opacity:1;
-	transition:all ease-in 0.2s;
-}
-
-a#cRetour.cInvisible
-{
-	bottom:-35px;
-	opacity:0;
-	transition:all ease-in 0.5s;
-}
-
-a#cRetour.cVisible
-{
-	bottom:20px;
-	opacity:1;
-}
+/******************************* button (bouton contact) ****************************/
 
 .button {
 	display: inline-block;
@@ -264,6 +238,47 @@ a#cRetour.cVisible
 	}
 }
 
+/*
+a#cRetour
+{
+	border-radius:3px;
+	padding:10px;
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+	background:rgba(227, 193, 57, 0.25);
+	position:fixed;
+	right:20px;
+	opacity:1;
+	z-index:99999;
+	transition:all ease-in 0.2s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	text-decoration: none;
+}
 
+a#cRetour:before
+{
+	content: "\25b2";
+}
 
+a#cRetour:hover
+{
+	background:darkgoldenrod;
+	opacity:1;
+	transition:all ease-in 0.2s;
+}
 
+a#cRetour.cInvisible
+{
+	bottom:-35px;
+	opacity:0;
+	transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible
+{
+	bottom:20px;
+	opacity:1;
+}
+*/

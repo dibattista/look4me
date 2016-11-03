@@ -183,6 +183,11 @@ $scope.news.objectPresses = [
       $location.hash('');
     };
 
+    $scope.offreCadeau = {
+      titre:"OFFRE SPECIAL NOEL",
+      texte:"Bientôt les fêtes"
+    }
+
     $scope.servParticuliersF = [
 
       // Prestation 1 (femmes)

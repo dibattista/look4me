@@ -21,62 +21,65 @@
 	<div class="tab-content">
 
 
-		<!-- TAB MENU1 :: HOMMES =========================================== -->
+		<!-- TAB MENU1 :: FEMMES =========================================== -->
 
 		<div id="menu1" ng-class="{'in active' : tab === 1}" class="tab-pane fade">
 			<!-- PRESTATIONS FEMMES -->
 			<div class="row">
-				<div class="col-xs-8"><div class="prestationsParticuliers">Nos prestations</div>
-				<p class="texteInfo">Toutes nos prestations sont adaptables en fonction du nombre de personnes, occasions particulières et peuvent faire l'objet de bons cadeaux. <br>Moyen de paiement : chèque ou espèces.</p>
-				</div>
-				<div class="col-xs-4">BONS CADEAUX</div>
+				<div class="col-xs-7"><div class="prestationsParticuliers">Nos prestations</div>
+				<p class="texteInfo">Toutes nos prestations sont adaptables en fonction du nombre de personnes,<br> occasions particulières et peuvent faire l'objet de bons cadeaux. <br>Moyen de paiement : chèque ou espèces.</p>
 			</div>
-			<hr class="separator">
+			<div class="col-xs-5"><a href="#/news"><div class="ribbonbox"><h3>{{offreCadeau.titre}}</h3><h3>{{offreCadeau.texte}}</h3></div></a></div>
+		</div>
+		<hr class="separator">
 
-			<!-- Prestations Femmes-->
-			<div class="row" ng-repeat="service in servParticuliersF">
-				<div ng-if="service.genre == 'F'">
-					<div class="col-xs-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
-					<div class="col-xs-6">
-						<h3 class="titrePrestation">{{service.titre}}</h3>
-						<p ng-bind-html="service.description"></p>
-					</div>
-					<div class="col-xs-2">
-						<h3>TARIFS</h3>
-						<h4>{{service.tarif}}</h4>
-						<a href="#/contact"><button class="button"><span>contact</span></button></a>
-					</div>
-					<div class="col-xs-12"><hr></div>
+		<!-- Prestations Femmes-->
+		<div class="row" ng-repeat="service in servParticuliersF">
+			<div ng-if="service.genre == 'F'">
+				<div class="col-xs-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
+				<div class="col-xs-6">
+					<h3 class="titrePrestation">{{service.titre}}</h3>
+					<p ng-bind-html="service.description"></p>
 				</div>
+				<div class="col-xs-2">
+					<h3>TARIFS</h3>
+					<h4>{{service.tarif}}</h4>
+					<a href="#/contact"><button class="button"><span>contact</span></button></a>
+				</div>
+				<div class="col-xs-12"><hr></div>
 			</div>
-
 		</div>
 
-		<!-- TAB MENU2 :: HOMMES =========================================== -->
+	</div>
 
-		<div id="menu2" ng-class="{'in active' : tab === 2}" class="tab-pane fade">
-			<!-- PRESTATIONS HOMMES -->
-			<div class="prestationsParticuliers">Nos prestations</div>
-			<p class="texteInfo">Moyen de paiement : chèque ou espèces.</p>
-			<hr class="separator">
+	<!-- TAB MENU2 :: HOMMES =========================================== -->
 
-			<!-- Prestations Hommes-->
-			<div class="row" ng-repeat="service in servParticuliersH">
-				<div ng-if="service.genre == 'H'">
-					<div class="col-xs-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
-					<div class="col-xs-6">
-						<h3 class="titrePrestation">{{service.titre}}</h3>
-						<p ng-bind-html="service.description"></p>
-					</div>
-					<div class="col-xs-2">
-						<h3>TARIFS</h3>
-						<h4>{{service.tarif}}</h4>
-						<a href="#/contact"><button class="button"><span>contact</span></button></a>
-					</div>
-					<div class="col-xs-12"><hr></div>
+	<div id="menu2" ng-class="{'in active' : tab === 2}" class="tab-pane fade">
+		<!-- PRESTATIONS HOMMES -->
+		<div class="row">
+		<div class="col-xs-8"><div class="prestationsParticuliers">Nos prestations</div>
+		<p class="texteInfo">Moyen de paiement : chèque ou espèces.</p>
+		</div></div>
+		<div class="col-xs-4"></div>
+		<hr class="separator">
+
+		<!-- Prestations Hommes-->
+		<div class="row" ng-repeat="service in servParticuliersH">
+			<div ng-if="service.genre == 'H'">
+				<div class="col-xs-4"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
+				<div class="col-xs-6">
+					<h3 class="titrePrestation">{{service.titre}}</h3>
+					<p ng-bind-html="service.description"></p>
 				</div>
+				<div class="col-xs-2">
+					<h3>TARIFS</h3>
+					<h4>{{service.tarif}}</h4>
+					<a href="#/contact"><button class="button"><span>contact</span></button></a>
+				</div>
+				<div class="col-xs-12"><hr></div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
