@@ -27,7 +27,7 @@
 <body>
 
 
-<div ng-controller="headerCheck" ng-init="haut" >
+<div ng-controller="headerCheck">
   <headernav ng-show="headerhome === 0"></headernav>
   <headerhome ng-show="headerhome === 1"></headerhome>
 </div>
@@ -39,9 +39,11 @@
 });
 </script>
 <!--<a name="haut" id="haut"></a>-->
+
+
 <main ng-view></main>
 
-<a id="cRetour" class="cInvisible" ng-click="haut" target="_self"></a>
+<a id="cRetour" class="cInvisible" ng-click="store.goToHash()"></a>
 
 
 
