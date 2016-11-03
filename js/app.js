@@ -230,7 +230,7 @@ $scope.news.objectPresses = [
         img:"img/particuliers/femmes/coachingImageComplet.jpg",
         alt:"photo coaching en image",
         titre:"Coaching en image complet",
-        description:"Ce coaching comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure et accompagnement chez notre partenaire coiffeur</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats en boutique</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
+        description:"Ce coaching comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage, cosmétologie et cours de maquillage</li>                 <li>conseils coiffure et accompagnement chez notre partenaire coiffeur</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                <li>tri de votre garde-robes</li>                 <li>accompagnement shopping</li>              <li>shotting photos chez notre partenaire</li>              </ul>               Non-compris :               <ul>                <li>(!) La prestation de notre partenaire coiffeur</li>                 <li>(!) Les achats en boutique</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
         tarif:"10-11H - 690€",
         genre:"F"
       },
@@ -238,9 +238,9 @@ $scope.news.objectPresses = [
       {
         img:"img/particuliers/femmes/atelierAmiesFamille.jpg",
         alt:"photo atelier occasion",
-        titre:"Atelier entre amies ou en famille",
-        description:"Pour une après-midi entre copines, enterrement de vie de jeune fille, tous les ateliers vus précédément peuvent s'adapter à vos souhaits.",
-        tarif:"à partir de + prix (par personne) (à définir)",
+        titre:"Séances entre amies ou en familles",
+        description:"Pour un après-midi entre amies, enterrement de vie de jeune fille, les thématiques suivantes peuvent s'adapter pour selon vos envies : <ul>                <li>séance colorimetrie</li>                 <li>séance morpho-style</li>                <li>séance maquillage</li> ",
+        tarif:"5 personnes maximum, à partir de 45€/ pers",
         genre:"F"
       }
       ];
@@ -261,7 +261,7 @@ $scope.news.objectPresses = [
         alt:"photo colorimetrie",
         titre:"Atelier colorimétrie",
         description:"Les couleurs ont un impact sur votre visage. Elles peuvent vous effacer ou vous mettre en valeur. Ce test est un incontournable du coaching en image car son résultat nous servira dans le choix de vos tenues et accessoires. Vous comprendrez la symbolique des couleurs et comment les utiliser selon vos objectifs. Un nuancier correspondant à votre résultat vous sera remis en fin de séance. Il vous sera utile lors de vos achats vestimentaires!",
-        tarif:"Ajouter le prix et la durée de la séance",
+        tarif:"1H - 70€",
         genre:"H"
       },
       // Prestation 3 (hommes)
