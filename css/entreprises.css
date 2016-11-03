@@ -16,12 +16,12 @@ body
 
 .imageFondEntreprises
 {
-  background-image: url("../img/entreprises/banniereEntreprise4.jpg");
+  background-image: url("../img/entreprises/photoBanniereBusiness.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 700px;
   width: 100%;
+  margin-top: -150px;
 }
 
 @media screen and (max-width: 770px)
@@ -66,9 +66,21 @@ body
   border: none;
 }
 
+.titrePrestation
+{
+  font-size: 24px;
+}
+
+.tailleDescription
+{
+  font-size: 14px;
+}
+
+/* A SUPPRIMER
 #accordion
 {
   margin-bottom: 75px;
+  background-color: #1b1816;
 }
 
 @media screen and (max-width: 770px)
@@ -79,14 +91,33 @@ body
   }
 }
 
+.panel-title
+{
+  color: goldenrod;
+  font-size: 20px;
+}
+
+.panel-body
+{
+  font-size: 18px;
+  background-color: #1b1816;
+}
+*/
+
+ul
+{
+  padding-left: 15px;
+}
+
+
 .bloc-transparent
 {
   background-color: rgba(71,60,53,0.7); /*#473c35*/
-  width: 100%;
+  width: 50%;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 625px;
   margin-bottom: 25px;
-  padding: 30px 30px 30px 30px;
+  padding: 10px 10px 10px 10px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
@@ -95,22 +126,23 @@ body
 {
   .bloc-transparent
   {
-  width: 100%;
-  margin: auto;
-  margin-top: 85px;
+    width: 100%;
+    margin: auto;
+    margin-top: 85px;
   }
 }
 
 .tailleTexte
 {
-  font-size: 24px;
+  font-size: 15px;
+  color: white;
 }
 
 @media screen and (max-width: 1280px)
 {
   .tailleTexte
   {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
@@ -132,8 +164,9 @@ body
   font-size: 12px;
 }
 
-.devis-color{
-  color:black;
+.devis-color
+{
+  color:darkgoldenrod;
 }
 
 a#cRetour

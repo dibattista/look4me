@@ -19,11 +19,10 @@ body
     background-image: url("../img/particuliers/banniereParticuliers.jpg");
     background-repeat: no-repeat;
     background-position: 30% 10%;
-    background-size: cover;
     background-attachment: scroll;
-    height: 500px;
+    height: 450px;
     width: 100%;
-    margin: 0 0 50px 0;
+    margin: 100px 0 50px 0;
 }
 
 @media screen and (max-width: 770px)
@@ -38,7 +37,7 @@ body
 {
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 17px;
     text-decoration: underline white;
     font-family: 'El Messiri', sans-serif;
 }
@@ -48,7 +47,7 @@ body
     #buttonfemmes, #buttonhommes
     {
         text-align: center;
-        font-size: 40px;
+        font-size: 12px;
     }
 }
 
@@ -57,22 +56,21 @@ body
     margin-top: 10px;
     text-align: center;
     font-family: 'El Messiri', sans-serif;
-    font-size: 22px;
+    font-size: 17px;
 }
 
 @media screen and (max-width: 770px)
 {
     #textHommesFemmes
     {
-        font-size: 15px;
+        font-size: 10px;
     }
 }
 
 .signature
 {
-    font-size: 22px;
+    font-size: 12px;
     text-align:right;
-    padding-right: 130px;
     font-family: 'El Messiri', sans-serif;
 }
 
@@ -139,11 +137,11 @@ body
 
 .bloc-info
 {
-    height: 200px;
-    width: 70%;
+    height: 75px;
+    width: 45%;
     margin: auto;
-    margin-top: 200px;
-    padding: 40px 30px 80px 30px;
+    margin-top: 325px;
+    padding: 20px 30px 80px 30px;
     background-color: rgba(71,60,53,0.7); /*#473c35*/
     text-align: center;
 }
