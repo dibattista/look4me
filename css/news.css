@@ -2,14 +2,16 @@
 /******************************* news ****************************/
 
 .title-news{
-	margin-top: 120px;
-	margin-bottom: 60px;
 	background-color: transparent;
 	text-align: center;
+	margin: 0px;
+}	
 
-	
+.p-h1-title-news{
+	margin-top: 130px; 
+	margin-bottom: 70px;
 }
-
+	
 .color-presse-p{
 	color: black;
 }
@@ -22,10 +24,27 @@
 .num-date{
 	padding-top: 12px;
 	color:white;
+
 }
+
+.num-date3{
+	padding-top: 30px;
+	color:white;
+}
+
+.underline_text {
+      border-bottom: solid 4px white;
+      display: inline;
+}
+
 .c-black{
 	color:#DAB270;
 	padding-left: 10px;
+}
+
+.c-black3{
+	color:white;
+
 }
 
 .background-gold-news{
@@ -60,11 +79,32 @@
 }
 
 .color-b-img{
-	background-color: #DAB270;
-	width: 100px;
+	background-color: #C79C51;
+	width: ;
+	padding-right: 10px;
+	padding-left: 10px; 
 	height: 100px;
 	text-align: center;
 }
+
+.color-b-img2{
+	background-color: #C79C51;
+	width: ;
+	padding-right: 10px;
+	padding-left: 10px; 
+	height: 100px;
+	text-align: center;
+}
+
+.color-b-img3{
+	background-color: #C79C51;
+	width: ;
+	padding-right: 10px;
+	padding-left: 10px; 
+	height: 100px;
+	text-align: center;
+}
+
 .overline-month{
 	text-decoration: overline;
 	margin-top: 0px;
@@ -82,6 +122,10 @@ td p {
 	color:white;
 }
 
+#m-news > div:nth-child(4) > div > div > figure{
+	margin-top: 30px;
+	padding-top: 20px;
+}
 /******************************* fin news  *****************************/
 
 /******************************* presses *****************************/
@@ -110,9 +154,13 @@ td p {
 	 }
 
 .img-presse{
-		width: 335px;
+		width: 300px;
 		height: 444px;
 		margin-top: 70px;
+		border-color: #DAB270;
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 4px;
 	}
 	.centerImage {
 		text-align: center;
@@ -122,10 +170,8 @@ td p {
 	text-decoration: none;
 }
 /******************************* presses *****************************/
-@media only screen and (min-width: 1024px)
 
-{}
-@media only screen and (max-width: 1019px)
+@media only screen and (max-width: 320px)
 {
 
 }
