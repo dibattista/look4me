@@ -2,6 +2,10 @@
 
   var app = angular.module('Look4Me', ['ngRoute','ngSanitize']);
 
+  app.run(['$anchorScroll', function($anchorScroll) {
+    $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+  }]);
+
   app.controller('headerCheck', ['$scope','$location', function($scope, $location){
     $scope.headerhome = 1;
 
@@ -63,6 +67,7 @@
   app.controller('LookController', function(){
     this.product = look;
   });
+
 
   app.controller('HeaderController', function(){
     this.tab = 1;
@@ -176,11 +181,22 @@ $scope.news.objectPresses = [
       $scope.tab = parseInt(id);
     };
 
-    $scope.goToHash = function(id){
-      $scope.tab = id;
-      $location.hash("menu"+id);
-      $anchorScroll();
+    $scope.$watch(function(){
+      return $scope.tab;
+    },function(newtab){
+      console.log(newtab);
+      let newHash = 'menu' + newtab;
+      $location.hash(newHash);
+      $anchorScroll(newHash);
       $location.hash('');
+    });
+
+    $scope.goToHash = function(id){
+      /*let newHash = 'menu' + id;
+      $location.hash(newHash);
+      $anchorScroll();
+      $location.hash('');*/
+      $scope.tab = parseInt(id);
     };
 
     $scope.offreCadeau = {
