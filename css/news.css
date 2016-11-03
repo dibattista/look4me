@@ -157,6 +157,10 @@ td p {
 		width: 300px;
 		height: 444px;
 		margin-top: 70px;
+		border-color: #DAB270;
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 4px;
 	}
 	.centerImage {
 		text-align: center;
