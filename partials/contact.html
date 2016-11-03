@@ -25,21 +25,25 @@
 
 
          <div class="row">
-           <div id="cartegooglemap" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-             <!--<h1 class="situation">Me situer</h1>-->
-             <!--<div id="map"></div>-->
+           <div id="cartegooglemap" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">>
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.6047776791293!2d1.491279651084609!3d48.44492467914737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e40c4bef6ba155%3A0xa8518581ae536c66!2s7+Rue+de+la+Foulerie%2C+28000+Chartres!5e0!3m2!1sfr!2sfr!4v1476360390880" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
            </div>
          </div>
        </div>
      </div>
 
+
+
+
+
+
      <div id="form2" class="container-fluid">
-       <!--FORMULAIRE PARTIE CONTACT-->   
-       <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate id="formcolor" role="form">
-        <div class="row">
-         <div id="form-champs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-         <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6">
+      <!--FORMULAIRE PARTIE CONTACT-->   
+      <div class="row">
+        <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate id="formcolor" role="form">
+
+          <div id="form-champs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+           <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6">
              <h2 class="titrecontact">CONTACT</h2>
              <!--NAME-->
              <div class="form-group">
@@ -51,50 +55,84 @@
             </div>
             <!-- EMAIL -->
             <div class="form-group">                
-             <input class="form-control" type="email" placeholder="Votre email" name="email"  ng-model="user.email">
-           </div>
-           <div  id="votrestatut">
-            <h2 class="statut">Précisez votre statut :</h2><br>
-
-            <div class="radio" class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-              <p><input id="particulier"   type="radio" name="choix" value="particulier"/> 
-                <label for="particulier">Particulier</label>
-              </p>
-              <p> <input  id="entreprise" type="radio" name="choix" value="entreprise"/> 
-               <label for="entreprise">Entreprise</label>
-             </p>
-           </div>
-           <div id="menuderoulant"  class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-             <h2 class="listederoulante">Raison de l'envoi</h2>
-
-             <div id="liste-particulier" class="form-group" >
-              <select  id="subject"  class="form-control" name="deroulant-particulier">
-                <option selected value="na">Choisissez une prestation :</option>
-                <option value="service">Total Relooking </option>
-                <option value="suggestions"> Relooking coiffure</option>
-                <option value="product">Relooking visage</option>
-                <option value="product"> Relooking stylisme</option>
-                <option value="product">Autre</option>
-              </select>
+              <input class="form-control" type="email" placeholder="Votre email" name="email"  ng-model="user.email">
             </div>
-          </div>
-        </div>
 
+
+
+            <!--SHOW test-->
+            <div id="votrestatut" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             <h2 class="statut">Précisez votre statut</h2>
+
+             <div id="btnstatus" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <span ><a href=""><button class="btn statusbutton" ng-click="myFunc()"><span>Particulier</span></button></a></span><br/>
+              <span ><a href=""><button class="btn statusbutton" ng-click="myFunc2()"><span>Entreprise</span></button></a></span>
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <h4 id="raison">Raison de la demande</h4>
+              <form>
+                <select id="deroulant" ng-show="showParticulier">
+                  <option ><h4 class="listetitle" >Femmes<h4></option>
+                  <option >Entretien découverte</option>
+                  <option>Atelier colorimétrie</option>
+                  <option>Atelier make-up</option>
+                  <option>Relooking coiffure</option>
+                  <option>Relooking coiffure</option>
+                  <option>Relooking vestimentaire</option>
+                  <option>Coaching en image complet</option>
+                  <option>Atelier occasion</option>
+
+                  <option>Hommes</option>
+                        <option>Ateliers découvertes</option>
+                  <option>Ateliers colorimétrie</option>
+                    <option>Relooking visage</option>
+                      <option>Relooking coiffure</option>
+                         <option>Relooking coiffure</option>
+                  <option>Entretien découverte</option>
+
+                </select>
+
+              </form>
+              <form>
+                <select ng-show="showEntreprise">
+                  <h3 style="color:red">Entreprise</h3>
+                  <option>Ateliers découvertes</option>
+                  <option>Ateliers colorimétrie</option>
+                    <option>Relooking visage</option>
+                      <option>Relooking coiffure</option>
+                         <option>Relooking coiffure</option>
+                         
+                </select>
+              </form>
+            </div>   
+
+          </div>
+
+        </div><!--col-lg-8 votre status-->
+      </div> <!-- id="votrestatut" class="col-lg-12" votre status-->
+
+
+
+
+
+
+
+      <div id="blocmessage" class="col-sm-12 col-md-6 col-lg-6">
+       <div class="form-group">
+        <label class="titremessage" for="comment">Votre message</label>
+        <textarea ng-model="formContact.contact.message" class="form-control" rows="10" id="comment"></textarea>
+        <span ><a href="#"><button ng-disabled="userForm.$invalid" class="animbutton pull-right voffset3" type="submit" value="Envoyer"><span>Envoyer</span></button></a></span>
       </div>
     </div>
+  </div>
 
-
-    <div id="blocmessage" class="col-sm-12 col-md-6 col-lg-6">
-     <div class="form-group">
-      <label class="titremessage" for="comment">Votre message</label>
-      <textarea ng-model="formContact.contact.message" class="form-control" rows="10" id="comment"></textarea>
-      <span ><a href="#"><button ng-disabled="userForm.$invalid" class="animbutton pull-right voffset3" type="submit" value="Envoyer"><span>Envoyer</span></button></a></span>
-    </div>
-  </div>    
+</form>
 </div>
 
 </div><!--row2-->
-</form>
+
+
 
 </div><!--container forme2-->
 

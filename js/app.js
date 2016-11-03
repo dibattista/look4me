@@ -336,7 +336,20 @@ app.controller("contactController", function ($scope) {
     ville: "28000 Chartres",
     telephone: "06 38 41 38 38",
     email: "contact@look4me.fr"
+
   };
+
+
+  $scope.showParticulier = false;
+    $scope.myFunc = function() {
+        $scope.showParticulier = !$scope.showParticulier;
+    };
+    $scope.showEntreprise = false;
+    $scope.myFunc2 = function() {
+        $scope.showEntreprise = !$scope.showEntreprise;
+    };
+
+
 });
 
 
