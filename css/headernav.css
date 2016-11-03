@@ -7,17 +7,16 @@
 #dropdown-menu > li:nth-child(1) > a:hover{
      background-color:black;
      color:#C79C51;
-    
-     
+       
 }
-#bs-example-navbar-collapse-1{
-    margin-bottom: 10px;
+
+nav.navbar.navbar-default.bg-nav.navbar-fixed-top{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #dropdown-menu > li:nth-child(2) > a:hover{
-     background-color:black;
-     color:#C79C51;
-     
+     background-color:black;     
 }
 
 .iconfleche i{
@@ -71,8 +70,46 @@
 	padding: 10px;  
 }
 
+#bs-example-navbar-collapse-1 > ul > li:nth-child(12) > a > i:hover{
+    color: #C79C51; 
+    background-color: black; 
+    padding: 10px; 
+    border-color: #C79C51; 
+    border-style: solid; 
+    border-width: 1px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li:nth-child(13) > a > i:hover{
+    color: #C79C51; 
+    background-color: black; 
+    padding: 10px; 
+    border-color: #C79C51;
+    border-style: solid;
+    border-width: 1px; 
+}
+
+#bs-example-navbar-collapse-1 > ul > li:nth-child(1) > a > i:hover{
+    color: #C79C51; 
+    background-color: black; 
+    padding: 10px; 
+    border-color: #C79C51;
+    border-style: solid;
+    border-width: 1px;  
+}
+
+
 .nav .navbar-nav >li>.fa-p-none{
 	padding:0px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li:nth-child(12) > a > i{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li:nth-child(12) > a{
+    padding-top: 0px;
 }
 
 .gold{
@@ -94,6 +131,19 @@
 	margin:0px;
 	text-align: -webkit-match-parent;
     font-family: 'El Messiri', sans-serif;
+}
+
+.color-p-sidr-dropdown{
+    color: white;
+    font-size: 20px;
+    padding:0px;
+    margin:0px;
+    text-align: -webkit-match-parent;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.color-p-sidr-dropdown:hover{
+    color:#C79C51;
 }
 
 .dropdown-menu>li> {
@@ -119,9 +169,14 @@ margin-right: 60px;
 	    background-color:#DAB270 ;
 }
 
+.navbar-default .navbar-toggle .icon-bar a:hover{
+    background-color: black;
+    color:#DAB270;
+}
+
 .navbar-collapse{
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 .m-news{
@@ -142,6 +197,19 @@ margin-right: 60px;
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
         background-color: white;
     }
+
+   #bs-example-navbar-collapse-1 > ul > li:nth-child(12) > a{
+    margin: 0px !important;
+    margin-bottom: 3px !important;
+    margin-top: 20px !important;
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+   }
+
+   #bs-example-navbar-collapse-1 > ul > li:nth-child(12) > a > i{
+    margin-left: 0px;
+   }
+
 }
 
 
@@ -161,10 +229,16 @@ margin-right: 60px;
 
     }
 
-   #bs-example-navbar-collapse-1 > ul > li:nth-child(12) a{
+   #bs-example-navbar-collapse-1 > ul > li:nth-child(12) > a{
    	margin: 0px !important;
    	margin-bottom: 3px !important;
    	margin-top: 20px !important;
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+   }
+
+   #bs-example-navbar-collapse-1 > ul > li:nth-child(12) > a > i{
+    margin-left: 0px;
    }
    
    #bs-example-navbar-collapse-1 > ul{

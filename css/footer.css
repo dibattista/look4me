@@ -31,6 +31,7 @@ li a.footer-a{
 }
 
 a.footer-a :hover{
+	font-size: 13px;
 	color: #BF813F; 
 	text-decoration: underline;
 }
@@ -40,5 +41,14 @@ a.footer-a :hover{
 }
 
 .color-p-footer{
+	font-family: 'El Messiri', sans-serif;
 	color:white;
+	font-size: 13px;
+}
+
+.font-p-partenaire{
+	font-family: 'El Messiri', sans-serif;
+	color:white;
+	font-size: 13px;
+	line-height: 12px;
 }
