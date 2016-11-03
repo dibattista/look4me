@@ -106,8 +106,7 @@ descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio
     $scope.home.space = {
       title : "Bienvenue",
       photo : "img/interieur_4250.JPG",
-      paragh : 'Je vous accueille dans un cadre atypique et chaleureux au coeur de Chartres. Toutes les conditions sont réunies pour que nous trouvions ensemble le style qui vous correspond afin de vous révéler et reprendre confiance en vous.'
-
+      paragh : "Dans une atmosphere bienvaillante, d'écoute et de respect je vous aide : à reprendre confiance en vous, affirmer votre personnalité, trouver l'harmonie entre votre personnalité et l'image que vous souhaitez vehiculer."
     }
     $scope.home.portefolio = [
 
@@ -121,37 +120,43 @@ descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio
   /******************************************** News controller *****************************************/
   app.controller('NewsController', function($scope){
 
-    $scope.news = {};
-    $scope.news.objectNews = [
+  $scope.news = {};
+  $scope.news.objectNews1 = [
 
-    { datej: "14",
-    dateM: "Août",
-    title: "Relooking à Chartres",
-    description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
-    image: "img/news-presse/news.jpg"
-  },
+{ datej: "Bientôt",
+  dateM: "Les fêtes",
+  title: "Pensez aux Bons cadeaux",
+  description: "Pour un cadeau original et qui fera toujours plaisir. Cours de maquillage, test de colorimetrie,",
+  image: "img/news-presse/cadeaux.jpg"
+}
 
-  { datej: "14",
-  dateM: "Août",
-  title: "Relooking à Chartres",
-  description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
-  image: "img/news-presse/news.jpg"
-},
+];
 
-{ datej: "14",
-dateM: "Août",
-title: "Relooking à Chartres",
-description: "Fashion Week printemps-été 2017 : suivez le défilé Emporio Armani en direct à 21 heures",
-image: "img/news-presse/news.jpg"
+ $scope.news.objectNews2 = [
+{ datej: "En",
+  dateM: "Février",
+  title: "Semaine santé, beauté",
+  description: "Retrouvez-moi en Février...lors de semaine santé, beauté à l'hypermarché de Fontenay sur Eure",
+  image: "img/news-presse/news.png"
+}
+
+];
+
+ $scope.news.objectNews3 = [
+{ datej: "Tendances",
+  dateM: "",
+  title: "Les couleurs pour cet hiver",
+  description: "Retrouvez-moi en Février...lors de semaine santé, beauté à l'hypermarché de Fontenay sur Eure",
+  image: "img/news-presse/tendances.jpg"
 }
 
 ];
 
 $scope.news.objectPresses = [
 {
-  info: "Look at your clothes with different eyes. Ask more than “does this look great on me?”.Ask “who made my clothes?”.",
-  photo: ["img/news-presse/img-presse.png", "img/news-presse/img-presse2.png", "img/news-presse/img-presse3.png"],
-  pdf: ["img/pdf/pdf-fashion.pdf", "http://www.chartres.fr/fr/outils-et-services/tous-les-documents-et-publications/le-magazine-de-la-ville/", "http://www.relooking-chartres.fr/"],
+  info: ["Relooking avec Look4me: parution Décembre. Dans le centre de Chartres nous avons eu la chance d'avoir des conseils pour nous mettre en valeur pour les fêtes...", "voici ma vidéo pour le maquillage classique spécial débutant. un maquillage qui passe partout et qui va aussi bien aux yeux verts, bleus ou marrons",],
+  photo: ["img/news-presse/img-presse.jpg", "img/news-presse/img-presse2.png", "img/news-presse/img-presse3.png"],
+  pdf: ["img/pdf/pdf-fashion.pdf", "https://www.youtube.com/watch?v=CqU9K8HQ3W4", "http://www.relooking-chartres.fr/"],
   title: "2017",
   plusinfos: "plus d'infos",
 }
@@ -332,7 +337,6 @@ app.controller("contactController", function ($scope) {
     telephone: "06 38 41 38 38",
     email: "contact@look4me.fr"
   };
-  
 });
 
 
@@ -346,17 +350,16 @@ app.controller("portefolioController", function($scope){
     // Data object
     $scope.portefolio = {};
     $scope.portefolio.images = [
-    {img:["01AV.jpg", "01AP.jpg"], alt: "Photo relooking style"},
-    {img:["02AV.jpg", "02AP.jpg"], alt: "Photo total relooking"},
-    {img:["03AV.jpg", "03AP.jpg"], alt: "Photo relooking maquillage"},
-    {img:["04AV.jpg", "04AP.jpg"], alt: "Photo relooking.."},
-    {img:["05AV.jpg", "05AP.jpg"], alt: "Photo relooking.."},
-    {img:["06AV.jpg", "06AP.jpg"], alt: "Photo relooking.."},
-    {img:["07AV.jpg", "07AP.jpg"], alt: "Photo relooking.."},
-    {img:["08AV.jpg", "08AP.jpg"], alt: "Photo relooking.."},
-    {img:["09AV.jpg", "09AP.jpg"], alt: "Photo relooking.."},
-    {img:["10AV.jpg", "10AP.jpg"], alt: "Photo relooking.."},
-    {img:["11AV.jpg", "11AP.jpg"], alt: "Photo relooking.."}
+        {img:["01AV.jpg", "01AP.jpg"], alt: "Photo relooking style"},
+        {img:["02AV.jpg", "02AP.jpg"], alt: "Photo total relooking"},
+        {img:["03AV.jpg", "03AP.jpg"], alt: "Photo relooking maquillage"},
+        {img:["04AV.jpg", "04AP.jpg"], alt: "Photo relooking.."},
+        {img:["05AV.jpg", "05AP.jpg"], alt: "Photo relooking.."},
+        {img:["06AV.jpg", "06AP.jpg"], alt: "Photo relooking.."},
+        {img:["07AV.jpg", "07AP.jpg"], alt: "Photo relooking.."},
+        {img:["08AV.jpg", "08AP.jpg"], alt: "Photo relooking.."},
+        {img:["09AV.jpg", "09AP.jpg"], alt: "Photo relooking.."},
+        {img:["10AV.jpg", "10AP.jpg"], alt: "Photo relooking.."}
     ];
     $scope.portefolio.testimonials = [
     {title:"Marjorie (35 ans) - Relooking style", description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."},
