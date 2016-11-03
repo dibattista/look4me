@@ -175,16 +175,48 @@
 				}
 
 				#votrestatut{
-					margin-top: 20px;
 					margin-bottom: 20px;
 					padding: 0px;				
 				}
 
 				.statut{
-					padding-top: 30px;
 					font-family: 'El Messiri', sans-serif;
 					font-size: 24px;
 					color: #C79C51;	
+				}
+				#btnstatus{
+					font-family: 'El Messiri', sans-serif;
+					font-size: 16px;
+					color: #C79C51;	
+					margin-left: 0px;
+					padding-left: 0px;
+
+				}
+
+				#raison{
+					font-family: 'El Messiri', sans-serif;
+					font-size: 16px;
+					color: #C79C51;	
+					margin-left: 0px;
+					padding-top: 0px;
+					padding-left: 0px;
+				}
+				#deroulant{
+					padding-left: 5px;
+					padding-right: 5px;
+
+					font-family: 'Open Sans', sans-serif;
+
+				}
+				.listetitle{
+					font-family: 'El Messiri', sans-serif;
+					font-size: 12px;
+					color: #C79C51;
+
+				}
+				.statusbutton{
+					background-color: #C79C51;	
+					margin-bottom: 10px;
 				}
 
 				/****DEROULANT*************************************************/
