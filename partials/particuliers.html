@@ -3,9 +3,8 @@
 <div class="bloc-info">
 <!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
 <div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="goToHash(1)" >FEMMES</a></div>
-<div id="buttonhommes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="goToHash(2)" >HOMMES</a></div>
-<div id="textFemmes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
-<div id="textHommes" class="col-lg-6 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ultrices turpis, in porttitor</div>
+<div id="buttonhommes" class="col-lg-5 col-xs-5"><a data-toggle="tab" target="_self" ng-click="goToHash(2)" >HOMMES</a></div>
+<div id="textHommesFemmes" class="col-lg-12 col-xs-12">"La beauté commence au moment où vous décidez d'être vous-même."<br><p class="signature">COCO CHANEL<p></div>
 </div>
 </div>
 </div>
@@ -26,8 +25,8 @@
 
 		<div id="menu1" ng-class="{'in active' : tab === 1}" class="tab-pane fade">
 			<!-- PRESTATIONS FEMMES -->
-			<div class="prestationRelooking">Nos prestations RELOOKING</div>
-			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèce.</p>
+			<div class="prestationRelooking">Nos prestations</div>
+			<p class="texteInfo">Toutes nos prestations sont adaptables en fonction du nombre de personnes et occasions particulières. <br> Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèces.</p>
 			<hr class="separator">
 
 			<!-- Prestations Femmes-->
@@ -48,12 +47,13 @@
 			</div>
 
 		</div>
+
 		<!-- TAB MENU2 :: HOMMES =========================================== -->
 
 		<div id="menu2" ng-class="{'in active' : tab === 2}" class="tab-pane fade">
 			<!-- PRESTATIONS HOMMES -->
-			<div class="prestationRelooking">Nos prestations RELOOKING</div>
-			<p class="moyenPaiement">Comme moyen de paiement, vous pouvez régler par chèque ou carte bancaire, au choix.</p>
+			<div class="prestationRelooking">Nos prestations</div>
+			<p class="texteInfo">Comme moyen de paiement, vous pouvez régler au choix, par chèque ou en espèces.</p>
 			<hr class="separator">
 
 			<!-- Prestations Hommes-->

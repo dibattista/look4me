@@ -49,13 +49,22 @@ app.controller('particuliersController', function($scope){
 			// Prestation 6 (femmes)
 			{
 				img:"img/particuliers/femmes/relooking_complet.jpg",
-				alt:"photo relooking complet",
-				titre:"Relooking complet",
+				alt:"photo coaching en image",
+				titre:"Coaching en image complet",
 				description:"Comprend : <ul> 								<li>entretien découverte</li> 								<li>test des couleurs</li> 								<li>analyse morphologique du visage, cosmétologie et cours de maquillage</li> 								<li>conseils coiffure</li> 								<li>analyse morphologique de la silhouette</li> 								<li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li> 								<li>tri de votre garde-robes</li> 								<li>accompagnement shopping</li> 							</ul> 							Non-compris : 							<ul> 								<li>(!) La prestation de notre partenaire coiffeur</li> 								<li>(!) Les achats lors du shopping</li> 							</ul> Un book récapitulatif vous sera envoyé ultérieurement.",
 				tarif:"10-11H - 690€",
 				genre:"F"
 			},
 			// Prestation 7 (femmes)
+			{
+				img:"img/particuliers/femmes/",
+				alt:"photo atelier occasion",
+				titre:"Atelier occasion",
+				description:"Ajouter le prix et la durée de la séance",
+				tarif:"Ajouter le prix et la durée de la séance",
+				genre:"F"
+			},
+			// Prestation 8 (femmes)
 			{
 				img:"img/particuliers/femmes/",
 				alt:"photo coatch séduction",
@@ -66,14 +75,23 @@ app.controller('particuliersController', function($scope){
 			},
 			// Prestation 1 (hommes)
 			{
+				img:"img/particuliers/hommes/",
+				alt:"photo meeting",
+				titre:"Entretien découverte",
+				description:"Nous permet de définir vos besoins, vos objectifs.",
+				tarif:"1H - 50€",
+				genre:"H"
+			},
+			// Prestation 2 (hommes)
+			{
 				img:"img/particuliers/hommes/total_relooking.jpg",
-				alt:"photo total relooking",
-				titre:"Relooking complet Homme",
+				alt:"photo coaching en image",
+				titre:"Coaching en image",
 				description:"Comprend : <ul> 								<li>entretien découverte</li> 								<li>test des couleurs</li> 								<li>maquillage</li> 								<li>coiffure</li> 								<li>analyse morphologique et style souhaité</li> 								<li>conseils vestimentaires et accessoires</li> 								<li>accompagnement shopping</li> 							</ul>",
 				tarif:"8H - 490€",
 				genre:"H"
 			},
-			// Prestation 2 (hommes)
+			// Prestation 3 (hommes)
 			{
 				img:"img/particuliers/hommes/colorimetrie.jpg",
 				alt:"photo colorimetrie",
@@ -82,7 +100,7 @@ app.controller('particuliersController', function($scope){
 				tarif:"Ajouter le prix et la durée de la séance",
 				genre:"H"
 			},
-			// Prestation 3 (hommes)
+			// Prestation 4 (hommes)
 			{
 				img:"img/particuliers/hommes/relooking_beard.jpg",
 				alt:"photo relooking barbe",
@@ -91,7 +109,7 @@ app.controller('particuliersController', function($scope){
 				tarif:"Ajouter le prix et la durée de la séance",
 				genre:"H"
 			},
-			// Prestation 4 (hommes)
+			// Prestation 5 (hommes)
 			{
 				img:"img/particuliers/hommes/relooking_hair.jpg",
 				alt:"photo relooking cheveux",
@@ -100,7 +118,7 @@ app.controller('particuliersController', function($scope){
 				tarif:"Ajouter le prix et la durée de la séance",
 				genre:"H"
 			},
-			// Prestation 5 (hommes)
+			// Prestation 6 (hommes)
 			{
 				img:"img/particuliers/hommes/relooking_style.jpg",
 				alt:"photo relooking style",
@@ -109,25 +127,7 @@ app.controller('particuliersController', function($scope){
 				tarif:"Ajouter le prix et la durée de la séance",
 				genre:"H"
 			},
-			// Prestation 6 (hommes)
-			{
-				img:"img/particuliers/hommes/relooking_complet.jpg",
-				alt:"photo relooking style",
-				titre:"Relooking complet",
-				description:"Comprend : <ul> 								<li>entretien découverte</li> 								<li>test des couleurs</li> 								<li>analyse morphologique du visage, cosmétologie et cours de maquillage</li> 								<li>conseils coiffure</li> 								<li>analyse morphologique de la silhouette</li> 								<li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li> 								<li>tri de votre garde-robes</li> 								<li>accompagnement shopping</li> 							</ul> Non-compris : <ul> 								<li>(!) La prestation de notre partenaire coiffeur</li> 								<li>(!) Les achats lors du shopping</li> 							</ul> Un book récapitulatif vous sera envoyé ultérieurement.",
-				tarif:"10-11H - 690€",
-				genre:"H"
-			},
 			// Prestation 7 (hommes)
-			{
-				img:"img/particuliers/hommes/",
-				alt:"photo atelier occasion",
-				titre:"Atelier occasion",
-				description:"Ajouter le prix et la durée de la séance",
-				tarif:"Ajouter le prix et la durée de la séance",
-				genre:"H"
-			},
-			// Prestation 8 (hommes)
 			{
 				img:"img/particuliers/hommes/",
 				alt:"photo coatch séduction",
