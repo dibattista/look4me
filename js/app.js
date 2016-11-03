@@ -355,20 +355,27 @@ app.controller("contactController", function ($scope) {
 
   };
 
+  $scope.listFemmes = listchoiceParticulierFemmes;
+  $scope.listHommes = listchoiceParticulierHommes;
+    $scope.listEntreprise = listchoiceEntreprise;
+
 
   $scope.showParticulier = false;
+  $scope.showEntreprise = false;
     $scope.myFunc = function() {
         $scope.showParticulier = !$scope.showParticulier;
+        $scope.showEntreprise = false;
     };
-    $scope.showEntreprise = false;
     $scope.myFunc2 = function() {
         $scope.showEntreprise = !$scope.showEntreprise;
+        $scope.showParticulier = false;
     };
-
 
 });
 
-
+var listchoiceParticulierFemmes = ["Entretien Découverte","Atelier colorimétrie","Atelier make-up","Relooking coiffure","Relooking vestimentaire","Coaching en image complet","Atelier occasion"];
+var listchoiceParticulierHommes = ["Ateliers découvertes","Ateliers colorimétrie","Relooking visage","Relooking coiffure","Coaching en image complet"];
+var listchoiceEntreprise = ["Offres pour les CE","Actions Commerciales","Challenge Commercial","Valorisation de l'image et communication de vos collaborateurs"];
 
 
 
