@@ -199,6 +199,11 @@ $scope.news.objectPresses = [
       $scope.tab = parseInt(id);
     };
 
+    $scope.offreCadeau = {
+      titre:"OFFRE SPECIAL NOEL",
+      texte:"Bientôt les fêtes"
+    }
+
     $scope.servParticuliersF = [
 
       // Prestation 1 (femmes)
@@ -300,7 +305,7 @@ $scope.news.objectPresses = [
         alt:"photo coaching en image",
         titre:"Coaching en image complet",
         description:"Comprend : <ul>                <li>entretien découverte</li>                 <li>test des couleurs</li>                <li>analyse morphologique du visage et cosmétologie</li>                 <li>conseils coiffure et accompagnement chez notre partenaire coiffeur</li>                <li>analyse morphologique de la silhouette</li>                 <li>conseils vestimentaires (coupes, couleurs, motifs et imprimés) et accessoires</li>                 <li>accompagnement shopping</li>              </ul>               Non-compris :               <ul>                <li>(!) Les achats en boutique</li>              </ul> Un book récapitulatif vous sera envoyé ultérieurement.",
-        tarif:"prix à définir",
+        tarif:"8H - 580€",
         genre:"H"
       }
       ];
@@ -330,8 +335,8 @@ app.controller('entreprisesController', function($scope){
       },
       // Prestation 4
       {
-        titre:"Valorisation de l'image et communication de vos collaborateurs",
-        description:""
+        titre:"Valoriser l'image et la communication de vos collaborateurs",
+        description:"Vos collaborateurs représentent votre entreprise , ils sont votre 'carte de visite'. Des recherches ont révélé que l'impact de notre communication repose sur :<ul>                <li>7% le verbal (les propos utilisés)</li>                 <li>38 % le vocal (l'intonation , le rythme de la voix)</li>                <li>55 % l'apparence (gestuelle, attitude, look vestimentaire )</li>                </ul> Dans un marché économique complexe, il est donc important de vérifier que vos collaborateurs véhiculent la bonne image de votre entreprise en valorisant leur apparence ! Après avoir défini avec vous l'image que vous souhaitez véhiculer de votre entreprise, je m'attache à transmettre à vos collaborateurs :<ul>                <li>le dress code (style , symbolique des couleurs )</li>                 <li>la gestuelle</li>                <li>l'attitude correspondant à vos attentes</li>                </ul> Cela permet à vos collaborateurs de gagner en confiance en soi, en crédibilité et de trouver ou (retrouver) une motivation dans leur travail. Des collaborateurs qui se sentent bien auront forcement un impact sur le developpement de votre activité et vous démarquera de la concurrence."
       }
       ];
     });
@@ -354,6 +359,7 @@ app.controller("contactController", function ($scope) {
     email: "contact@look4me.fr"
 
   };
+
 
   $scope.listFemmes = listchoiceParticulierFemmes;
   $scope.listHommes = listchoiceParticulierHommes;
