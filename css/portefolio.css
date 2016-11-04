@@ -1,75 +1,42 @@
-
-/* Portefolio custom styles
+/* PORTEFOLIO
 ------------------------------------------------------------------------------*/
+#pfCarousel {
+    background-color: #000;
+    border: 2px solid #C79C51;
+    border-radius:4px;
+}
 
-.red   { background-color: red; }
-.blue  { background-color: blue; }
-.green { background-color: green; }
-
-/* suppression des marges */
-.carousel-inner .row,
-.carousel-inner [class*="col-"] {
+/* suppression marges */
+#pfCarousel .carousel-inner .row,
+#pfCarousel .carousel-inner [class*="col-"] {
     margin : 0;
     padding: 0;
 }
-.carousel-img-indicators { padding: 10px 0; }
-.carousel-img-indicators [class*="col-"] { padding: 5px; }
-.carousel-img-indicators img { cursor: pointer; }
-.carousel-img-indicators .active img { border: 4px solid #C93; }
-/*.carousel-inner*/
-#pfCarousel {
-    border: 2px solid #C93;
-    border-radius:4px;
-    background-color: black;
-}
-/*
-la classe 'active' est gérée dans le js de bootstrap (vers ligne 443)
-faut-il écraser ou étendre la fonction et peut-on le faire de l'extérieur du fichier
-*/
 
-/*
-.carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
+/* indicators (thumbnails) #annulation de styles bootstrap */
+#pfCarousel .carousel-indicators {
+    position: static;
+    left: auto;
+    margin: 20px auto;
+    width: 100%;
 }
-.carousel-indicators li {
+#pfCarousel .carousel-indicators li {
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
+    padding: 2px;
+    width: 84px;
+    height: 124px;
+    margin: 4px;
+    background-color: rgba(0,0,0,0.25);
+    text-indent: 0;
     cursor: pointer;
-    background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #fff;
-    border-radius: 10px;
+    border: none;
+    border-radius: 2px;
 }
-.carousel-indicators .active {
-    width: 12px;
-    height: 12px;
-    margin: 0;
-    background-color: #fff;
+#pfCarousel .carousel-indicators .active {
+    padding: 2px;
+    width: 84px;
+    height: 124px;
+    margin: 4px;
+    background-color: #C79C51;
+    border: none;
 }
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-.carousel-indicators {
-    bottom: 20px;
-}
-*/

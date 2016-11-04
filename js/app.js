@@ -43,7 +43,7 @@
     })
     .when('/portefolio',{
       templateUrl : 'partials/portefolio.html',
-      controller : 'portefolioController',
+      controller : 'PortefolioController',
     })
     .when('/presentation',{
       templateUrl : 'partials/aboutme.html',
@@ -340,7 +340,7 @@ app.controller('entreprisesController', function($scope){
 app.controller("aboutmeController", function ($scope) {
   $scope.about = {
     title : "Natacha Tilmant",
-    paragh : "Au cours de ma vie professionnelle, j'ai toujours été en contact avec des personnes.<br/>J'ai été amenée à diriger, à recruter certaines, et à en conseiller d'autres. <br/> J'ai vite pris conscience que l'image que l'on véhicule est aussi importante que ce que l'on est amené à dire. <br/>Comme le dit Nicholas Boothman<em> <br/>\"Tout se joue en moins de 2 minutes!\"</em><br/>Souvent par manque de temps, votre interlocuteur risque de vous juger sur votre apparence, votre attitude au détriment de vos paroles, de votre potentiel et de votre vraie nature. <br/>Une attitude peu sûre vous conduira certainement à une déception.<br/>Nombres de personnes suite à un échec professionnel ou personnel perdent confiance en eux et l'image qu'ils ont d'eux-mêmes.<br/>Je vais vous accompagner, vous aider à vous révéler et à prendre confiance en vous,<br/>pour trouver l'harmonie entre votre personnalité et l'image que vous souhaitez véhiculer.",
+    paragh : "Au cours de ma vie professionnelle, j'ai toujours été en contact avec des personnes.<br/>J'ai été amenée à diriger, à recruter certaines, et à en conseiller d'autres. <br/> J'ai vite pris conscience que l'image que l'on véhicule est aussi importante que ce que l'on est amené à dire. <br/>Comme le dit Nicholas Boothman<em> <br/>\"Tout se joue en moins de 2 minutes!\"</em><br/>Souvent par manque de temps, votre interlocuteur risque de vous juger sur votre apparence, votre attitude au détriment de vos paroles, de votre potentiel et de votre vraie nature. <br/>Une attitude peu sûre vous conduira certainement à une déception.<br/>Nombres de personnes suite à un échec professionnel ou personnel perdent confiance en eux et l'image qu'ils ont d'eux-mêmes.<br/>Je vais vous accompagner, vous aider à vous révéler et à prendre confiance en vous, pour trouver l'harmonie entre votre personnalité et l'image que vous souhaitez véhiculer.",
     photo : 'img/natacha_portrait.JPG'
   }
 });
@@ -383,29 +383,38 @@ var listchoiceEntreprise = ["Offres pour les CE","Actions Commerciales","Challen
 
 /***************************************** controller portefolio *****************************/
 
-app.controller("portefolioController", function($scope){
+app.controller("PortefolioController", function($scope){
 
     // Data object
     $scope.portefolio = {};
     $scope.portefolio.images = [
-        {img:["01AV.jpg", "01AP.jpg"], alt: "Photo relooking style"},
-        {img:["02AV.jpg", "02AP.jpg"], alt: "Photo total relooking"},
-        {img:["03AV.jpg", "03AP.jpg"], alt: "Photo relooking maquillage"},
-        {img:["04AV.jpg", "04AP.jpg"], alt: "Photo relooking.."},
-        {img:["05AV.jpg", "05AP.jpg"], alt: "Photo relooking.."},
-        {img:["06AV.jpg", "06AP.jpg"], alt: "Photo relooking.."},
-        {img:["07AV.jpg", "07AP.jpg"], alt: "Photo relooking.."},
-        {img:["08AV.jpg", "08AP.jpg"], alt: "Photo relooking.."},
-        {img:["09AV.jpg", "09AP.jpg"], alt: "Photo relooking.."},
-        {img:["10AV.jpg", "10AP.jpg"], alt: "Photo relooking.."}
+        {imgAV: "01AV.jpg", imgAP: "01AP.jpg", alt: "Photo relooking style"},
+        {imgAV: "02AV.jpg", imgAP: "02AP.jpg", alt: "Photo total relooking"},
+        {imgAV: "03AV.jpg", imgAP: "03AP.jpg", alt: "Photo relooking maquillage"},
+        {imgAV: "04AV.jpg", imgAP: "04AP.jpg", alt: "Photo relooking.."},
+        {imgAV: "05AV.jpg", imgAP: "05AP.jpg", alt: "Photo relooking.."},
+        {imgAV: "06AV.jpg", imgAP: "06AP.jpg", alt: "Photo relooking.."},
+        {imgAV: "07AV.jpg", imgAP: "07AP.jpg", alt: "Photo relooking.."},
+        {imgAV: "08AV.jpg", imgAP: "08AP.jpg", alt: "Photo relooking.."},
+        {imgAV: "09AV.jpg", imgAP: "09AP.jpg", alt: "Photo relooking.."},
+        {imgAV: "10AV.jpg", imgAP: "10AP.jpg", alt: "Photo relooking.."}
     ];
     $scope.portefolio.testimonials = [
-    {title:"Marjorie (35 ans) - Relooking style", description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."},
-    {title:"Enzo (44 ans) - Relooking global", description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."},
-    {title:"Alice (21 ans) - Relooking maquillage", description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."},
-    {title:"Groupe Guerlain - Coaching d'entreprise", description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."}
+        {
+        title:"Marjorie (35 ans) - Relooking style",
+        description: "<em><strong>Donec id elit</strong> non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</em>"
+        }, {
+        title:"Enzo (44 ans) - Relooking global",
+        description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."
+        }, {
+        title:"Alice (21 ans) - Relooking maquillage",
+        description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."
+        }, {
+        title:"Groupe Guerlain - Coaching d'entreprise",
+        description: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."
+        }
     ];
-  });
+});
 
 /******************* controller portefolio **************************************************/
 
