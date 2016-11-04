@@ -5,14 +5,14 @@
 
       <nav class="menuhome">
         <ul >
-          <li ><a class="iconhome page-scroll" href="#haut"><i class="glyphicon glyphicon-home page-scroll"></i></a></li>  
+          <li><a class="iconhome page-scroll" href="#haut" ng-click="tab = 4"><i class="glyphicon glyphicon-home page-scroll"></i></a></li>  
           <li class="sousmenushome"><a>A propos<span class="iconfleche"><i class="glyphicon glyphicon-menu-down"></i> </span></a>
             <ul>
-              <li><a href="#/presentation">Présentation</a></li>
-              <li><a href="#/news">News / Presse</a></li>
+              <li><a href="#/presentation" ng-click="tab = 4">Présentation</a></li>
+              <li><a href="#/news" ng-click="tab = 4">News / Presse</a></li>
             </ul>
           </li>
-          <li><a href="#/contact">Contact<span class="iconcontact"><i class="glyphicon glyphicon-envelope"></i></span></a></li>
+          <li><a href="#/contact" ng-click="tab = 5">Contact<span class="iconcontact"><i class="glyphicon glyphicon-envelope"></i></span></a></li>
           <li><a href="https://www.facebook.com/look4me.fr/" target="_blanck" class="iconhome" ><i class="fa fa-facebook" ></i>
           </a></li> 
           <li><a class="iconhome" href="#"><i class="fa fa-instagram"></i></a></li>
@@ -35,9 +35,9 @@
         <div class="row">
           <div id="menuprestation" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
            <p>
-            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/particuliers">Particuliers</a></span>
-            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/entreprises">Entreprises</a></span>
-            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/portefolio">Avant / Après</a></span>
+            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/particuliers" ng-click="tab = 1">Particuliers</a></span>
+            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/entreprises" ng-click="tab = 2">Entreprises</a></span>
+            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/portefolio" ng-click="tab = 3">Avant / Après</a></span>
           </p>
         </div>
       </div>

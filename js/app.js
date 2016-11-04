@@ -69,10 +69,6 @@
   });
 
 
-  app.controller('HeaderController', function(){
-    this.tab = 1;
-  });
-
   /************************************PLUS DINFO**********************/
   app.controller('plusdinfosController', function($scope){
 
