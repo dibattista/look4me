@@ -27,39 +27,42 @@
 
     .when('/',{
       templateUrl : 'partials/home.html',
-      controller : 'HomeController',
+      controller : 'HomeController'
     })
     .when('/home',{
       templateUrl : 'partials/home.html',
-      controller : 'HomeController',
+      controller : 'HomeController'
     })
     .when('/particuliers',{
       templateUrl : 'partials/particuliers.html',
-      controller : 'particuliersController',
+      controller : 'particuliersController'
     })
     .when('/entreprises',{
       templateUrl : 'partials/entreprises.html',
-      controller : 'entreprisesController',
+      controller : 'entreprisesController'
     })
     .when('/portefolio',{
       templateUrl : 'partials/portefolio.html',
-      controller : 'PortefolioController',
+      controller : 'PortefolioController'
     })
     .when('/presentation',{
       templateUrl : 'partials/aboutme.html',
-      controller : 'aboutmeController',
+      controller : 'aboutmeController'
     })
     .when('/contact',{
       templateUrl : 'partials/contact.html',
-      controller : 'contactController',
+      controller : 'contactController'
     })
     .when('/news',{
       templateUrl : 'partials/news.html',
-      controller : 'NewsController',
+      controller : 'NewsController'
     })
     .when('/plusdinfos',{
       templateUrl : 'partials/plusdinfos.html',
-      controller : 'plusdinfosController',
+      controller : 'plusdinfosController'
+    })
+    .when('/legacy',{
+      templateUrl : 'partials/legacy.html',
     })
   });
 
@@ -346,11 +349,11 @@ app.controller("aboutmeController", function ($scope) {
 });
 
 app.controller("contactController", function ($scope) {
- 
+
   $scope.submitForm = function(isValid) {
 
     // check to make sure the form is completely valid
-    if (isValid) { 
+    if (isValid) {
       alert('our form is amazing');
     }
 
