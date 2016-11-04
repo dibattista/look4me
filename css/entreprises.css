@@ -91,14 +91,14 @@ body
 
 @media screen and (max-width: 360px)
 {
-    .bloc-transparent
-    {
-        margin-top: 340px;
-        padding: 0;
-        height: 50px;
-        width: 100%;
-        padding: 10px 10px 10px 10px;
-    }
+	.bloc-transparent
+	{
+		margin-top: 340px;
+		padding: 0;
+		height: 50px;
+		width: 100%;
+		padding: 10px 10px 10px 10px;
+	}
 }
 
 .tailleTexte
@@ -133,19 +133,19 @@ body
 
 @media screen and (max-width: 770px)
 {
-    .prestationsEntreprises
-    {
-        font-size: 30px;
-    }
+	.prestationsEntreprises
+	{
+		font-size: 30px;
+	}
 }
 
 @media screen and (max-width: 360px)
 {
-    .prestationsEntreprises
-    {
-        font-size: 20px;
-        margin-top: 25px;
-    }
+	.prestationsEntreprises
+	{
+		font-size: 20px;
+		margin-top: 25px;
+	}
 }
 
 .separator
@@ -169,41 +169,52 @@ body
 
 @media screen and (max-width: 360px)
 {
-    .titrePrestationEntreprises
-    {
-        font-size: 17px;
-    }
+	.titrePrestationEntreprises
+	{
+		font-size: 17px;
+	}
 }
 
 @media screen and (max-width: 360px)
 {
-    .descriptionPrestationEntreprises
-    {
-        font-size: 14px;
-    }
+	.descriptionPrestationEntreprises
+	{
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 360px)
 {
-    .tarifsEntreprises
-    {
-        font-size: 17px;
-    }
+	.tarifsEntreprises
+	{
+		font-size: 17px;
+	}
 }
 
 @media screen and (max-width: 360px)
 {
-    .descriptionTarifsEntreprises
-    {
-        font-size: 14px;
-    }
+	.descriptionTarifsEntreprises
+	{
+		font-size: 14px;
+	}
 }
-
 
 ul
 {
 	padding-left: 15px;
 }
+
+.container1
+{
+	margin-left: -20px;
+}
+
+.container2
+{
+	margin-left: 30px;
+	margin-right: 80px;
+}
+
 
 /******************************* button (bouton contact) ****************************/
 
