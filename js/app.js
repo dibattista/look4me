@@ -105,13 +105,13 @@ descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio
     $scope.home = {};
     $scope.home.caption = {
       title : "Avant / Après",
-      paragh : "D'autres prestations sont en cours, vous pouvez les consulter sur mon compte facebook"
+      paragh : "Retrouvez prochainement d'autres relooking sur ma page facebook"
 
     }
     $scope.home.space = {
       title : "Bienvenue",
       photo : "img/interieur_4250.JPG",
-      paragh : "Dans une atmosphere bienvaillante, d'écoute et de respect je vous aide : à reprendre confiance en vous, affirmer votre personnalité, trouver l'harmonie entre votre personnalité et l'image que vous souhaitez vehiculer."
+      paragh : "Dans une atmosphère bienveillante, d'écoute et de respect je vous aide  à reprendre confiance en vous, affirmer votre personnalité et trouver l'harmonie avec l'image que vous souhaitez vehiculer."
     }
     $scope.home.portefolio = [
 
@@ -131,7 +131,7 @@ descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio
 { datej: "Bientôt",
   dateM: "Les fêtes",
   title: "Pensez aux Bons cadeaux",
-  description: "Pour un cadeau original et qui fera toujours plaisir. Cours de maquillage, test de colorimetrie,",
+  description: "Pour un cadeau original et qui fera toujours plaisir. Cours de maquillage, test de colorimétrie,",
   image: "img/news-presse/cadeaux.jpg"
 }
 
@@ -344,7 +344,7 @@ app.controller('entreprisesController', function($scope){
 app.controller("aboutmeController", function ($scope) {
   $scope.about = {
     title : "Natacha Tilmant",
-    paragh : "Au cours de ma vie professionnelle, j'ai toujours été en contact avec des personnes.<br/>J'ai été amenée à diriger, à recruter certaines, et à en conseiller d'autres. <br/> J'ai vite pris conscience que l'image que l'on véhicule est aussi importante que ce que l'on est amené à dire. <br/>Comme le dit Nicholas Boothman<em> <br/>\"Tout se joue en moins de 2 minutes!\"</em><br/>Souvent par manque de temps, votre interlocuteur risque de vous juger sur votre apparence, votre attitude au détriment de vos paroles, de votre potentiel et de votre vraie nature. <br/>Une attitude peu sûre vous conduira certainement à une déception.<br/>Je vais donc vous accompagner, vous aider à vous révéler et à prendre confiance en vous,<br/>pour trouver l'harmonie entre votre personnalité et l'image que vous souhaitez véhiculer.",
+    paragh : "Au cours de ma vie professionnelle, j'ai toujours été en contact avec des personnes.<br/>J'ai été amenée à diriger, à recruter certaines, et à en conseiller d'autres. <br/> J'ai vite pris conscience que l'image que l'on véhicule est aussi importante que ce que l'on est amené à dire. <br/>Comme le dit Nicholas Boothman<em> <br/>\"Tout se joue en moins de 2 minutes!\"</em><br/>Souvent par manque de temps, votre interlocuteur risque de vous juger sur votre apparence, votre attitude au détriment de vos paroles, de votre potentiel et de votre vraie nature. <br/>Une attitude peu sûre vous conduira certainement à une déception.<br/>Nombres de personnes suite à un échec professionnel ou personnel perdent confiance en eux et l'image qu'ils ont d'eux-mêmes.<br/>Je vais vous accompagner, vous aider à vous révéler et à prendre confiance en vous,<br/>pour trouver l'harmonie entre votre personnalité et l'image que vous souhaitez véhiculer.",
     photo : 'img/natacha_portrait.JPG'
   }
 });
