@@ -136,7 +136,7 @@ descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio
  $scope.news.objectNews2 = [
 { datej: "En",
   dateM: "Février",
-  title: "Semaine santé, beauté",
+  title: "Semaine santé, beauté  ",
   description: "Retrouvez-moi en Février...lors de semaine santé, beauté à l'hypermarché de Fontenay sur Eure",
   image: "img/news-presse/news.png"
 }
@@ -146,7 +146,7 @@ descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio
  $scope.news.objectNews3 = [
 { datej: "Tendances",
   dateM: "",
-  title: "Les couleurs pour cet hiver",
+  title: "Couleurs pour cet hiver",
   description: "Retrouvez-moi en Février...lors de semaine santé, beauté à l'hypermarché de Fontenay sur Eure",
   image: "img/news-presse/tendances.jpg"
 }
