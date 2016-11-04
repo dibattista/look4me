@@ -152,7 +152,6 @@
           margin-left: 20px;
           margin-right: 20px;
           padding: 0px;
-
         }
 
         .titrecontact{
@@ -171,13 +170,19 @@
 
         #votrestatut{
           margin-bottom: 20px;
-          padding: 0px;       
+          margin-top: 0px; 
+          padding: 0px;     
+        }
+        #votrestatut h2{
+          margin-top: 0px; 
+          padding: 0px;     
         }
 
         .statut{
           font-family: 'El Messiri', sans-serif;
           font-size: 24px;
           color: #C79C51; 
+             margin-top: 0px; 
         }
         #btnstatus{
           font-family: 'El Messiri', sans-serif;
@@ -193,6 +198,13 @@
           font-size: 16px;
           color: #C79C51; 
           margin-left: 0px;
+          margin-top: 0px;
+          padding-top: 0px;
+          padding-left: 0px;
+        }
+         #raison h4{
+          margin-left: 0px;
+          margin-top: 0px;
           padding-top: 0px;
           padding-left: 0px;
         }
@@ -218,7 +230,7 @@
         .statusbutton{
           background-color: #C79C51;  
           margin-bottom: 10px;
-
+          font-size: 16px;
         }
 
         #blocmessage{
@@ -232,7 +244,7 @@
         }
 
         .titremessage{
-          padding-top: 15px;    
+          padding-top: 5px;    
           font-family: 'El Messiri', sans-serif;
           font-size: 18px;
           color: #C79C51;
