@@ -1,5 +1,12 @@
 /* PORTEFOLIO
 ------------------------------------------------------------------------------*/
+#pfWrapper { margin-top: 20px;}
+
+#pfContent {
+    width:85%;
+    margin:auto;
+}
+
 #pfCarousel {
     background-color: #000;
     border: 2px solid #C79C51;

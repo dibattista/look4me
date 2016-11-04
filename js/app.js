@@ -346,6 +346,17 @@ app.controller("aboutmeController", function ($scope) {
 });
 
 app.controller("contactController", function ($scope) {
+ 
+  $scope.submitForm = function(isValid) {
+
+    // check to make sure the form is completely valid
+    if (isValid) { 
+      alert('our form is amazing');
+    }
+
+  };
+
+
   $scope.coordonnees = {
     identite :"LOOK4ME",
     name: "Natacha Tilmant",
@@ -373,7 +384,9 @@ app.controller("contactController", function ($scope) {
         $scope.showParticulier = false;
     };
 
+
 });
+
 
 var listchoiceParticulierFemmes = ["Entretien Découverte","Atelier colorimétrie","Atelier make-up","Relooking coiffure","Relooking vestimentaire","Coaching en image complet","Atelier occasion"];
 var listchoiceParticulierHommes = ["Ateliers découvertes","Ateliers colorimétrie","Relooking visage","Relooking coiffure","Coaching en image complet"];
