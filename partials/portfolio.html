@@ -1,4 +1,4 @@
-<!-- PORTEFOLIO
+<!-- PORTFOLIO
 ==================================================================================== -->
 <!-- DEBUG / TO DO
 * sur clique vignette, faire un reset du timer
@@ -9,7 +9,7 @@
     <!-- CAROUSEL ****************************************************************** -->
 
     <div id="pfContent">
-        <h1>Avant - Après <small>portefolio</small></h1>
+        <h1>Avant - Après <small>portfolio</small></h1>
 
         <div id="pfCarousel" class="carousel slide" data-ride="carousel">
 
@@ -17,15 +17,15 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- FULL IMAGES -->
-                <div ng-class="{item: true, active: ($index === 0)}" ng-repeat="image in portefolio.images">
+                <div ng-class="{item: true, active: ($index === 0)}" ng-repeat="image in portfolio.images">
 
                     <div class="row">
                         <div class="col-md-6">
-                            <img ng-src="img/portefolio/{{image.imgAV}}"
+                            <img ng-src="img/portfolio/{{image.imgAV}}"
                             class="img-responsive" alt="{{image.alt}} - avant">
                         </div>
                         <div class="col-md-6">
-                            <img ng-src="img/portefolio/{{image.imgAP}}"
+                            <img ng-src="img/portfolio/{{image.imgAP}}"
                             class="img-responsive" alt="{{image.alt}} - après">
                         </div>
                     </div>
@@ -49,9 +49,9 @@
             <ol class="carousel-indicators row">
                 <li data-target="#pfCarousel"
                 data-slide-to="{{$index}}"
-                ng-repeat="image in portefolio.images"
+                ng-repeat="image in portfolio.images"
                 ng-class="{active: ($index === 0)}">
-                <img ng-src="img/portefolio/{{image.imgAP}}" width="80px" height="120px" />
+                <img ng-src="img/portfolio/{{image.imgAP}}" width="80px" height="120px" />
             </li>
         </ol>
 
@@ -63,7 +63,7 @@
     <div id="testimonials" class="container">
         <h2>Témoignages</h2>
         <div class="row">
-            <div ng-repeat="testimonial in portefolio.testimonials" class="col-md-6">
+            <div ng-repeat="testimonial in portfolio.testimonials" class="col-md-6">
                 <h3 ng-bind-html="testimonial.title"></h3>
                 <p ng-bind-html="testimonial.description"></p>
             </div><!-- /ng-repeat -->

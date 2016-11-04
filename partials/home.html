@@ -37,7 +37,7 @@
            <p>
             <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/particuliers" ng-click="tab = 1">Particuliers</a></span>
             <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/entreprises" ng-click="tab = 2">Entreprises</a></span>
-            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/portefolio" ng-click="tab = 3">Avant / Après</a></span>
+            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/portfolio" ng-click="tab = 3">Avant / Après</a></span>
           </p>
         </div>
       </div>
@@ -76,13 +76,13 @@
           </ol>
           <!-- Wrapper for slides -->
           <div id="slideHome" class="carousel-inner" role="listbox">
-            <div ng-class="{item:true, active: ($index === 0)}" ng-repeat="diaporama in home.portefolio">
+            <div ng-class="{item:true, active: ($index === 0)}" ng-repeat="diaporama in home.portfolio">
               <div class="row">
                 <div class=" col-xs-6 col-sm-6 col-md-6">
-                  <img  ng-show="true" class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[0]}}" alt="...">
+                  <img  ng-show="true" class="img-responsive" ng-src="../img/portfolio/{{diaporama.img[0]}}" alt="...">
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                  <img  ng-show="true" class="img-responsive" ng-src="../img/portefolio/{{diaporama.img[1]}}" alt="...">
+                  <img  ng-show="true" class="img-responsive" ng-src="../img/portfolio/{{diaporama.img[1]}}" alt="...">
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@
           </div>
         </div>    
         <p id="paragraphe-salon2">{{home.caption.paragh}}</p>
-        <p id="suite"><a href="#/portefolio"><button  class="animbutton"><span>Voir la galerie</span></button></a></p><br/>
+        <p id="suite"><a href="#/portfolio"><button  class="animbutton"><span>Voir la galerie</span></button></a></p><br/>
      <!--slide-->
     </div>
   </div>

@@ -41,9 +41,9 @@
       templateUrl : 'partials/entreprises.html',
       controller : 'entreprisesController'
     })
-    .when('/portefolio',{
-      templateUrl : 'partials/portefolio.html',
-      controller : 'PortefolioController'
+    .when('/portfolio',{
+      templateUrl : 'partials/portfolio.html',
+      controller : 'PortfolioController'
     })
     .when('/presentation',{
       templateUrl : 'partials/aboutme.html',
@@ -112,7 +112,7 @@ descriptioninfo: "Fashion Week printemps-été 2017 : suivez le défilé Emporio
       photo : "img/interieur_4250.JPG",
       paragh : "Dans une atmosphère bienveillante, d'écoute et de respect je vous aide  à reprendre confiance en vous, affirmer votre personnalité et trouver l'harmonie avec l'image que vous souhaitez vehiculer."
     }
-    $scope.home.portefolio = [
+    $scope.home.portfolio = [
 
     {img:["01AV.jpg", "01AP.jpg"], alt: "Photo relooking"},
     {img:["02AV.jpg", "02AP.jpg"], alt: "Photo relooking"},
@@ -365,7 +365,7 @@ app.controller("contactController", function ($scope) {
     name: "Natacha Tilmant",
     adresse: "7 Rue de la Foulerie",
     ville: "28000 Chartres",
-    telephone: "06 38 41 38 38",
+    telephone: "06 38 44 38 38",
     email: "contact@look4me.fr"
 
   };
@@ -397,13 +397,13 @@ var listchoiceEntreprise = ["Offres pour les CE","Actions Commerciales","Challen
 
 
 
-/***************************************** controller portefolio *****************************/
+/***************************************** controller portfolio *****************************/
 
-app.controller("PortefolioController", function($scope){
+app.controller("PortfolioController", function($scope){
 
     // Data object
-    $scope.portefolio = {};
-    $scope.portefolio.images = [
+    $scope.portfolio = {};
+    $scope.portfolio.images = [
         {imgAV: "01AV.jpg", imgAP: "01AP.jpg", alt: "Photo relooking style"},
         {imgAV: "02AV.jpg", imgAP: "02AP.jpg", alt: "Photo total relooking"},
         {imgAV: "03AV.jpg", imgAP: "03AP.jpg", alt: "Photo relooking maquillage"},
@@ -415,7 +415,7 @@ app.controller("PortefolioController", function($scope){
         {imgAV: "09AV.jpg", imgAP: "09AP.jpg", alt: "Photo relooking.."},
         {imgAV: "10AV.jpg", imgAP: "10AP.jpg", alt: "Photo relooking.."}
     ];
-    $scope.portefolio.testimonials = [
+    $scope.portfolio.testimonials = [
         {
         title:"Marjorie (35 ans) - Relooking style",
         description: "<em><strong>Donec id elit</strong> non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</em>"
@@ -432,7 +432,7 @@ app.controller("PortefolioController", function($scope){
     ];
 });
 
-/******************* controller portefolio **************************************************/
+/******************* controller portfolio **************************************************/
 
 /*********************Directive*************************************************************/
 
