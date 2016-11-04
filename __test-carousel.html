@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+    var recipesApp = angular.module('recipesApp', ['ngRoute']);
+
+    recipesApp.config(function($routeProvider) {
+
+        $routeProvider.when("/", {
+            templateUrl : "idea.html",
+            controller  : "mainController"
+        });
+
+        $routeProvider.when("/my_recipes", {
+            templateUrl : "my_recipes.html",
+            controller  : "MyRecipesController"
+        });
+
+        $routeProvider.when("/list", {
+            templateUrl : "list.html",
+            controller  : "ListController",
+        });
+    });
+
+    recipesApp.controller('mainController',      ['$scope', function ($scope) {}]);
+    recipesApp.controller('MyRecipesController', ['$scope', function ($scope) {}]);
+    recipesApp.controller('ListController',      ['$scope', function ($scope) {}]);
+
+</script>
+</head>
+<body>
+<header>
+
+<div class="recipes">
+<span>Рецепты</span>
+</div>
+<nav>
+<li><a href="#/">Идеи</a></li>
+<li><a href="#/my_recipes">Мои рецепты</a></li>
+<li><a href="#/list">Списки</a></li>
+</nav>
+
+</header>
+
+<div class="view">
+<ng-view></ng-view>
+</div>
+<div class="container">
+<div  class="main">
+<div class="what_to_cook">
+<span>Что приготовить сегодня?</span>
+</div>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<img src="http://andychef.ru/wp-content/uploads/2016/02/DSC07364.jpg" alt="...">
+<div class="carousel-caption">
+<h3>Caption Text</h3>
+</div>
+</div>
+<div class="item">
+<img src="http://andychef.ru/wp-content/uploads/2016/02/DSC06995.jpg" alt="...">
+<div class="carousel-caption">
+<h3>Caption Text</h3>
+</div>
+</div>
+<div class="item">
+<img src="http://andychef.ru/wp-content/uploads/2016/01/DSC06427.jpg" alt="...">
+<div class="carousel-caption">
+<h3>Caption Text</h3>
+</div>
+</div>
+</div>
+
+<!-- Controls -->
+<a class="left carousel-control" data-target="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="right carousel-control" data-target="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div> <!-- Carousel -->
+
+</div>
+</div>
+</body>
+</html>

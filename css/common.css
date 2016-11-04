@@ -1,0 +1,14 @@
+body {
+    color: #AAA;
+    background-color: #1F2228;
+}
+
+h1, h2 {
+    color: #C93;
+    font-family: 'El Messiri', sans-serif;
+}
+
+/* pour debug */
+.red   { background-color: red; }
+.blue  { background-color: blue; }
+.green { background-color: green; }
